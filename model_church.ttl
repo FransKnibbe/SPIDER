@@ -19,13 +19,13 @@
 
 # missing: jaar_ingebruikname, jaar_consecratie 
 :c17
-	a dpo:Church, cidoc:E22, schema:Church ; 
+	a dpo:Church, cidoc:E22_Man-Made_Object, schema:Church ; 
 	dcterms:subject aat:300007466 et:c15af234-87b0-433c-bbe1-880a6f717057 ;
 	dcterms:title "Silo"^^xsd:string ;
 	bag:woonplaatsnaam "Hilversum"^^xsd:string ;
 	bag:openbareruimtenaam "Zadelstraat"^^xsd:string ;
 	bag:huisnummer "3"^^xsd:integer ;
-	dcterms:created "1898"^^xsd:gYear ; 
+	dcterms:created "1898"^^xsd:gYear ; # this is the year of commissioning. The year of commissioning should also have a more specialized materialization.
 	dcterms:valid :intervalB ;
 	dcterms:replaces <c17/version1> ;
 .
@@ -33,7 +33,7 @@
 <c17/version1>
 	dcterms:isReplacedBy :c17 ;
 	dcterms:valid :intervalA ;
-	a dpo:Church, cidoc:E22, schema:Church ; 
+	a dpo:Church, cidoc:E22_Man-Made_Object, schema:Church ; 
 	dcterms:subject aat:300007466 et:c15af234-87b0-433c-bbe1-880a6f717057 ;
 	dcterms:title "Bethel"^^xsd:string ;
 	bag:woonplaatsnaam "Hilversum"^^xsd:string ;
@@ -42,7 +42,7 @@
 .
 
 <c17/consecration> # how to link this to the church resource? See http://answers.semanticweb.com/questions/32996/how-to-link-a-resource-to-an-event
-	a dcterms:event ; # also event:Event?
+	a dcterms:event, cidoc:E5_Event; # also event:Event?
 	dcterms:date "1901"^^xsd:gYear ; 
 	dcterms:subject aat:300069272 ;
 .
