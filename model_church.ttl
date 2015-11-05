@@ -1,0 +1,59 @@
+# This is an RDF file in Turtle notation. It contains data describing one church building.
+# It can be used as an example of how church buildings described in the churches database 
+# should be described as Linked Data
+
+@prefix : <http://data.spider-ld.org/kerkennl/>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dpo: <http://dbpedia.org/ontology/> .
+@prefix aat: <http://vocab.getty.edu/aat> .
+@prefix schema: <http://schema.org/> .
+@prefix bag: <http://lod.geodan.nl/vocab/bag#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix et: <http://data.cultureelerfgoed.nl/semnet/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+
+# missing: jaar_ingebruikname, jaar_consecratie 
+:c17
+	a dpo:Church, cidoc:E22, schema:Church ; 
+	dcterms:subject aat:300007466 et:c15af234-87b0-433c-bbe1-880a6f717057 ;
+	dcterms:title "Silo"^^xsd:string ;
+	bag:woonplaatsnaam "Hilversum"^^xsd:string ;
+	bag:openbareruimtenaam "Zadelstraat"^^xsd:string ;
+	bag:huisnummer "3"^^xsd:integer ;
+	dcterms:created "1898"^^xsd:gYear ; 
+	dcterms:valid :intervalB ;
+	dcterms:replaces <c17/version1> ;
+.
+
+<c17/version1>
+	dcterms:isReplacedBy :c17 ;
+	dcterms:valid :intervalA ;
+	a dpo:Church, cidoc:E22, schema:Church ; 
+	dcterms:subject aat:300007466 et:c15af234-87b0-433c-bbe1-880a6f717057 ;
+	dcterms:title "Bethel"^^xsd:string ;
+	bag:woonplaatsnaam "Hilversum"^^xsd:string ;
+	bag:openbareruimtenaam "Zadelstraat"^^xsd:string ;
+	bag:huisnummer  "3"^^xsd:integer
+.
+
+<c17/consecration> # how to link this to the church resource? See http://answers.semanticweb.com/questions/32996/how-to-link-a-resource-to-an-event
+	a dcterms:event ; # also event:Event?
+	dcterms:date "1901"^^xsd:gYear ; 
+	dcterms:subject aat:300069272 ;
+.
+
+:intervalA 
+  a time:Interval ;
+  time:hasBeginning time:inXSDDateTime "1898-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
+  time:hasEnd time:inXSDDateTime "1931-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
+.
+
+:intervalB
+  a time:Interval ;
+  time:hasBeginning time:inXSDDateTime "1948-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
+ .
