@@ -17,15 +17,19 @@
 @prefix et: <http://data.cultureelerfgoed.nl/semnet/> .
 @prefix event: <http://purl.org/NET/c4dm/event.owl#> .
 
-# missing: jaar_ingebruikname, jaar_consecratie 
+# missing: a way to link the church to events 
 :c17
 	a dpo:Church, cidoc:E22_Man-Made_Object, schema:Church ; 
 	dcterms:subject aat:300007466 et:c15af234-87b0-433c-bbe1-880a6f717057 ;
 	dcterms:title "Silo"^^xsd:string ;
+	dpo:buildingName "Silo"^^xsd:string ;
+	rdfs:comment "Dit is een bijzonderheid."@nl^^xsd:string ;
 	bag:woonplaatsnaam "Hilversum"^^xsd:string ;
 	bag:openbareruimtenaam "Zadelstraat"^^xsd:string ;
 	bag:huisnummer "3"^^xsd:integer ;
 	dcterms:created "1898"^^xsd:gYear ; # this is the year of commissioning. The year of commissioning should also have a more specialized materialization.
+	dpo:architectureStyle et:5c688668-31a7-4080-b6ad-95e7d2b1ea9f ;
+	dcterms:subject aat:300170433 ;
 	dcterms:valid :intervalB ;
 	dcterms:replaces <c17/version1> ;
 .
