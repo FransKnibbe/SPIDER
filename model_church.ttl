@@ -1,6 +1,6 @@
-# This is an RDF file in Turtle notation. It contains data describing one church building.
-# It can be used as an example of how church buildings described in the churches database 
-# should be described as Linked Data
+# This is an RDF file in Turtle notation. It describes the desired output of an
+# automatic procedure for transforming source data to RDF.
+# The file contians dataset metadata and data describing one church building.
 
 @prefix : <http://data.spider-ld.org/kerkennl/>
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -16,6 +16,15 @@
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix et: <http://data.cultureelerfgoed.nl/semnet/> .
 @prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+# dataset metadata
+<http://data.spider-ld.org/kerkennl/>
+  a void:dataset;
+  dcterms:subject aat:c15af234-87b0-433c-bbe1-880a6f717057;
+  dcterms:spatial :spatialExtent; 
+  dcterms:temporal :temporalExtent;
+.
 
 # missing: a way to link the church to events 
 :c17
