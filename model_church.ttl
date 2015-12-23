@@ -26,6 +26,7 @@
 @prefix rc: <http://umbel.org/umbel/rc/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 
+
 # dataset metadata
 <http://data.spider-ld.org/kerkennl/>
   a void:dataset;
@@ -40,7 +41,7 @@
   dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057 ;
   dcterms:title "Silo" ;
   dpo:buildingName "Silo" ;
-  rdfs:comment "Dit is een bijzonderheid." ;
+  rdfs:comment "Dit is een bijzonderheid."@nl ;
   bag:woonplaatsnaam "Hilversum" ;
   bag:openbareruimtenaam "Zadelstraat" ;
   bag:huisnummer "3"^^xsd:integer ;
@@ -49,13 +50,15 @@
   dul:isParticipantIn <c17/consecration> ; 
   cidoc:P12i_was_present_at <c17/consecration> ; 
   umbel:relatesToEvent <c17/consecration> ;
-  dcterms:valid :intervalB ;
+  #dcterms:valid :intervalB ;
+  dcterms:valid "start=1948;" ; #do we need to add the datatype dcmi-period? Does it have a RDFS/OWL defintion?
   dcterms:replaces <c17/version1> 
 .
 
 <c17/version1>
   dcterms:isReplacedBy :c17 ;
-  dcterms:valid :intervalA ;
+  #dcterms:valid :intervalA ;
+  dcterms:valid "start=1898; end=1931" ;
   a dpo:Church, cidoc:E22_Man-Made_Object, schema:Church ; 
   dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057 ;
   dcterms:title "Bethel"^^xsd:string ;
@@ -66,21 +69,21 @@
 
 <c17/consecration> 
   a dcterms:event, cidoc:E5_Event, dul:Event; # also event:Event?
+  dcterms:subject aat:300069272 ;
   dul:includesObject <c17> ;
   cidoc:P12_occurred_in_the_presence_of <c17> ;
   umbel:relatesToFacility <c17> ;
   dcterms:date "1901"^^xsd:gYear ; 
-  dcterms:subject aat:300069272 ;
 .
 
-:intervalA 
-  a time:Interval ;
-  time:hasBeginning "1898-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
-  time:hasEnd "1931-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
-.
+#:intervalA 
+#  a time:Interval ;
+#  time:hasBeginning "1898-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
+#  time:hasEnd "1931-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
+#.
 
-:intervalB
-  a time:Interval ;
-  time:hasBeginning "1948-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
- .
+#:intervalB
+#  a time:Interval ;
+#  time:hasBeginning "1948-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
+# .
  
