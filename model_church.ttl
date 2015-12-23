@@ -1,7 +1,11 @@
 # This is an RDF file in Turtle notation. It describes the desired output of an
 # automatic procedure for transforming source data to RDF.
 # The file contians dataset metadata and data describing one church building.
+#
+# Note: in Turtle, if there is no datatype URI and no language tag. datatype is xsd:string
+# So we only need to specify datatypes for non-string literals.
 
+@base <http://data.spider-ld.org/kerkennl/>
 @prefix : <http://data.spider-ld.org/kerkennl/>
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,14 +14,17 @@
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dpo: <http://dbpedia.org/ontology/> .
-@prefix aat: <http://vocab.getty.edu/aat/.
-> .
+@prefix aat: <http://vocab.getty.edu/aat/> .
 @prefix schema: <http://schema.org/> .
 @prefix bag: <http://lod.geodan.nl/vocab/bag#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix eth: <http://data.cultureelerfgoed.nl/semnet/> .
 @prefix event: <http://purl.org/NET/c4dm/event.owl#> .
 @prefix void: <http://rdfs.org/ns/void#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix umbel: <http://umbel.org/umbel#> .
+@prefix rc: <http://umbel.org/umbel/rc/> .
+@prefix time: <http://www.w3.org/2006/time#> .
 
 # dataset metadata
 <http://data.spider-ld.org/kerkennl/>
@@ -29,44 +36,51 @@
 
 # missing: a way to link the church to events 
 :c17
-	a dpo:Church, cidoc:E22_Man-Made_Object, schema:Church ; 
-	dcterms:subject aat:300007466 eth:c15af234-87b0-433c-bbe1-880a6f717057 ;
-	dcterms:title "Silo"^^xsd:string ;
-	dpo:buildingName "Silo"^^xsd:string ;
-	rdfs:comment "Dit is een bijzonderheid."@nl^^xsd:string ;
-	bag:woonplaatsnaam "Hilversum"^^xsd:string ;
-	bag:openbareruimtenaam "Zadelstraat"^^xsd:string ;
-	bag:huisnummer "3"^^xsd:integer ;
-	dcterms:created "1898"^^xsd:gYear ; # this is the year of commissioning. The year of commissioning should also have a more specialized materialization.
-	dpo:architectureStyle eth:5c688668-31a7-4080-b6ad-95e7d2b1ea9f ;
-	dcterms:valid :intervalB ;
-	dcterms:replaces <c17/version1> ;
+  a dpo:Church, cidoc:E22_Man-Made_Object, schema:Church, dul:DesignedArtifact, rc:Church_Building ; 
+  dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057 ;
+  dcterms:title "Silo" ;
+  dpo:buildingName "Silo" ;
+  rdfs:comment "Dit is een bijzonderheid." ;
+  bag:woonplaatsnaam "Hilversum" ;
+  bag:openbareruimtenaam "Zadelstraat" ;
+  bag:huisnummer "3"^^xsd:integer ;
+  dcterms:created "1898"^^xsd:gYear ; # this is the year of commissioning. The year of commissioning should also have a more specialized materialization.
+  dpo:architectureStyle eth:5c688668-31a7-4080-b6ad-95e7d2b1ea9f ;
+  dul:isParticipantIn <c17/consecration> ; 
+  cidoc:P12i_was_present_at <c17/consecration> ; 
+  umbel:relatesToEvent <c17/consecration> ;
+  dcterms:valid :intervalB ;
+  dcterms:replaces <c17/version1> 
 .
 
 <c17/version1>
-	dcterms:isReplacedBy :c17 ;
-	dcterms:valid :intervalA ;
-	a dpo:Church, cidoc:E22_Man-Made_Object, schema:Church ; 
-	dcterms:subject aat:300007466 eth:c15af234-87b0-433c-bbe1-880a6f717057 ;
-	dcterms:title "Bethel"^^xsd:string ;
-	bag:woonplaatsnaam "Hilversum"^^xsd:string ;
-	bag:openbareruimtenaam "Zadelstraat"^^xsd:string ;
-	bag:huisnummer  "3"^^xsd:integer
+  dcterms:isReplacedBy :c17 ;
+  dcterms:valid :intervalA ;
+  a dpo:Church, cidoc:E22_Man-Made_Object, schema:Church ; 
+  dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057 ;
+  dcterms:title "Bethel"^^xsd:string ;
+  bag:woonplaatsnaam "Hilversum"^^xsd:string ;
+  bag:openbareruimtenaam "Zadelstraat"^^xsd:string ;
+  bag:huisnummer  "3"^^xsd:integer
 .
 
-<c17/consecration> # how to link this to the church resource? See http://answers.semanticweb.com/questions/32996/how-to-link-a-resource-to-an-event
-	a dcterms:event, cidoc:E5_Event; # also event:Event?
-	dcterms:date "1901"^^xsd:gYear ; 
-	dcterms:subject aat:300069272 ;
+<c17/consecration> 
+  a dcterms:event, cidoc:E5_Event, dul:Event; # also event:Event?
+  dul:includesObject <c17> ;
+  cidoc:P12_occurred_in_the_presence_of <c17> ;
+  umbel:relatesToFacility <c17> ;
+  dcterms:date "1901"^^xsd:gYear ; 
+  dcterms:subject aat:300069272 ;
 .
 
 :intervalA 
   a time:Interval ;
-  time:hasBeginning time:inXSDDateTime "1898-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
-  time:hasEnd time:inXSDDateTime "1931-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
+  time:hasBeginning "1898-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
+  time:hasEnd "1931-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
 .
 
 :intervalB
   a time:Interval ;
-  time:hasBeginning time:inXSDDateTime "1948-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
+  time:hasBeginning "1948-01-01T00:00:00"^^xsd:dateTime ; # untruthful - source data have only year
  .
+ 
