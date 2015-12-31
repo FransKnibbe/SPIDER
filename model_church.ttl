@@ -25,19 +25,59 @@
 @prefix umbel: <http://umbel.org/umbel#> .
 @prefix rc: <http://umbel.org/umbel/rc/> .
 @prefix time: <http://www.w3.org/2006/time#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> 
 
-
-# dataset metadata
+#### >>> start dataset metadata
+# To do: optionally define subsets, e.g. by province. (to demonstrate dataset partioning)
 <http://data.spider-ld.org/kerkennl/>
-  a void:dataset;
-  dcterms:subject aat:c15af234-87b0-433c-bbe1-880a6f717057;
-  dcterms:spatial :spatialExtent; 
-  dcterms:temporal :temporalExtent;
+  a void:Dataset, dcat:Dataset ;
+  dcterms:title "Kerkgebouwen in Nederland 1800-1970"@nl, "Church buildings in The Netherlands 1800-1970"@en;
+  dcterms:description "Deze dataset bevat gegevens over kerkgebouwen uit de periode 1800-1970. De dataset is samengesteld om de cultuurhistorische waarde van deze gebouwen te meten."@nl, "This dataset contains data about church buildings in the Netherlands. The data are collected with the aim of helping measuring cultural and historical value of church buildings."@nl;
+  dcterms:creator <http://www.hermanwesselink.nl/>, <http://www.godgeleerdheid.vu.nl/nl/over-de-faculteit/medewerkers/wetenschappelijk-personeel-t-z/he-wesselink/index.aspx> ; 
+  dcerms:publisher <http://data.spider-ld.org/about> ; #To Do: create and maintain this page
+  foaf:homepage <http://data.spider-ld.org/kerkennl/about> ; #To Do: create and maintain this page
+  dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057, <http://brt.kadaster.nl/doc/begrip/Kerk> ;
+  dcat:theme aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057, <http://brt.kadaster.nl/doc/begrip/Kerk> ;
+  dcterms:spatial :spatialExtent ;
+  dcterms:temporal :temporalExtent ;
+  dcterms:created "2016-01-15"^^xsd:Date ;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
+  dcterms:license <http://www.opendatacommons.org/licenses/by/> ; # To do: discuss with Herman
+  void:feature <http://www.w3.org/ns/formats/RDF_XML> ;  # To do: test this format
+  void:feature <http://www.w3.org/ns/formats/Turtle> ; # To do: test this format
+  void:feature <http://www.w3.org/ns/formats/N3> ; # To do: test this format
+  void:feature <http://www.w3.org/ns/formats/JSON-LD> ; # To do: test this format
+  void:sparqlEndpoint <http://data.spider-ld.org/sparql> ; # To do: test 
+  void:exampleResource :c17 ;
+  void:vocabulary <http://www.cidoc-crm.org/cidoc-crm/>, <http://data.cultureelerfgoed.nl/semnet/>, <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> ;
 .
+
+:spatialExtent
+  a dcterms:Location ;
+  locn:location <http://dbpedia.org/resource/Netherlands> ;
+  locn:geometry :spatialExtentGeometry ;
+  locn:geographicName "Nederland"@nl, "The Netherlands"@en ;
+.
+
+:spatialExtentGeometry
+  a geosparql:Geometry ;
+  geosparql:asWKT "POLYGON((3.31 50.75,3.31 53.58,7.23 53.58,7.23 50.75,3.31 50.75))"^^geosparql:wktLiteral ;
+.
+
+:temporalExtent
+  a dcterms:PeriodOfTime ;
+  dcterms:temporal "start=1800; end=1970" ;
+  time:hasBeginning "1800"^^xsd:gYear ;
+  time:hasEnd "1970"^^xsd:gYear ;
+.
+
+#### <<<< end dataset metadata
 
 # missing: a way to link the church to events 
 :c17
   a dpo:Church, cidoc:E22_Man-Made_Object, schema:Church, dul:DesignedArtifact, rc:Church_Building ; 
+  void:inDataset <http://data.spider-ld.org/kerkennl/> ;
   dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057 ;
   dcterms:title "Silo" ;
   dpo:buildingName "Silo" ;
@@ -68,13 +108,18 @@
 .
 
 <c17/consecration> 
-  a dcterms:event, cidoc:E5_Event, dul:Event; # also event:Event?
+  a dcterms:event, cidoc:E5_Event, dul:Event; umbel:Events # also event:Event?
   dcterms:subject aat:300069272 ;
   dul:includesObject <c17> ;
   cidoc:P12_occurred_in_the_presence_of <c17> ;
   umbel:relatesToFacility <c17> ;
-  dcterms:date "1901"^^xsd:gYear ; 
+  dcterms:date "1901"^^xsd:gYear ;
+  #cidoc:P4_has_time-span :year1901 ;
 .
+
+#:year1901
+#  a cidoc:E52_Time-Span ;
+#.
 
 #:intervalA 
 #  a time:Interval ;
