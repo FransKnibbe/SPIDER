@@ -55,6 +55,11 @@
   void:sparqlEndpoint <http://data.spider-ld.org/sparql> ; # To do: test 
   void:exampleResource :c17 ;
   void:vocabulary <http://www.cidoc-crm.org/cidoc-crm/>, <http://data.cultureelerfgoed.nl/semnet/>, <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> ;
+  dcterms:hasPart :provfriesland ; # dataset partitioning by province, to be generated automatically (SPARQL CONSTRUCT query)
+  void:subset :provfriesland ; # dataset partitioning by province, to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:hasPart :provutrecht ; # dataset partitioning by province, to be generated automatically (SPARQL CONSTRUCT query)
+  void:subset :provutrecht ; # dataset partitioning by province, to be generated automatically (SPARQL CONSTRUCT query)
+  # repeat for other provinces
 .
 
 :spatialExtent
@@ -76,14 +81,67 @@
   time:hasEnd "1970"^^xsd:gYear ;
 .
 
+:provfriesland #example of subset by provinde
+  a void:Dataset, dcat:Dataset ;
+  dcterms:isPartOf <http://data.spider-ld.org/kerkennl/> ;
+  dcterms:title "Kerkgebouwen de provincie Friesland"@nl ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Church buildings in the province of Friesland"@en ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:hasPart :munleeuwarden ;  # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:hasPart :munharlingen ;  # to be generated automatically (SPARQL CONSTRUCT query)
+  # repeat for other municipalities
+.
+
+:provutrecht  #example of subset by provinde
+  a void:Dataset, dcat:Dataset ;
+  dcterms:isPartOf <http://data.spider-ld.org/kerkennl/> ;
+  dcterms:title "Kerkgebouwen de provincie Utrecht"@nl ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Church buildings in the province of Utrecht"@en ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:hasPart :munhilversum ;  # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:hasPart :munamersfoort ;  # to be generated automatically (SPARQL CONSTRUCT query)
+  # repeat for other towns
+.
+
+:munhilversum  #example of subset by municipality
+  a void:Dataset, dcat:Dataset ;
+  dcterms:isPartOf :provutrecht ;
+  dcterms:title "Kerkgebouwen in gemeente Hilversum"@nl ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Church buildings in the municipality Hilversum"@en ; # to be generated automatically (SPARQL CONSTRUCT query)
+.
+
+:wphilversum  #example of subset by city, town or village of residence
+  a void:Dataset, dcat:Dataset ;
+  dcterms:isPartOf :munhilversum ;
+  dcterms:title "Kerkgebouwen in woonplaats Hilversum"@nl ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Church buildings in Hilversum"@en ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:hasPart :c17 ; # lowest subset level has relations to church instances.
+.
+
+:mungooisemeren #example of subset by municipality with subsets by city, town or village of residence
+  a void:Dataset, dcat:Dataset ;
+  dcterms:isPartOf :provutrecht ;
+  dcterms:hasPart :wpbussum, wpnaarden, wpmuiden ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Kerkgebouwen in gemeente Hilversum"@nl ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Church buildings in the municipality Hilversum"@en ; # to be generated automatically (SPARQL CONSTRUCT query)
+.
+
+:wpbussum #example of subset by city, town or village of residence
+  a void:Dataset, dcat:Dataset ;
+  dcterms:isPartOf :mungooisemeren ;
+  dcterms:title "Kerkgebouwen in woonplaats Bussum"@nl ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Church buildings in Bussum"@en ; # to be generated automatically (SPARQL CONSTRUCT query)
+.
+
+
 #### <<<< end dataset metadata
 
 # missing: a way to link the church to events 
 :c17
   a dpo:Church, cidoc:E22_Man-Made_Object, schema:Church, dul:DesignedArtifact, rc:Church_Building ;
-  dcterms:type dbp:Cathedral ; #uncomment if this is a cathedral
-  dcterms:type dbp:Minor_basilica ; #uncomment if this is a basilica 
+  dpo:type dbp:Cathedral ; #uncomment if this is a cathedral
+  dpo:type dbp:Minor_basilica ; #uncomment if this is a basilica 
   void:inDataset <http://data.spider-ld.org/kerkennl/> ;
+  void:inDataset :wphilversum ;
+  dcterms:isPartOf :wphilversum ;
   dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057 ;
   dcterms:title "Silo" ;
   dpo:buildingName "Silo" ;
@@ -93,7 +151,8 @@
   bag:huisnummer "3"^^xsd:integer ;
   dcterms:created "1898"^^xsd:gYear ; # this is the year of first use (ingebruikname)
   #The following line is rejected by riot, seemingly because of the parentheses. 
-  dpo:architectureStyle aat:300069303, eth:d19a7bd4-d479-422c-838a-d4d3749205aa, dbp:Rationalism_(architecture) ; 
+  #dpo:architectureStyle aat:300069303, eth:d19a7bd4-d479-422c-838a-d4d3749205aa, dbp:Rationalism_(architecture) ; # commented for riot validation
+  dpo:architectureStyle aat:300069303, eth:d19a7bd4-d479-422c-838a-d4d3749205aa, dbp:Rationalism_(architecture) ; # replace parentheses in URI 
   dpo:architectureType eth:5c688668-31a7-4080-b6ad-95e7d2b1ea9f ;
   dul:isParticipantIn <c17/consecration> ; 
   cidoc:P12i_was_present_at <c17/consecration> ; 
