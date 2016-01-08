@@ -12,7 +12,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
+#@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> . # apparently version 5.0.4
+@prefix cidoc: <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs> .  # to be replaced by definitive 6.2 version
 @prefix dpo: <http://dbpedia.org/ontology/> .
 @prefix dbp: <http://dbpedia.org/resource/> .
 @prefix aat: <http://vocab.getty.edu/aat/> .
@@ -119,7 +120,7 @@
 :mungooisemeren #example of subset by municipality with subsets by city, town or village of residence
   a void:Dataset, dcat:Dataset ;
   dcterms:isPartOf :provutrecht ;
-  dcterms:hasPart :wpbussum, wpnaarden, wpmuiden ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:hasPart :wpbussum, :wpnaarden, :wpmuiden ; # to be generated automatically (SPARQL CONSTRUCT query)
   dcterms:title "Kerkgebouwen in gemeente Hilversum"@nl ; # to be generated automatically (SPARQL CONSTRUCT query)
   dcterms:title "Church buildings in the municipality Hilversum"@en ; # to be generated automatically (SPARQL CONSTRUCT query)
 .
@@ -136,7 +137,7 @@
 
 # missing: a way to link the church to events 
 :c17
-  a dpo:Church, cidoc:E22_Man-Made_Object, schema:Church, dul:DesignedArtifact, rc:Church_Building ;
+  a dpo:Church, cidoc:E22_Man-Made_Object, cidoc:E93_Presence, schema:Church, dul:DesignedArtifact, rc:Church_Building ;
   dpo:type dbp:Cathedral ; #uncomment if this is a cathedral
   dpo:type dbp:Minor_basilica ; #uncomment if this is a basilica 
   void:inDataset <http://data.spider-ld.org/kerkennl/> ;
@@ -152,13 +153,14 @@
   dcterms:created "1898"^^xsd:gYear ; # this is the year of first use (ingebruikname)
   #The following line is rejected by riot, seemingly because of the parentheses. 
   #dpo:architectureStyle aat:300069303, eth:d19a7bd4-d479-422c-838a-d4d3749205aa, dbp:Rationalism_(architecture) ; # commented for riot validation
-  dpo:architectureStyle aat:300069303, eth:d19a7bd4-d479-422c-838a-d4d3749205aa, dbp:Rationalism_(architecture) ; # replace parentheses in URI 
+  dpo:architectureStyle aat:300069303, eth:d19a7bd4-d479-422c-838a-d4d3749205aa, dbp:Rationalism_architecture ; # replace parentheses in URI 
   dpo:architectureType eth:5c688668-31a7-4080-b6ad-95e7d2b1ea9f ;
   dul:isParticipantIn <c17/consecration> ; 
   cidoc:P12i_was_present_at <c17/consecration> ; 
   umbel:relatesToEvent <c17/consecration> ;
   #dcterms:valid :intervalB ;
   dcterms:valid "start=1948; end=1974;" ; #do we need to add the datatype dcmi-period? Does it have a RDFS/OWL definition?
+  cidoc:P164_during :interval1948-1974 ;
   dcterms:replaces <c17/version1> 
 .
 
@@ -181,6 +183,17 @@
   cidoc:P12_occurred_in_the_presence_of <c17> ;
   umbel:relatesToFacility <c17> ;
   dcterms:date "1901"^^xsd:gYear ;
+.
+
+:interval1948-1974 # intervals can and should be shared between versions of churches when appropriate.
+  a cidoc:E52_Time-Span ;
+  cidoc:P81_ongoing_throughout :timespan1948-1974 ;
+.
+
+:timespan1948-1974
+  a cidoc:E61_Time-Primitive ;
+  dpo:startYear "1948"^^xsd:gYear ;
+  dpo:endYear "1974"^^xsd:gYear ;
 .
 
 #:year1901
