@@ -146,6 +146,7 @@
   dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057 ;
   dcterms:title "Silo" ;
   dpo:buildingName "Silo" ;
+  cidoc:E42_Identifier "Silo" ;
   rdfs:comment "Dit is een bijzonderheid (uit de kolom 'bijzonderheden')"@nl ;
   bag:woonplaatsnaam "Hilversum" ;
   bag:openbareruimtenaam "Zadelstraat" ;
