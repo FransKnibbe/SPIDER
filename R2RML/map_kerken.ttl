@@ -1,0 +1,73 @@
+# This is a R2RML mapping file
+# It is processes with R2RML Parser (https://github.com/nkons/r2rml-parser). It should be possible to use it
+# with other R2RML implementations too
+
+@prefix map: <#>.
+@prefix : <http://data.spider-ld.org/kerkennl/>
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix cidoc: <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs> .  # to be replaced by definitive 6.2 version
+@prefix dpo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/resource/> .
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix schema: <http://schema.org/> .
+@prefix bag: <http://lod.geodan.nl/vocab/bag#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix eth: <http://data.cultureelerfgoed.nl/semnet/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix umbel: <http://umbel.org/umbel#> .
+@prefix rc: <http://umbel.org/umbel/rc/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+
+
+map:churches
+    rr:logicalTable [ rr:tableName "01_Hoofdtabel_Kerken"; ];
+    rr:subjectMap [
+        rr:template 'http://data.spider-ld.org/kerkennl/kerk{"ID"}';
+        rr:class dpo:Church, cidoc:E22_Man-Made_Object, cidoc:E93_Presence, schema:Church, dul:DesignedArtifact, rc:Church_Building;
+    ];
+    
+    rr:predicateObjectMap [
+      rr:predicate bag:woonplaats;
+      rr:objectMap [ rr:template '{"Plaats"}' ;
+                      rr:termType rr:Literal; ]
+    ].
+
+# map:persons
+    # rr:logicalTable [ rr:tableName '"eperson"'; ];
+    # rr:subjectMap [
+        # rr:template 'http://data.example.org/repository/person/{"eperson_id"}';
+        # rr:class foaf:Person;
+    # ];
+    
+    # rr:predicateObjectMap [
+      # rr:predicate foaf:name;
+      # rr:objectMap [ rr:template '{"firstname"} {"lastname"}' ;
+                      # rr:termType rr:Literal; ]
+    # ].
+
+# map:persons-groups
+    # rr:logicalTable [ rr:tableName '"epersongroup2eperson"'; ];
+    # rr:subjectMap [
+        # rr:template 'http://data.example.org/repository/group/{"eperson_group_id"}';
+    # ];
+    
+    # rr:predicateObjectMap [
+      # rr:predicate foaf:member;
+      # rr:objectMap [ rr:template 'http://data.example.org/repository/person/{"eperson_id"}' ;
+      # rr:termType rr:IRI;  ]
+    # ].
+
