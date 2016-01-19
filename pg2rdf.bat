@@ -40,7 +40,14 @@ psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%v
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dpo%type> <%dbp%Cathedral> .' from \"01_Hoofdtabel_Kerken\" where \"Functie_kathedraal\" = '1';" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dpo%type> <%dbp%Minor_basilica> .' from \"01_Hoofdtabel_Kerken\" where \"Eretitel_Basiliek\" = '1';" >> churches.nt
 :: Weird double quotes, but it works.
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <%dcterms%title> ""' || n.\"Naam_Kerk\" || '\" .' from \"01_Hoofdtabel_Kerken\" k, \"011_Naam_Kerk\" n where k.\"ID\" = n.\"ID\"; >> churches.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <%dpo%buildingName> ""' || n.\"Naam_Kerk\" || '\" .' from \"01_Hoofdtabel_Kerken\" k, \"011_Naam_Kerk\" n where k.\"ID\" = n.\"ID\"; >> churches.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <%cidoc%E42_Identifier> ""' || n.\"Naam_Kerk\" || '\" .' from \"01_Hoofdtabel_Kerken\" k, \"011_Naam_Kerk\" n where k.\"ID\" = n.\"ID\"; >> churches.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%rdfs%comment> ""' || \"Bijzonderheden\" || '\" .' from \"01_Hoofdtabel_Kerken\" where \"Bijzonderheden\" is not null";" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <%dcterms%title> ""' || n.\"Naam_Kerk\" || '\" .' from \"01_Hoofdtabel_Kerken\" k, \"011_Naam_Kerk\" n where k.\"ID\" = n.\"ID\" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <%dpo%buildingName> ""' || n.\"Naam_Kerk\" || '\" .' from \"01_Hoofdtabel_Kerken\" k, \"011_Naam_Kerk\" n where k.\"ID\" = n.\"ID\" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <%cidoc%E42_Identifier> ""' || n.\"Naam_Kerk\" || '\" .' from \"01_Hoofdtabel_Kerken\" k, \"011_Naam_Kerk\" n where k.\"ID\" = n.\"ID\" >> churches.nt
+:: Long literals ("""like this""") are needed if the string can contain newlines or double quotes
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%rdfs%comment> """"""' || \"Bijzonderheden\" || '\""""" .' from \"01_Hoofdtabel_Kerken\" where \"Bijzonderheden\" is not null";" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%locn%postName> ""' || \"Plaats\" || '\" .' from \"01_Hoofdtabel_Kerken\" where \"Plaats\" is not null  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%bag%woonplaatsnaam> ""' || \"Plaats\" || '\" .' from \"01_Hoofdtabel_Kerken\" where \"Plaats\" is not null  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%locn%thoroughfare> ""' || \"Straatnaam\" || '\" .' from \"01_Hoofdtabel_Kerken\" where \"Straatnaam\" is not null  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%bag%openbareruimtenaam> ""' || \"Straatnaam\" || '\" .' from \"01_Hoofdtabel_Kerken\" where \"Straatnaam\" is not null  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%locn%locatorDesignator> ""' || \"Huisnummer\" || '\"^^^^xsd:Integer .' from \"01_Hoofdtabel_Kerken\" where \"Huisnummer\" is not null  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%bag%huisnummer> ""' || \"Huisnummer\" || '\"^^^^xsd:Integer .' from \"01_Hoofdtabel_Kerken\" where \"Huisnummer\" is not null  >> churches.nt
