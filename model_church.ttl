@@ -135,6 +135,23 @@
 
 #### <<<< end dataset metadata
 
+#### >>>> start reference data
+:usage_church
+  a cidoc:E55_type ;
+   dbp:Church_service ;
+.
+
+:usage_preschool
+  a cidoc:E55_type ;
+  ?? dbp:Preschool ;
+.
+
+:arch1
+  a dbo:Architect ;
+  foaf:name "Pietje Puk" ;
+.
+#### <<<< end reference data
+
 # missing: a way to link the church to events 
 :c17
   a dbo:Church, cidoc:E22_Man-Made_Object, cidoc:E93_Presence, schema:Church, dul:DesignedArtifact, rc:Church_Building, dbo:ArchitecturalStructure ;
@@ -164,6 +181,7 @@
   cidoc:P164_during :interval1948-1974 ;
   dcterms:replaces <c17/version1> ;
   dbo:architect :arch1 ;
+  cidoc:P101_had_as_general_use :usage_church ;
 .
 
 :c17/address
@@ -171,11 +189,6 @@
   locn:thoroughfare "Zadelstraat" ;
   locn:postName "Hilversum" ;
   locn:locatorDesignator "3"^^xsd:Integer ;
-.
-
-:arch1
-  a dbo:Architect ;
-  foaf:name "Pietje Puk" ;
 .
 
 <c17/version1>
