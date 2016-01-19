@@ -1,0 +1,1 @@
+select '<http://data.spider-ld.org/kerkennl/kerk' || "ID" || '> <http://purl.org/dc/terms/created> "' || "Jaar_ingebruikname" || ''

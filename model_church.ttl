@@ -14,7 +14,7 @@
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 #@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> . # apparently version 5.0.4
 @prefix cidoc: <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#> .  # to be replaced by definitive 6.2 version
-@prefix dpo: <http://dbpedia.org/ontology/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dbp: <http://dbpedia.org/resource/> .
 @prefix aat: <http://vocab.getty.edu/aat/> .
 @prefix schema: <http://schema.org/> .
@@ -53,7 +53,7 @@
   void:feature <http://www.w3.org/ns/formats/Turtle> ; # To do: test this format
   void:feature <http://www.w3.org/ns/formats/N3> ; # To do: test this format
   void:feature <http://www.w3.org/ns/formats/JSON-LD> ; # To do: test this format
-  void:sparqlEndpoint <http://data.spider-ld.org/sparql> ; # To do: test 
+  void:sparqlEndboint <http://data.spider-ld.org/sparql> ; # To do: test 
   void:exampleResource :c17 ;
   void:vocabulary <http://www.cidoc-crm.org/cidoc-crm/>, <http://data.cultureelerfgoed.nl/semnet/>, <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> ;
   dcterms:hasPart :provfriesland ; # dataset partitioning by province, to be generated automatically (SPARQL CONSTRUCT query)
@@ -137,39 +137,52 @@
 
 # missing: a way to link the church to events 
 :c17
-  a dpo:Church, cidoc:E22_Man-Made_Object, cidoc:E93_Presence, schema:Church, dul:DesignedArtifact, rc:Church_Building ;
-  dpo:type dbp:Cathedral ; #uncomment if this is a cathedral
-  dpo:type dbp:Minor_basilica ; #uncomment if this is a basilica 
+  a dbo:Church, cidoc:E22_Man-Made_Object, cidoc:E93_Presence, schema:Church, dul:DesignedArtifact, rc:Church_Building, dbo:ArchitecturalStructure ;
+  dbo:type dbp:Cathedral ; #uncomment if this is a cathedral
+  dbo:type dbp:Minor_basilica ; #uncomment if this is a basilica 
   void:inDataset <http://data.spider-ld.org/kerkennl/> ;
   void:inDataset :wphilversum ;
   dcterms:isPartOf :wphilversum ;
-  dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057 ;
+  #dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057 ; # moved to dataset metadata
   dcterms:title "Silo" ;
-  dpo:buildingName "Silo" ;
+  dbo:buildingName "Silo" ;
   cidoc:E42_Identifier "Silo" ;
   rdfs:comment "Dit is een bijzonderheid (uit de kolom 'bijzonderheden')"@nl ;
-  bag:woonplaatsnaam "Hilversum" ;
-  bag:openbareruimtenaam "Zadelstraat" ;
-  bag:huisnummer "3"^^xsd:integer ;
+  #bag:woonplaatsnaam "Hilversum" ;
+  #bag:openbareruimtenaam "Zadelstraat" ;
+  #bag:huisnummer "3"^^xsd:integer ;
   dcterms:created "1898"^^xsd:gYear ; # this is the year of first use (ingebruikname)
   #The following line is rejected by riot, seemingly because of the parentheses. 
-  #dpo:architectureStyle aat:300069303, eth:d19a7bd4-d479-422c-838a-d4d3749205aa, dbp:Rationalism_(architecture) ; # commented for riot validation
-  dpo:architectureStyle aat:300069303, eth:d19a7bd4-d479-422c-838a-d4d3749205aa, dbp:Rationalism_architecture ; # replace parentheses in URI 
-  dpo:architectureType eth:5c688668-31a7-4080-b6ad-95e7d2b1ea9f ;
+  #dbo:architectureStyle aat:300069303, eth:d19a7bd4-d479-422c-838a-d4d3749205aa, dbp:Rationalism_(architecture) ; # commented for riot validation
+  dbo:architectureStyle aat:300069303, eth:d19a7bd4-d479-422c-838a-d4d3749205aa, dbp:Rationalism_architecture ; # replace parentheses in URI 
+  dbo:architectureType eth:5c688668-31a7-4080-b6ad-95e7d2b1ea9f ;
   dul:isParticipantIn <c17/consecration> ; 
   cidoc:P12i_was_present_at <c17/consecration> ; 
   umbel:relatesToEvent <c17/consecration> ;
   #dcterms:valid :intervalB ;
   dcterms:valid "start=1948; end=1974;" ; #do we need to add the datatype dcmi-period? Does it have a RDFS/OWL definition?
   cidoc:P164_during :interval1948-1974 ;
-  dcterms:replaces <c17/version1> 
+  dcterms:replaces <c17/version1> ;
+  dbo:architect :arch1 ;
+.
+
+:c17/address
+  a locn:Address ;
+  locn:thoroughfare "Zadelstraat" ;
+  locn:postName "Hilversum" ;
+  locn:locatorDesignator "3"^^xsd:Integer ;
+.
+
+:arch1
+  a dbo:Architect ;
+  foaf:name "Pietje Puk" ;
 .
 
 <c17/version1>
   dcterms:isReplacedBy :c17 ;
   #dcterms:valid :intervalA ;
   dcterms:valid "start=1898; end=1931" ;
-  a dpo:Church, cidoc:E22_Man-Made_Object, schema:Church ; 
+  a dbo:Church, cidoc:E22_Man-Made_Object, schema:Church ; 
   dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057 ;
   dcterms:title "Bethel"^^xsd:string ;
   bag:woonplaatsnaam "Hilversum"^^xsd:string ;
@@ -193,8 +206,8 @@
 
 :timespan1948-1974
   a cidoc:E61_Time-Primitive ;
-  dpo:startYear "1948"^^xsd:gYear ;
-  dpo:endYear "1974"^^xsd:gYear ;
+  dbo:startYear "1948"^^xsd:gYear ;
+  dbo:endYear "1974"^^xsd:gYear ;
 .
 
 #:year1901
