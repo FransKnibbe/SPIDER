@@ -138,12 +138,12 @@
 #### >>>> start reference data
 :usage_church
   a cidoc:E55_type ;
-   dbp:Church_service ;
+  dcterms:subject dbp:Church_service ;
 .
 
 :usage_preschool
   a cidoc:E55_type ;
-  ?? dbp:Preschool ;
+  dcterms:subject dbp:Preschool ;
 .
 
 :arch1
@@ -181,7 +181,7 @@
   cidoc:P164_during :interval1948-1974 ;
   dcterms:replaces <c17/version1> ;
   dbo:architect :arch1 ;
-  cidoc:P101_had_as_general_use :usage_church ;
+  cidoc:P103_was_intended_for :usage_church ;
 .
 
 :c17/address
