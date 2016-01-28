@@ -35,8 +35,6 @@
 
 ## start usage types 
 
-# We still need something for "buiten gebruik" (out of use) and "overig" (other)
-
 :usage_church
   a cidoc:E55_type ;
   dcterms:subject dbp:Church_service ;
@@ -105,6 +103,11 @@
 :usage_other
   a cidoc:E55_type ;
   dcterms:subject aat:300400513 ;
+.
+
+:usage_none
+  a cidoc:E55_type ;
+  dcterms:subject egt:ce21134b-4819-4efb-9ecd-612736a93111 ;
 .
 
 ##  end usage types 
