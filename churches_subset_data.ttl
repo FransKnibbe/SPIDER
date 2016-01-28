@@ -1,0 +1,92 @@
+# This is an RDF file in Turtle notation. 
+# The file contains an illustration of how a hierarchy of subsets of the main dataset should be constructed.
+# The subset data will probably be generated automatically from appropriate input data
+
+# Note: in Turtle, if there is no datatype URI and no language tag. datatype is xsd:string
+# So we only need to specify datatypes for non-string literals.
+
+@base <http://data.spider-ld.org/kerkennl/>
+@prefix : <http://data.spider-ld.org/kerkennl/>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+#@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> . # apparently version 5.0.4
+@prefix cidoc: <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#> .  # to be replaced by definitive 6.2 version
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/resource/> .
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix schema: <http://schema.org/> .
+@prefix bag: <http://lod.geodan.nl/vocab/bag#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix eth: <http://data.cultureelerfgoed.nl/semnet/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix umbel: <http://umbel.org/umbel#> .
+@prefix rc: <http://umbel.org/umbel/rc/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+
+
+<http://data.spider-ld.org/kerkennl/>
+  dcterms:hasPart :provfriesland ; # dataset partitioning by province, to be generated automatically (SPARQL CONSTRUCT query)
+  void:subset :provfriesland ; # dataset partitioning by province, to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:hasPart :provutrecht ; # dataset partitioning by province, to be generated automatically (SPARQL CONSTRUCT query)
+  void:subset :provutrecht ; # dataset partitioning by province, to be generated automatically (SPARQL CONSTRUCT query)
+  # repeat for other provinces
+.
+
+:provfriesland #example of subset by provinde
+  a void:Dataset, dcat:Dataset ;
+  dcterms:isPartOf <http://data.spider-ld.org/kerkennl/> ;
+  dcterms:title "Kerkgebouwen de provincie Friesland"@nl ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Church buildings in the province of Friesland"@en ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:hasPart :munleeuwarden ;  # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:hasPart :munharlingen ;  # to be generated automatically (SPARQL CONSTRUCT query)
+  # repeat for other municipalities
+.
+
+:provutrecht  #example of subset by provinde
+  a void:Dataset, dcat:Dataset ;
+  dcterms:isPartOf <http://data.spider-ld.org/kerkennl/> ;
+  dcterms:title "Kerkgebouwen de provincie Utrecht"@nl ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Church buildings in the province of Utrecht"@en ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:hasPart :munhilversum ;  # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:hasPart :munamersfoort ;  # to be generated automatically (SPARQL CONSTRUCT query)
+  # repeat for other towns
+.
+
+:munhilversum  #example of subset by municipality
+  a void:Dataset, dcat:Dataset ;
+  dcterms:isPartOf :provutrecht ;
+  dcterms:title "Kerkgebouwen in gemeente Hilversum"@nl ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Church buildings in the municipality Hilversum"@en ; # to be generated automatically (SPARQL CONSTRUCT query)
+.
+
+:wphilversum  #example of subset by city, town or village of residence
+  a void:Dataset, dcat:Dataset ;
+  dcterms:isPartOf :munhilversum ;
+  dcterms:title "Kerkgebouwen in woonplaats Hilversum"@nl ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Church buildings in Hilversum"@en ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:hasPart :c17 ; # lowest subset level has relations to church instances.
+.
+
+:mungooisemeren #example of subset by municipality with subsets by city, town or village of residence
+  a void:Dataset, dcat:Dataset ;
+  dcterms:isPartOf :provutrecht ;
+  dcterms:hasPart :wpbussum, :wpnaarden, :wpmuiden ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Kerkgebouwen in gemeente Hilversum"@nl ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Church buildings in the municipality Hilversum"@en ; # to be generated automatically (SPARQL CONSTRUCT query)
+.
+
+:wpbussum #example of subset by city, town or village of residence
+  a void:Dataset, dcat:Dataset ;
+  dcterms:isPartOf :mungooisemeren ;
+  dcterms:title "Kerkgebouwen in woonplaats Bussum"@nl ; # to be generated automatically (SPARQL CONSTRUCT query)
+  dcterms:title "Church buildings in Bussum"@en ; # to be generated automatically (SPARQL CONSTRUCT query)
+.
