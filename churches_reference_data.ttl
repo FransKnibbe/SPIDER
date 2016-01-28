@@ -1,0 +1,114 @@
+# This is an RDF file in Turtle notation. 
+# It contains reference data (code lists) for use with the dataset of Dutch churches.
+
+# Note: in Turtle, if there is no datatype URI and no language tag. datatype is xsd:string
+# So we only need to specify datatypes for non-string literals.
+
+@base <http://data.spider-ld.org/kerkennl/>
+@prefix : <http://data.spider-ld.org/kerkennl/>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+#@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> . # apparently version 5.0.4
+@prefix cidoc: <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#> .  # to be replaced by definitive 6.2 version
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/resource/> .
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix schema: <http://schema.org/> .
+@prefix bag: <http://lod.geodan.nl/vocab/bag#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix eth: <http://data.cultureelerfgoed.nl/semnet/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix umbel: <http://umbel.org/umbel#> .
+@prefix rc: <http://umbel.org/umbel/rc/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+
+
+
+## start usage types 
+
+# We still need something for "buiten gebruik" (out of use) and "overig" (other)
+overig
+
+:usage_church
+  a cidoc:E55_type ;
+  dcterms:subject dbp:Church_service ;
+.
+
+:usage_museum
+  a cidoc:E55_type ;
+  dcterms:subject dbp:Museum ;
+.
+
+:usage_communitycentre
+  a cidoc:E55_type ;
+  dcterms:subject dbp:Community_centre ;
+.
+
+:usage_mosque
+  a cidoc:E55_type ;
+  dcterms:subject dbp:Mosque ;
+.
+
+:usage_healthcentre
+  a cidoc:E55_type ;
+  dcterms:subject dbp:Community_health_center ;
+.
+
+:usage_house
+  a cidoc:E55_type ;
+  dcterms:subject dbp:House ;
+.
+
+:usage_office
+  a cidoc:E55_type ;
+  dcterms:subject dbp:Office ;
+.
+
+:usage_culturalcentre
+  a cidoc:E55_type ;
+  dcterms:subject dbp:Cultural_center ;
+.
+
+:usage_school
+  a cidoc:E55_type ;
+  dcterms:subject dbp:School ;
+.
+
+:usage_columbarium
+  a cidoc:E55_type ;
+  dcterms:subject dbp:Columbarium ;
+.
+
+:usage_library
+  a cidoc:E55_type ;
+  dcterms:subject dbp:Library ;
+.
+
+:usage_retail
+  a cidoc:E55_type ;
+  dcterms:subject dbp:Retail ;
+.
+
+:usage_preschool
+  a cidoc:E55_type ;
+  dcterms:subject dbp:Preschool ;
+.
+
+##  end usage types 
+
+## architects
+# Prefered method: use an existing registry 
+
+#:arch1
+#  a dbo:Architect ;
+#  foaf:name "Pietje Puk" ;
+#.

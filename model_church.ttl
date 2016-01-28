@@ -32,24 +32,7 @@
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 
-#### >>>> start reference data
-:usage_church
-  a cidoc:E55_type ;
-  dcterms:subject dbp:Church_service ;
-.
 
-:usage_preschool
-  a cidoc:E55_type ;
-  dcterms:subject dbp:Preschool ;
-.
-
-:arch1
-  a dbo:Architect ;
-  foaf:name "Pietje Puk" ;
-.
-#### <<<< end reference data
-
-# missing: a way to link the church to events 
 :c17
   a dbo:Church, cidoc:E22_Man-Made_Object, cidoc:E93_Presence, schema:Church, dul:DesignedArtifact, rc:Church_Building, dbo:ArchitecturalStructure ;
   dbo:type dbp:Cathedral ; #uncomment if this is a cathedral
