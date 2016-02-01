@@ -34,6 +34,8 @@
 
 
 ## start usage types 
+# Does it make sense to add rdf:labels?
+
 
 :usage_church
   a cidoc:E55_type ;
@@ -105,6 +107,7 @@
   dcterms:subject aat:300400513 ;
 .
 
+# the following mapping needs confirmation from Herman:
 :usage_none
   a cidoc:E55_type ;
   dcterms:subject egt:ce21134b-4819-4efb-9ecd-612736a93111 ;

@@ -45,6 +45,7 @@ psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <%dbo%buildingName> ""' || n.\"Naam_Kerk\" || '\" .' from \"01_Hoofdtabel_Kerken\" k, \"011_Naam_Kerk\" n where k.\"ID\" = n.\"ID\" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <%cidoc%E42_Identifier> ""' || n.\"Naam_Kerk\" || '\" .' from \"01_Hoofdtabel_Kerken\" k, \"011_Naam_Kerk\" n where k.\"ID\" = n.\"ID\" >> churches.nt
 :: Long literals ("""like this""") are needed if the string can contain newlines or double quotes
+:: commented out because Riot (Jena) and Cliopatria do not seem to accept triple quotes.
 ::psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%rdfs%comment> """"""' || \"Bijzonderheden\" || '\""""" .' from \"01_Hoofdtabel_Kerken\" where \"Bijzonderheden\" is not null";" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/address> <%rdf%type> <%locn%Address> .' from \"01_Hoofdtabel_Kerken\" where \"Plaats\" is not null;" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/address> <%locn%postName> ""' || \"Plaats\" || '"" .' from \"01_Hoofdtabel_Kerken\" where \"Plaats\" is not null;" >> churches.nt
@@ -60,3 +61,19 @@ psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/cons
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/consecration> <%cidoc%P12_occurred_in_the_presence_of> <%base%kerk' || \"ID\" || '> .' from \"01_Hoofdtabel_Kerken\" where \"Jaar_Consecratie\" is not null and \"Jaar_Consecratie\" <> 0 ;"  >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/consecration> <%umbel%relatesToFacility> <%base%kerk' || \"ID\" || '> .' from \"01_Hoofdtabel_Kerken\" where \"Jaar_Consecratie\" is not null and \"Jaar_Consecratie\" <> 0 ;"  >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/consecration> <%dcterms%date> ""' || \"Jaar_Consecratie\" || '""^^<%xsd%gYear> .' from \"01_Hoofdtabel_Kerken\" where \"Jaar_Consecratie\" is not null and \"Jaar_Consecratie\" <> 0 ;"  >> churches.nt
+:: start 'bestemming'
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_church> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'kerk' ;"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_museum> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'museum' ;"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_communitycentre> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'wijkcentrum' ;"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_mosque> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'moskee' ;"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_healthcentre> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'gezondheidscentrum' ;"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_house> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'woningen' ;"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_office> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'kantoren' ;"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_culturalcentre> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'cultureel centrum / buurthuis' ;"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_school> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'school' ;"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%columbarium> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'columbarium' ;"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_library> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'bibliotheek' ;"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_retail> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'winkel' ;"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_preschool> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'kinderdagverblijf' ;"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_other> .' from \"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'overig' ;"  >> churches.nt
+:: end 'bestemming'
