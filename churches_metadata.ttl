@@ -33,6 +33,7 @@
 
 <http://data.spider-ld.org/kerkennl/>
   a void:Dataset, dcat:Dataset ;
+  rdfs:seeAlso <http://data.spider-ld.org/kerkennl_extra/> ;
   dcterms:title "Kerkgebouwen in Nederland 1800-1970"@nl, "Church buildings in The Netherlands 1800-1970"@en;
   dcterms:description "Deze dataset bevat gegevens over kerkgebouwen uit de periode 1800-1970. De dataset is samengesteld om te helpen de cultuurhistorische waarde van deze gebouwen te meten."@nl, "This dataset contains data about church buildings in the Netherlands. The data are collected with the aim of helping measuring cultural and historical value of church buildings."@nl;
   dcterms:creator <http://www.hermanwesselink.nl/>, <http://www.godgeleerdheid.vu.nl/nl/over-de-faculteit/medewerkers/wetenschappelijk-personeel-t-z/he-wesselink/index.aspx> ; 
