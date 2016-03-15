@@ -33,9 +33,9 @@
 
 
 
+
 ## start usage types 
 # Does it make sense to add rdf:labels?
-
 
 :usage_church
   a cidoc:E55_type ;

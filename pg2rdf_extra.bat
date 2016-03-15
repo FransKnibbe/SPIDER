@@ -30,11 +30,13 @@ set time=http://www.w3.org/2006/time#
 set geosparql=http://www.opengis.net/ont/geosparql#
 set sd=http://www.w3.org/ns/sparql-service-description#
 set crs=http://www.opengis.net/def/crs/EPSG/0/
+set extra=http://data.spider-ld.org/kerkennl_extra/
 
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || id || '> <%locn%location> <%base%locatie' || id || '> .' from kerken_locatie;" > churches_extra.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%locatie' || id || '> <%rdf%type> <%dcterms%Location> .' from kerken_locatie;" >> churches_extra.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%locatie' || id || '> <%locn%geometry> ""' || st_astext(geometrie_4326) || '""^^' || '<%geosparql%wktLiteral> .' from kerken_locatie;" >> churches_extra.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%locatie' || id || '> <%locn%geometry> ""<%crs%28992> ' || st_astext(geometrie_28992) || '""^^' || '<%geosparql%wktLiteral> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || id || '> <%locn%location> <%extra%locatie' || id || '> .' from kerken_locatie;" > churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%rdf%type> <%dcterms%Location> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%void%inDataset> <%extra%> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%locn%geometry> ""' || ST_AsText(ST_GeomFromGeoJSON(ST_AsGeoJSON(geometrie_4326,5,0))) || '""^^' || '<%geosparql%wktLiteral> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%locn%geometry> ""<%crs%28992> ' || ST_AsText(ST_GeomFromGeoJSON(ST_AsGeoJSON(geometrie_28992,0,0))) || '""^^' || '<%geosparql%wktLiteral> .' from kerken_locatie;" >> churches_extra.nt
 
 ::psql -U postgres -A -t -d spiderdb1 -c "select '<%base%locatie' || id || '> <%locn%geometry> <%base%kerk' || id || '_geom_crs84> .' from kerken_locatie;" >> churches_extra.nt
 ::psql -U postgres -A -t -d spiderdb1 -c "select '<%base%locatie' || id || '> <%locn%geometry> <%base%kerk' || id || '_geom_rd> .' from kerken_locatie;" >> churches_extra.nt
