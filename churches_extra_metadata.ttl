@@ -5,8 +5,8 @@
 # Note: in Turtle, if there is no datatype URI and no language tag. datatype is xsd:string
 # So we only need to specify datatypes for non-string literals.
 
-@base <http://data.spider-ld.org/kerkennl/>
-@prefix : <http://data.spider-ld.org/kerkennl/>
+@base <http://data.spider-ld.org/kerkennl_extra/>
+@prefix : <http://data.spider-ld.org/kerkennl_extra/>
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
