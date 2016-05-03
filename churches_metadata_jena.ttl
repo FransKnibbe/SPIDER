@@ -4,10 +4,8 @@
 # Note: in Turtle, if there is no datatype URI and no language tag. datatype is xsd:string
 # So we only need to specify datatypes for non-string literals.
 
-# transform to ntriples: riot --formatted=ntriples churches_metadata.ttl > churches_metadata.nt
-
-@base <http://data.spider-ld.org/kerkennl/data/> .
-@prefix : <http://data.spider-ld.org/kerkennl/data/> .
+@base <http://jena.spider-ld.org/kerkennl/data/>
+@prefix : <http://jena.spider-ld.org/kerkennl/data/>
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -33,11 +31,11 @@
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix wv: <http://vocab.org/waiver/terms/> .
-@prefix geonames: <http://sws.geonames.org/> .
+@prefix geonames: <http://sws.geonames.org/>
 
-<http://data.spider-ld.org/kerkennl/data>
+<http://jena.spider-ld.org/kerkennl/data/>
   a void:Dataset, dcat:Dataset ;
-  rdfs:seeAlso <http://data.spider-ld.org/kerkennl_extra/data> ;
+  rdfs:seeAlso <http://jena.spider-ld.org/kerkennl_extra/> ;
   dcterms:title "Kerkgebouwen in Nederland 1800-1970"@nl, "Church buildings in The Netherlands 1800-1970"@en;
   dcterms:description "Deze dataset bevat gegevens over kerkgebouwen de zijn gebouwd in de periode 1800-1970. De dataset is samengesteld om te helpen de cultuurhistorische waarde van deze gebouwen te meten."@nl, "This dataset contains data about church buildings that were built in the Netherlands in the years 1800-1970. The data are collected with the aim of helping measuring cultural and historical value of church buildings."@en;
   dcterms:creator <http://www.hermanwesselink.nl/>, <http://www.godgeleerdheid.vu.nl/nl/over-de-faculteit/medewerkers/wetenschappelijk-personeel-t-z/he-wesselink/index.aspx> ; 
@@ -58,7 +56,7 @@
   void:feature <http://www.w3.org/ns/formats/N3> ; # To do: test this format
   void:feature <http://www.w3.org/ns/formats/JSON-LD> ; # To do: test this format
   void:sparqlEndpoint <http://service.spider-ld.org/sparql> ;
-  void:exampleResource <http://data.spider-ld.org/kerkennl/data/kerk17> ; 
+  void:exampleResource <http://jena.spider-ld.org/kerkennl/data/ kerk17> ; 
   void:vocabulary <http://www.cidoc-crm.org/cidoc-crm/>, <http://data.cultureelerfgoed.nl/semnet/>, <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> ;
 .
 

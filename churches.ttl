@@ -1,0 +1,2981 @@
+<http://data.spider-ld.org/kerkennl/kerk47>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Christelijke Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1958"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Christelijke Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Christelijke Gereformeerde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk26>
+        a       <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Evangelisch Lutherse Kerk" ;
+        <http://purl.org/dc/terms/title>
+                "Evangelisch Lutherse Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Evangelisch Lutherse Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk103>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Kleine Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1924"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Kleine Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Kleine Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk37/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "43"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Ceintuurbaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk32/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "50"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Mecklenburglaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk15/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "63"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Kleine Drift" .
+
+<http://data.spider-ld.org/kerkennl/kerk85/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "23"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Ankeveen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Stichts End" .
+
+<http://data.spider-ld.org/kerkennl/kerk68/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "7"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Maarssen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Wilhelminaweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk80/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "1"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Loenen aan de Vecht" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Prinses Margrietlaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk97>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Singelkerk" ;
+        <http://purl.org/dc/terms/created>
+                "1928"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Singelkerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Singelkerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_house> .
+
+<http://data.spider-ld.org/kerkennl/kerk63/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "14"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hollandsche Rading" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Tolakkerweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk76>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Nederlands Hervormde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1845"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Nederlands Hervormde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Nederlands Hervormde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk106/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "180"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Amsterdam" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Zaaiersweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk55>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Johannes de Doper" ;
+        <http://dbpedia.org/ontology/type>
+                <http://dbpedia.org/resource/Minor_basilica> ;
+        <http://purl.org/dc/terms/created>
+                "1925"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Johannes de Doper" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Johannes de Doper" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk34>
+        a       <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Iepenlaankerk" ;
+        <http://purl.org/dc/terms/created>
+                "1891"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Iepenlaankerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Iepenlaankerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_house> .
+
+<http://data.spider-ld.org/kerkennl/kerk111>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Christus Koning" ;
+        <http://purl.org/dc/terms/created>
+                "1959"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Christus Koning" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Christus Koning" .
+
+<http://data.spider-ld.org/kerkennl/kerk101/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "8"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Diemen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Schoolstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk13>
+        a       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Torenlaankerk" ;
+        <http://purl.org/dc/terms/created>
+                "1896"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Torenlaankerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Torenlaankerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_other> .
+
+<http://data.spider-ld.org/kerkennl/kerk45/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "14"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Wilhelminaplantsoen" .
+
+<http://data.spider-ld.org/kerkennl/kerk28/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "35"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Taludweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk2>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Vitus" ;
+        <http://purl.org/dc/terms/created>
+                "1889"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Vitus" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Vitus" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk55/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1925"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk55> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk55> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk55> .
+
+<http://data.spider-ld.org/kerkennl/kerk40/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "2"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Koningslaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk84>
+        a       <http://schema.org/Church> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Nederlands Hervormde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1907"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Nederlands Hervormde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Nederlands Hervormde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_culturalcentre> .
+
+<http://data.spider-ld.org/kerkennl/kerk23/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "5"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Kerkenlandenlaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk93/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "19"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Weesp" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Meester P.J. Troelstralaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk63>
+        a       <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Adventkapel" ;
+        <http://purl.org/dc/terms/created>
+                "1938"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Adventkapel" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Adventkapel" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk76/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "230"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Oud-Loosdrecht" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Oud-Loosdrechtsedijk" .
+
+<http://data.spider-ld.org/kerkennl/kerk42>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Vitus" ;
+        <http://purl.org/dc/terms/created>
+                "1884"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Vitus" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Vitus" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_house> .
+
+<http://data.spider-ld.org/kerkennl/kerk21>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "H. Clemens Maria van Hofbauer" ;
+        <http://purl.org/dc/terms/title>
+                "H. Clemens Maria van Hofbauer" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "H. Clemens Maria van Hofbauer" .
+
+<http://data.spider-ld.org/kerkennl/kerk71/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "25"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Kockengen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Voorstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk83/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1880"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk83> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk83> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk83> .
+
+<http://data.spider-ld.org/kerkennl/kerk58/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "17"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Nieuw Loosdrecht" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Eikenlaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk92>
+        a       <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Van Houtenkerk" ;
+        <http://purl.org/dc/terms/created>
+                "1906"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Van Houtenkerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Van Houtenkerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk110/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1929"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk110> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk110> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk110> .
+
+<http://data.spider-ld.org/kerkennl/kerk71>
+        a       <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Onze Lieve Vrouw ten Hemelopneming" ;
+        <http://purl.org/dc/terms/created>
+                "1854"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Onze Lieve Vrouw ten Hemelopneming" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Onze Lieve Vrouw ten Hemelopneming" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk53/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "36"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Huizen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Hooghuizenweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk36/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "70"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Oud Bussumerweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk50>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Goede Herderkerk" ;
+        <http://purl.org/dc/terms/created>
+                "1968"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Goede Herderkerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Goede Herderkerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk89/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "5"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Nederhorst den Berg" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Dammerweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk106>
+        a       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Familie" ;
+        <http://purl.org/dc/terms/created>
+                "1951"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Familie" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Familie" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk29>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gebouw Graalsbeweging" ;
+        <http://purl.org/dc/terms/created>
+                "1951"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gebouw Graalsbeweging" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gebouw Graalsbeweging" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk31/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "10"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Wladimirlaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk84/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "57"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Ankeveen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Stichts End" .
+
+<http://data.spider-ld.org/kerkennl/kerk18/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "148"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Neuweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk105/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "17"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Amsterdam" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Zaaiersweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk37/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1953"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk37> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk37> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk37> .
+
+<http://data.spider-ld.org/kerkennl/kerk79>
+        a       <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Oud Gereformeerde Gemeente" ;
+        <http://purl.org/dc/terms/created>
+                "1952"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Oud Gereformeerde Gemeente" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Oud Gereformeerde Gemeente" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk100/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Driemond" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Burgemeester Kasteleinstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk13/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "25"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Torenlaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk58>
+        a       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Ned. Hervormd Centrum" ;
+        <http://purl.org/dc/terms/created>
+                "1960"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Ned. Hervormd Centrum" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Ned. Hervormd Centrum" .
+
+<http://data.spider-ld.org/kerkennl/kerk23/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1970"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk23> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk23> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk23> .
+
+<http://data.spider-ld.org/kerkennl/kerk37>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Jozef" ;
+        <http://purl.org/dc/terms/created>
+                "1953"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Jozef" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Jozef" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk49/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "28"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Huizen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Brede Englaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk16>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Doopsgezinde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1940"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Doopsgezinde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Doopsgezinde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_other> .
+
+<http://data.spider-ld.org/kerkennl/kerk89/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1889"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk89> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk89> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk89> .
+
+<http://data.spider-ld.org/kerkennl/kerk61/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "40"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Maartensdijk" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Nachtegaallaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk44/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "2"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Huizerweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk97/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "28"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Muiden" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Singelstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk6/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Kerkbrink" .
+
+<http://data.spider-ld.org/kerkennl/kerk92/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "69"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Weesp" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Oudegracht" .
+
+<http://data.spider-ld.org/kerkennl/kerk5>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Bethlehemkerk" ;
+        <http://purl.org/dc/terms/created>
+                "1961"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Bethlehemkerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Bethlehemkerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk87>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Elimkapel" ;
+        <http://purl.org/dc/terms/created>
+                "1925"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Elimkapel" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Elimkapel" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_office> .
+
+<http://data.spider-ld.org/kerkennl/kerk1/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "5"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Emmastraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk66>
+        a       <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1887"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk" .
+
+<http://data.spider-ld.org/kerkennl/kerk102/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1910"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk102> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk102> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk102> .
+
+<http://data.spider-ld.org/kerkennl/kerk113/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "92"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Amsterdam" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Linnaeusstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk45>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Wilhelminakerk" ;
+        <http://purl.org/dc/terms/created>
+                "1926"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Wilhelminakerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Wilhelminakerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk26/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "6"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Bergweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk101>
+        a       <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Ontmoeting" ;
+        <http://purl.org/dc/terms/created>
+                "1937"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Ontmoeting" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Ontmoeting" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk24>
+        a       <http://schema.org/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Jozef" ;
+        <http://purl.org/dc/terms/created>
+                "1936"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Jozef" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Jozef" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_house> .
+
+<http://data.spider-ld.org/kerkennl/kerk111/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1959"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk111> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk111> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk111> .
+
+<http://data.spider-ld.org/kerkennl/kerk21/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "55"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Bosdrift" .
+
+<http://data.spider-ld.org/kerkennl/kerk57/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "60"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Eemnes" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Wakkerendijk" .
+
+<http://data.spider-ld.org/kerkennl/kerk52/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "13"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Huizen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Cesar Francklaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk95>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Laurentius" ;
+        <http://purl.org/dc/terms/created>
+                "1876"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Laurentius" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Laurentius" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk74>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Johannes de Doper" ;
+        <http://purl.org/dc/terms/created>
+                "1885"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Johannes de Doper" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Johannes de Doper" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk53>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Vitus" ;
+        <http://purl.org/dc/terms/created>
+                "1949"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Vitus" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Vitus" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk32>
+        a       <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Evangelisch Lutherse Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1903"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Evangelisch Lutherse Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Evangelisch Lutherse Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk109>
+        a       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Apostolisch Genootschap" ;
+        <http://purl.org/dc/terms/created>
+                "1930"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Apostolisch Genootschap" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Apostolisch Genootschap" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk11>
+        a       <http://dbpedia.org/ontology/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Vereenigingsgebouw/Loge" ;
+        <http://purl.org/dc/terms/created>
+                "1905"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Vereenigingsgebouw/Loge" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Vereenigingsgebouw/Loge" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_other> .
+
+<http://data.spider-ld.org/kerkennl/kerk24/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1936"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk24> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk24> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk24> .
+
+<http://data.spider-ld.org/kerkennl/kerk57/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1845"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk57> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk57> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk57> .
+
+<http://data.spider-ld.org/kerkennl/kerk34/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "6"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Iepenlaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk17/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "3"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Zadelstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk12/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "161"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Minckelersstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk85/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1927"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk85> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk85> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk85> .
+
+<http://data.spider-ld.org/kerkennl/kerk65/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "62"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Tienhoven" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Laan van Niftarlake" .
+
+<http://data.spider-ld.org/kerkennl/kerk82>
+        a       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1900"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk61>
+        a       <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Martinus" ;
+        <http://purl.org/dc/terms/created>
+                "1965"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Martinus" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Martinus" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk71/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1854"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk71> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk71> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk71> .
+
+<http://data.spider-ld.org/kerkennl/kerk40>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Remonstrantse Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1956"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Remonstrantse Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Remonstrantse Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk60/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "26"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Maartensdijk" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Koningin Julianalaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk103/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "129"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Duivendrecht" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Rijksstraatweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk19>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Apostolisch Genootschap" ;
+        <http://purl.org/dc/terms/created>
+                "1970"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Apostolisch Genootschap" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Apostolisch Genootschap" .
+
+<http://data.spider-ld.org/kerkennl/kerk112/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1927"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk112> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk112> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk112> .
+
+<http://data.spider-ld.org/kerkennl/kerk8>
+        a       <http://schema.org/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Koninkrijkszaal Jehovah's Getuigen" ;
+        <http://purl.org/dc/terms/created>
+                "1932"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Koninkrijkszaal Jehovah's Getuigen" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Koninkrijkszaal Jehovah's Getuigen" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk42/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "115"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Brinklaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk90>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1890"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_other> .
+
+<http://data.spider-ld.org/kerkennl/kerk25/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "40"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Koninginneweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk69>
+        a       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Westhillkinderkapel" ;
+        <http://purl.org/dc/terms/created>
+                "1913"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Westhillkinderkapel" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Westhillkinderkapel" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk78/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "11"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Loenen aan de Vecht" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Dorpsstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk48>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Vitus" ;
+        <http://purl.org/dc/terms/created>
+                "1911"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Vitus" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Vitus" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk27>
+        a       <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Westerkerk" ;
+        <http://purl.org/dc/terms/created>
+                "1955"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Westerkerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Westerkerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk20/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "115"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Joh. Geradtsweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk104>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Urbanus" ;
+        <http://purl.org/dc/terms/created>
+                "1879"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Urbanus" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Urbanus" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk73/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "37"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Breukelen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Straatweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk25/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1910"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk25> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk25> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk25> .
+
+<http://data.spider-ld.org/kerkennl/kerk98>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Nicolaas" ;
+        <http://purl.org/dc/terms/created>
+                "1822"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Nicolaas" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Nicolaas" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk77>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1891"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_house> .
+
+<http://data.spider-ld.org/kerkennl/kerk53/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1949"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk53> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk53> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk53> .
+
+<http://data.spider-ld.org/kerkennl/kerk38/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "22"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Nieuwe Hilversumseweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk56>
+        a       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Ontmoetingskerk" ;
+        <http://purl.org/dc/terms/created>
+                "1962"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Ontmoetingskerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Ontmoetingskerk" .
+
+<http://data.spider-ld.org/kerkennl/kerk112>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Gerardus Majella" ;
+        <http://purl.org/dc/terms/created>
+                "1926"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Gerardus Majella" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Gerardus Majella" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_other> .
+
+<http://data.spider-ld.org/kerkennl/kerk35>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Johanneskerk" ;
+        <http://purl.org/dc/terms/created>
+                "1905"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Johanneskerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Johanneskerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_other> .
+
+<http://data.spider-ld.org/kerkennl/kerk14>
+        a       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Pniëlkerk" ;
+        <http://purl.org/dc/terms/title>
+                "Pniëlkerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Pniëlkerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk33/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "1"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Veldweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk86/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "24"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Ankeveen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Hollands End" .
+
+<http://data.spider-ld.org/kerkennl/kerk81/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "1"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Vreeland" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Nigtevechtseweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk104/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1879"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk104> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk104> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk104> .
+
+<http://data.spider-ld.org/kerkennl/kerk107/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "20"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Amsterdam" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Van 't Hofflaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk3>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Diependaalse Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1925"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Diependaalse Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Diependaalse Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk85>
+        a       <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Martinus" ;
+        <http://purl.org/dc/terms/created>
+                "1927"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Martinus" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Martinus" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk64>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Nederlands Geref. Kerk" , "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1903"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk" , "Nederlands Geref. Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk" , "Nederlands Geref. Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk102/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "25"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Diemen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Hartveldseweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk43>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Verlosserkerk" ;
+        <http://purl.org/dc/terms/created>
+                "1957"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Verlosserkerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Verlosserkerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk22>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://schema.org/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilig Hart van Jezus" ;
+        <http://purl.org/dc/terms/created>
+                "1928"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilig Hart van Jezus" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilig Hart van Jezus" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk10/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "71"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Coehoornstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk46/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "29"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Naarden" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Turfpoortstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk99/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "51"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Muiden" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Hellingstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk41/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "34"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Nieuwe 's-Gravelandseweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk8/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "55"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Frans Halslaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk94/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "6"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Weesp" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Papelaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk93>
+        a       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Apostolisch Genootschap" ;
+        <http://purl.org/dc/terms/created>
+                "1957"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Apostolisch Genootschap" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Apostolisch Genootschap" .
+
+<http://data.spider-ld.org/kerkennl/kerk3/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "138"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Diependaalselaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk72>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1879"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_other> .
+
+<http://data.spider-ld.org/kerkennl/kerk51>
+        a       <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Kruiskerk" ;
+        <http://purl.org/dc/terms/created>
+                "1950"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Kruiskerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Kruiskerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk30>
+        a       <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Apostolisch Genootschap" ;
+        <http://purl.org/dc/terms/created>
+                "1953"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Apostolisch Genootschap" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Apostolisch Genootschap" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk107>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Koningkerk" ;
+        <http://purl.org/dc/terms/created>
+                "1955"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Koningkerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Koningkerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk54/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1871"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk54> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk54> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk54> .
+
+<http://data.spider-ld.org/kerkennl/kerk110/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "94"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Amsterdam" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Linneaushof" .
+
+<http://data.spider-ld.org/kerkennl/kerk59/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "55"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Nieuw Loosdrecht" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Nieuw Loosdrechtsedijk" .
+
+<http://data.spider-ld.org/kerkennl/kerk54/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "17"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Blaricum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Kerklaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk80>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Ludgerus" ;
+        <http://purl.org/dc/terms/created>
+                "1964"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Ludgerus" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Ludgerus" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk59>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://schema.org/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/Church> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1936"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk1/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1892"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk1> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk1> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk1> .
+
+<http://data.spider-ld.org/kerkennl/kerk38>
+        a       <http://dbpedia.org/ontology/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Nederlandse Protestanten Bond (NPB)" ;
+        <http://purl.org/dc/terms/created>
+                "1915"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Nederlandse Protestanten Bond (NPB)" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Nederlandse Protestanten Bond (NPB)" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk17>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Bethel" , "Silo" ;
+        <http://purl.org/dc/terms/created>
+                "1898"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Silo" , "Bethel" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Silo" , "Bethel" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk19/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "9"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "La Rivièrestraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk6>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Grote Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1891"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Grote Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Grote Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk14/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "47"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Van Ghentlaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk67/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "60"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Maarssen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Kerkweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk88>
+        a       <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1938"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_house> .
+
+<http://data.spider-ld.org/kerkennl/kerk67>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Open Hof" ;
+        <http://purl.org/dc/terms/created>
+                "1932"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Open Hof" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Open Hof" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk46>
+        a       <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Andreaskerk" ;
+        <http://purl.org/dc/terms/created>
+                "1895"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Andreaskerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Andreaskerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_other> .
+
+<http://data.spider-ld.org/kerkennl/kerk62/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Maartensdijk" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Dorpsweg 198" .
+
+<http://data.spider-ld.org/kerkennl/kerk25>
+        a       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Onze Lieve Vrouw Onbevlekt Ontvangen" ;
+        <http://purl.org/dc/terms/created>
+                "1910"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Onze Lieve Vrouw Onbevlekt Ontvangen" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Onze Lieve Vrouw Onbevlekt Ontvangen" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk102>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Petrus' Banden" ;
+        <http://purl.org/dc/terms/created>
+                "1910"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Petrus' Banden" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Petrus' Banden" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk98/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "83"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Muiden" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Herengracht" .
+
+<http://data.spider-ld.org/kerkennl/kerk7/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "4"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Albertus Perkstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk2/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "12"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Melkpad" .
+
+<http://data.spider-ld.org/kerkennl/kerk74/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1885"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk74> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk74> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk74> .
+
+<http://data.spider-ld.org/kerkennl/kerk96>
+        a       <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Ontmoetingskerk" ;
+        <http://purl.org/dc/terms/created>
+                "1926"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Ontmoetingskerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Ontmoetingskerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_house> .
+
+<http://data.spider-ld.org/kerkennl/kerk27/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "15"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Frederik van Eedenlaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk75>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1836"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk106/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1952"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk106> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk106> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk106> .
+
+<http://data.spider-ld.org/kerkennl/kerk54>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Vitus" ;
+        <http://purl.org/dc/terms/created>
+                "1871"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Vitus" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Vitus" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk33>
+        a       <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "De Hoeksteen" , "Christophoruskerk" ;
+        <http://purl.org/dc/terms/created>
+                "1931"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "De Hoeksteen" , "Christophoruskerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "De Hoeksteen" , "Christophoruskerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk22/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "5"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Dr. P.J.H. Cuypersplein" .
+
+<http://data.spider-ld.org/kerkennl/kerk110>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Martelaren van Gorcum" ;
+        <http://purl.org/dc/terms/created>
+                "1929"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Martelaren van Gorcum" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Martelaren van Gorcum" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk75/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "124"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Oud-Loosdrecht" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Oud-Loosdrechtsedijk" .
+
+<http://data.spider-ld.org/kerkennl/kerk12>
+        a       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Oosterkerk" , "Ontmoetingskerk" ;
+        <http://purl.org/dc/terms/created>
+                "1964"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Oosterkerk" , "Ontmoetingskerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Ontmoetingskerk" , "Oosterkerk" .
+
+<http://data.spider-ld.org/kerkennl/kerk70/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "3"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Maarssen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Breedstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk1>
+        a       <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Vitus" ;
+        <http://purl.org/dc/terms/created>
+                "1892"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Vitus" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Vitus" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk83>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Antonius van Padua" ;
+        <http://purl.org/dc/terms/created>
+                "1880"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Antonius van Padua" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Antonius van Padua" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk62>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gereformeerde Kerk Vrijgemaakt" , "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1900"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk Vrijgemaakt" , "Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk Vrijgemaakt" , "Gereformeerde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_other> .
+
+<http://data.spider-ld.org/kerkennl/kerk41>
+        a       <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Spieghelkerk" ;
+        <http://purl.org/dc/terms/created>
+                "1925"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Spieghelkerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Spieghelkerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk20>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Nieuw Apostolische Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1937"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Nieuw Apostolische Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Nieuw Apostolische Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk35/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "6"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Nieuwe Englaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk88/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "15"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Nederhorst den Berg" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Dammerweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk30/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "49"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Meulenwiekelaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk83/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "26"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Kortenhoef" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Kerklaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk66/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "42"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Tienhoven" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Laan van Niftarlake" .
+
+<http://data.spider-ld.org/kerkennl/kerk109/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "97"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Amsterdam" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Archimedesweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk9>
+        a       <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Tesselschadekerk" ;
+        <http://purl.org/dc/terms/created>
+                "1928"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Tesselschadekerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Tesselschadekerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_house> .
+
+<http://data.spider-ld.org/kerkennl/kerk91>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Maarten Lutherkerk" ;
+        <http://purl.org/dc/terms/created>
+                "1819"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Maarten Lutherkerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Maarten Lutherkerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_other> .
+
+<http://data.spider-ld.org/kerkennl/kerk70>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilig Hart van Jezus" ;
+        <http://purl.org/dc/terms/created>
+                "1885"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilig Hart van Jezus" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilig Hart van Jezus" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk42/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1884"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk42> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk42> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk42> .
+
+<http://data.spider-ld.org/kerkennl/kerk104/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "232"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Duivendrecht" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Rijksstraatweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk49>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Nieuwe Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1924"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Nieuwe Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Nieuwe Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk105>
+        a       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Kerk van Jezus Chr. v/d Heiligen der Laatste Dagen" ;
+        <http://purl.org/dc/terms/created>
+                "1966"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Kerk van Jezus Chr. v/d Heiligen der Laatste Dagen" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Kerk van Jezus Chr. v/d Heiligen der Laatste Dagen" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk28>
+        a       <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://purl.org/dc/terms/created>
+                "1931"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk61/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1965"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk61> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk61> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk61> .
+
+<http://data.spider-ld.org/kerkennl/kerk48/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "3"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Naarden" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Turfpoortstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk70/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1885"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk70> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk70> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk70> .
+
+<http://data.spider-ld.org/kerkennl/kerk43/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "59"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "H.A. Lorentzweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk96/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "2"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Muiderberg" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Populierenlaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk79/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "45"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Loenen aan de Vecht" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Koningin Wilhelminaweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk99>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1890"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_house> .
+
+<http://data.spider-ld.org/kerkennl/kerk5/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "263"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Loosdrechtseweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk78>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1923"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk91/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "36"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Weesp" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Nieuwstad" .
+
+<http://data.spider-ld.org/kerkennl/kerk74/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "146"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Breukelen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Straatweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk57>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Nicolaas" ;
+        <http://purl.org/dc/terms/created>
+                "1845"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Nicolaas" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Nicolaas" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk113>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Muiderkerk" ;
+        <http://purl.org/dc/terms/created>
+                "1892"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Muiderkerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Muiderkerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk36>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Hersteld Apostolische Kerk" , "Vrije Evangelische Gemeente" ;
+        <http://purl.org/dc/terms/created>
+                "1930"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Hersteld Apostolische Kerk" , "Vrije Evangelische Gemeente" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Vrije Evangelische Gemeente" , "Hersteld Apostolische Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk15>
+        a       <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> ;
+        <http://purl.org/dc/terms/created>
+                "1959"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk112/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "13"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Amsterdam" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Ambonplein" .
+
+<http://data.spider-ld.org/kerkennl/kerk56/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "41"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Laren (N.-H.)" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Kerklaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk39/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1924"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk39> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk39> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk39> .
+
+<http://data.spider-ld.org/kerkennl/kerk39/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "40"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Bussum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Brinklaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk86>
+        a       <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1895"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_house> .
+
+<http://data.spider-ld.org/kerkennl/kerk48/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1911"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk48> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk48> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk48> .
+
+<http://data.spider-ld.org/kerkennl/kerk51/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "1"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Huizen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "J. van Wassenaerstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk65>
+        a       <http://dbpedia.org/ontology/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Nederlands Hervormde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1813"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Nederlands Hervormde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Nederlands Hervormde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk44>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Vredekerk" ;
+        <http://purl.org/dc/terms/created>
+                "1914"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Vredekerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Vredekerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_house> .
+
+<http://data.spider-ld.org/kerkennl/kerk87/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "21"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Horstermeer" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Machineweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk100>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Ned. Hervormde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1960"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Ned. Hervormde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Ned. Hervormde Kerk" .
+
+<http://data.spider-ld.org/kerkennl/kerk23>
+        a       <http://dbpedia.org/ontology/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Heilige Johannes de Evangelist" ;
+        <http://purl.org/dc/terms/created>
+                "1970"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Heilige Johannes de Evangelist" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Heilige Johannes de Evangelist" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk82/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "15"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "'s-Graveland" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Zuidereinde" .
+
+<http://data.spider-ld.org/kerkennl/kerk108/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "2"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Amsterdam" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Hugo de Vrieslaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk95/consecration>
+        a       <http://umbel.org/umbel#Events> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E_Event> , <http://purl.org/dc/terms/event> ;
+        <http://purl.org/dc/terms/date>
+                "1876"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/subject>
+                <http://vocab.getty.edu/aat/300069272> ;
+        <http://umbel.org/umbel#relatesToFacility>
+                <http://data.spider-ld.org/kerkennl/kerk95> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P12_occurred_in_the_presence_of>
+                <http://data.spider-ld.org/kerkennl/kerk95> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject>
+                <http://data.spider-ld.org/kerkennl/kerk95> .
+
+<http://data.spider-ld.org/kerkennl/kerk16/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "14"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Boomberglaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk94>
+        a       <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Geref. Kerk Vrijgemaakt" , "Nieuw Apostolische Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1931"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Nieuw Apostolische Kerk" , "Geref. Kerk Vrijgemaakt" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Geref. Kerk Vrijgemaakt" , "Nieuw Apostolische Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_house> .
+
+<http://data.spider-ld.org/kerkennl/kerk69/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "48"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Maarssen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Parkweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk73>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Pauluskerk" ;
+        <http://purl.org/dc/terms/created>
+                "1908"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Pauluskerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Pauluskerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk11/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "19"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Oude Enghweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk52>
+        a       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "De Engel" ;
+        <http://purl.org/dc/terms/created>
+                "1951"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "De Engel" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "De Engel" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk64/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "60"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Westbroek" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Kerkdijk" .
+
+<http://data.spider-ld.org/kerkennl/kerk47/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "57"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Naarden" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Cattenhagestraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk31>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Doopsgezinde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1923"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Doopsgezinde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Doopsgezinde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk108>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://umbel.org/umbel/rc/Church_Building> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Emmakerk" ;
+        <http://purl.org/dc/terms/created>
+                "1939"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Emmakerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Emmakerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk10>
+        a       <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Lutherkapel" ;
+        <http://purl.org/dc/terms/created>
+                "1966"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Lutherkapel" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Lutherkapel" .
+
+<http://data.spider-ld.org/kerkennl/kerk9/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "15"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Tesselschadelaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk95/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "116"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Weesp" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Herengracht" .
+
+<http://data.spider-ld.org/kerkennl/kerk90/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "168"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Nigtevecht" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Dorpsstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk29/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "14"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Bergweg" .
+
+<http://data.spider-ld.org/kerkennl/kerk81>
+        a       <http://dbpedia.org/ontology/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Gereformeerde Kerk" ;
+        <http://purl.org/dc/terms/created>
+                "1906"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Gereformeerde Kerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Gereformeerde Kerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_other> .
+
+<http://data.spider-ld.org/kerkennl/kerk60>
+        a       <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Ontmoetingskerk" ;
+        <http://purl.org/dc/terms/created>
+                "1967"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Ontmoetingskerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Ontmoetingskerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk24/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "32"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Hilversum" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Pelikaanstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk39>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://schema.org/Church> , <http://dbpedia.org/ontology/Church> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Onze Lieve Vrouw van Altijddurende Bijstand" ;
+        <http://purl.org/dc/terms/created>
+                "1921"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Onze Lieve Vrouw van Altijddurende Bijstand" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Onze Lieve Vrouw van Altijddurende Bijstand" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk111/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "58"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Amsterdam" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "James Wattstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk77/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "80"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Loenen aan de Vecht" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Oud Over" .
+
+<http://data.spider-ld.org/kerkennl/kerk18>
+        a       <http://dbpedia.org/ontology/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://umbel.org/umbel/rc/Church_Building> , <http://schema.org/Church> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Zuiderkerk" ;
+        <http://purl.org/dc/terms/title>
+                "Zuiderkerk" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Zuiderkerk" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk72/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "12"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Kockengen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Nieuwstraat" .
+
+<http://data.spider-ld.org/kerkennl/kerk55/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "31"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Laren (N.-H.)" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Brink" .
+
+<http://data.spider-ld.org/kerkennl/kerk50/address>
+        a       <http://www.w3.org/ns/locn#Address> ;
+        <http://www.w3.org/ns/locn#locatorDesignator>
+                "2"^^<http://www.w3.org/2001/XMLSchema#Integer> ;
+        <http://www.w3.org/ns/locn#postName>
+                "Huizen" ;
+        <http://www.w3.org/ns/locn#thoroughfare>
+                "Piersonlaan" .
+
+<http://data.spider-ld.org/kerkennl/kerk7>
+        a       <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://umbel.org/umbel/rc/Church_Building> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Ned. Hervormde Kapel" ;
+        <http://purl.org/dc/terms/created>
+                "1921"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Ned. Hervormde Kapel" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Ned. Hervormde Kapel" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_other> .
+
+<http://data.spider-ld.org/kerkennl/kerk89>
+        a       <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://dbpedia.org/ontology/Church> , <http://schema.org/Church> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Onze Lieve Vrouw ten Hemelopneming" ;
+        <http://purl.org/dc/terms/created>
+                "1889"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Onze Lieve Vrouw ten Hemelopneming" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Onze Lieve Vrouw ten Hemelopneming" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .
+
+<http://data.spider-ld.org/kerkennl/kerk68>
+        a       <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E22_Man-Made_Object> , <http://dbpedia.org/ontology/Church> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> , <http://umbel.org/umbel/rc/Church_Building> , <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E93_Presence> , <http://schema.org/Church> ;
+        <http://dbpedia.org/ontology/buildingName>
+                "Ned. Protestantenbond" ;
+        <http://purl.org/dc/terms/created>
+                "1901"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+        <http://purl.org/dc/terms/title>
+                "Ned. Protestantenbond" ;
+        <http://rdfs.org/ns/void#inDataSet>
+                <http://data.spider-ld.org/kerkennl/> ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#E42_Identifier>
+                "Ned. Protestantenbond" ;
+        <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#P103_was_intended_for>
+                <http://data.spider-ld.org/kerkennl/usage_church> .

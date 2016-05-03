@@ -1,0 +1,945 @@
+<http://data.spider-ld.org/kerkennl_extra/locatie74>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(128677 465087)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.0024 52.17331)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk47>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie47> .
+
+<http://data.spider-ld.org/kerkennl/kerk26>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie26> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie53>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(143801 478661)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.22304 52.29582)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk103>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie103> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie32>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139653 477037)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16231 52.28112)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie11>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140189 471133)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.17042 52.22807)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie82>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(136932 471801)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.12272 52.23398)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk34>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie34> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie61>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140377 463061)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.17353 52.15552)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk111>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie111> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie40>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139171 476855)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.15525 52.27947)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk13>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie13> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie19>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140522 472572)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.17524 52.24101)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk2>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie2> .
+
+<http://data.spider-ld.org/kerkennl/kerk84>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie84> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie103>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(124557 482604)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(4.9406 52.33053)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie90>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(130689 476256)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.03102 52.27378)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk63>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie63> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie69>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(131411 461241)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.04264 52.13886)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk42>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie42> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie48>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139760 478605)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16381 52.29522)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk21>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie21> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie27>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139254 469886)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.1568 52.21684)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie111>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(123473 484971)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(4.92447 52.35174)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk92>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie92> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie98>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(133285 482395)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.06865 52.32906)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie2>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140474 471090)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.1746 52.2277)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk71>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie71> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie77>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(130632 469367)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.03067 52.21186)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk50>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie50> .
+
+<http://data.spider-ld.org/kerkennl/kerk106>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie106> .
+
+<http://data.spider-ld.org/kerkennl/kerk29>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie29> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie35>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139644 476786)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16219 52.27886)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie14>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(138881 469249)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.15137 52.2111)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk79>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie79> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie85>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(135290 475262)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.09848 52.26503)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie64>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(136596 462941)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.11828 52.15434)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk37>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie37> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie43>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(141003 475701)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.18215 52.26915)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk16>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie16> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie22>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(141269 471830)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.1862 52.23437)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk5>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie5> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie106>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(124479 483684)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(4.93935 52.34023)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk66>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie66> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie72>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(124898 462345)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(4.9474 52.14846)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk45>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie45> .
+
+<http://data.spider-ld.org/kerkennl/kerk101>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie101> .
+
+<http://data.spider-ld.org/kerkennl/kerk24>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie24> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie30>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140531 476230)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.17521 52.27389)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie5>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(138981 469609)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.15281 52.21434)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk74>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie74> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie80>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(129854 469442)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.01927 52.2125)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk53>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie53> .
+
+<http://data.spider-ld.org/kerkennl/kerk32>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie32> .
+
+<http://data.spider-ld.org/kerkennl/kerk109>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie109> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie38>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139390 475883)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.15851 52.27074)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk11>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie11> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie17>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140237 470294)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.17117 52.22053)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk82>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie82> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie101>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(125803 483601)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(4.95878 52.33956)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk61>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie61> .
+
+<http://data.spider-ld.org/kerkennl/kerk40>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie40> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie67>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(131176 461192)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.03921 52.13841)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie46>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139682 478527)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16267 52.29451)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk19>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie19> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie25>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140651 471356)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.17718 52.23009)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk8>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie8> .
+
+<http://data.spider-ld.org/kerkennl/kerk90>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie90> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie109>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(124585 485352)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(4.94076 52.35523)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie96>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(136542 482057)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.11645 52.32614)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk69>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie69> .
+
+<http://data.spider-ld.org/kerkennl/kerk48>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie48> .
+
+<http://data.spider-ld.org/kerkennl/kerk27>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie27> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie54>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(145754 475839)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.25175 52.27049)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk104>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie104> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie33>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139620 476300)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16186 52.2745)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie12>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(142271 470675)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.20091 52.224)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk98>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie98> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie8>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140950 469961)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.1816 52.21756)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk77>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie77> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie83>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(136638 472407)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.11837 52.23941)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk35>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie35> .
+
+<http://data.spider-ld.org/kerkennl/kerk112>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie112> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie41>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139073 476386)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.15384 52.27526)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk14>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie14> .
+
+<http://data.spider-ld.org/kerkennl/kerk3>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie3> .
+
+<http://data.spider-ld.org/kerkennl/kerk85>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie85> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie104>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(124350 481938)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(4.93762 52.32453)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie91>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(131339 479955)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.04027 52.30705)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk64>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie64> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie70>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(131217 461378)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.03979 52.14009)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk43>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie43> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie49>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(144617 478331)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.23501 52.29287)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk22>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie22> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie28>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139804 470137)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16483 52.21911)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie112>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(124348 485901)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(4.93723 52.36015)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie99>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(133298 482654)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.06882 52.33139)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie3>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140335 469313)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.17263 52.21172)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk72>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie72> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie78>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(129957 468929)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.02083 52.20789)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie57>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(146633 473369)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.26468 52.2483)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk30>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie30> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie15>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(141458 470886)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.18901 52.22588)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk80>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie80> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie65>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(134019 464840)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.08051 52.17131)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk38>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie38> .
+
+<http://data.spider-ld.org/kerkennl/kerk17>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie17> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie94>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(131120 480258)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.03704 52.30977)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk67>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie67> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie73>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(128761 464658)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.00366 52.16945)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk46>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie46> .
+
+<http://data.spider-ld.org/kerkennl/kerk25>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie25> .
+
+<http://data.spider-ld.org/kerkennl/kerk102>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie102> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie31>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139464 477093)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.15953 52.28162)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk96>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie96> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie81>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(130691 471577)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.03137 52.23172)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk54>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie54> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie60>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140959 463186)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.18202 52.15666)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk33>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie33> .
+
+<http://data.spider-ld.org/kerkennl/kerk12>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie12> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie39>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139567 476574)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16107 52.27696)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie18>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140229 469737)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.17107 52.21552)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk1>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie1> .
+
+<http://data.spider-ld.org/kerkennl/kerk83>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie83> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie102>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(125818 483536)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(4.95901 52.33897)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie89>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(131745 475221)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.04655 52.26452)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie68>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(130837 461429)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.03423 52.14052)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk41>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie41> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie47>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139473 478609)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.15959 52.29525)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie26>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139803 470776)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16479 52.22485)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk9>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie9> .
+
+<http://data.spider-ld.org/kerkennl/kerk91>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie91> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie1>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140762 470473)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.17884 52.22216)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk70>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie70> .
+
+<http://data.spider-ld.org/kerkennl/kerk49>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie49> .
+
+<http://data.spider-ld.org/kerkennl/kerk105>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie105> .
+
+<http://data.spider-ld.org/kerkennl/kerk28>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie28> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie34>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139373 476099)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.15825 52.27268)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie13>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140096 470651)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16909 52.22374)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk99>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie99> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie9>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140477 471251)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.17464 52.22914)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk78>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie78> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie84>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(135227 475041)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.09757 52.26304)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk57>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie57> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie63>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140514 465488)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.17541 52.17734)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie42>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139719 476099)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16332 52.2727)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk15>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie15> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie21>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139855 469612)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.1656 52.21439)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie105>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(124826 484073)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(4.94441 52.34374)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie92>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(131550 479832)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.04337 52.30596)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk65>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie65> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie71>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(124845 462364)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(4.94662 52.14863)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie50>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(143892 478198)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.22438 52.29166)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie29>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139722 470774)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16361 52.22484)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk94>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie94> .
+
+<http://data.spider-ld.org/kerkennl/kerk73>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie73> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie79>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(129927 469373)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.02036 52.21188)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk31>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie31> .
+
+<http://data.spider-ld.org/kerkennl/kerk108>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie108> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie37>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(140159 475520)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16978 52.2675)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie16>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139905 470970)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16627 52.2266)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk81>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie81> .
+
+<http://data.spider-ld.org/kerkennl/kerk60>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie60> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie66>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(134136 464533)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.08224 52.16856)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk39>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie39> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie45>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(139715 476443)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.16325 52.27578)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk18>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie18> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie24>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(141553 470775)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(5.19039 52.22489)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk89>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie89> .
+
+<http://data.spider-ld.org/kerkennl_extra/locatie108>
+        a       <http://purl.org/dc/terms/Location> ;
+        <http://rdfs.org/ns/void#inDataset>
+                <http://data.spider-ld.org/kerkennl_extra/> ;
+        <http://www.w3.org/ns/locn#geometry>
+                "<http://www.opengis.net/def/crs/EPSG/0/28992> POINT(124139 484836)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> , "POINT(4.93426 52.35056)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.spider-ld.org/kerkennl/kerk68>
+        <http://www.w3.org/ns/locn#location>
+                <http://data.spider-ld.org/kerkennl_extra/locatie68> .
