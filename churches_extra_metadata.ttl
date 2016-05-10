@@ -31,6 +31,7 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix geom: <http://data.ign.fr/def/geometrie#> .
 
 <http://data.spider-ld.org/kerkennl_extra/>
   a void:Dataset, dcat:Dataset ;
@@ -53,5 +54,5 @@
   void:feature <http://www.w3.org/ns/formats/JSON-LD> ; # To do: test this format
   void:sparqlEndboint <http://data.spider-ld.org/sparql> ; # To do: test 
   void:exampleResource <http://data.spider-ld.org/kerkennl_extra/locatie17> ;
-  void:vocabulary <http://www.opengis.net/ont/geosparql#>, <http://www.w3.org/ns/locn#> ;
+  void:vocabulary <http://www.opengis.net/ont/geosparql#>, <http://www.w3.org/ns/locn#>, <> ;
 .

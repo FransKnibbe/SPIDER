@@ -31,16 +31,33 @@ set geosparql=http://www.opengis.net/ont/geosparql#
 set sd=http://www.w3.org/ns/sparql-service-description#
 set crs=http://www.opengis.net/def/crs/EPSG/0/
 set extra=http://data.spider-ld.org/kerkennl_extra/
+set geom=http://data.ign.fr/def/geometrie#
 
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || id || '> <%locn%location> <%extra%locatie' || id || '> .' from kerken_locatie;" > churches_extra.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%rdf%type> <%dcterms%Location> .' from kerken_locatie;" >> churches_extra.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%void%inDataset> <%extra%> .' from kerken_locatie;" >> churches_extra.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%locn%geometry> ""' || ST_AsText(ST_GeomFromGeoJSON(ST_AsGeoJSON(geometrie_4326,5,0))) || '""^^' || '<%geosparql%wktLiteral> .' from kerken_locatie;" >> churches_extra.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%locn%geometry> ""<%crs%28992> ' || ST_AsText(ST_GeomFromGeoJSON(ST_AsGeoJSON(geometrie_28992,0,0))) || '""^^' || '<%geosparql%wktLiteral> .' from kerken_locatie;" >> churches_extra.nt
-
-::psql -U postgres -A -t -d spiderdb1 -c "select '<%base%locatie' || id || '> <%locn%geometry> <%base%kerk' || id || '_geom_crs84> .' from kerken_locatie;" >> churches_extra.nt
-::psql -U postgres -A -t -d spiderdb1 -c "select '<%base%locatie' || id || '> <%locn%geometry> <%base%kerk' || id || '_geom_rd> .' from kerken_locatie;" >> churches_extra.nt
-::psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || id || '_geom_crs84> <%rdf%type> <%locn%Geometry>.' from kerken_locatie;" >> churches_extra.nt
-::psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || id || '_geom_crs84> <%geosparql%type> <%locn%Geometry>.' from kerken_locatie;" >> churches_extra.nt
-::psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || id || '_geom_crs84> <%geosparql%type> <%geosparql%Geometry>.' from kerken_locatie;" >> churches_extra.nt
-::psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || id || '_geom_crs84> <%geosparql%asWKT> ""' || st_astext(geometrie_4326) || '""^^' || '<%geosparql%wktLiteral>.' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%dbo%area> ""' || oppervlakte || '""^^<http://www.w3.org/2001/XMLSchema#double> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%locn%geometry> <%extra%geom' || id || '_point_crs84> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%locn%geometry> <%extra%geom' || id || '_polygon_crs84> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%locn%geometry> <%extra%geom' || id || '_point_rd> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%locn%geometry> <%extra%geom' || id || '_polygon_rd> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_point_rd> <%rdf%type> <%geom%Geometry> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_point_rd> <%rdf%type> <%locn%Geometry> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_point_rd> <%rdf%type> <%geom%Point> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_point_rd> <%geom%crs> <http://www.opengis.net/def/crs/EPSG/0/28992> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_point_rd> <%geosparql%asWKT> ""<%crs%28992> ' || ST_AsText(ST_GeomFromGeoJSON(ST_AsGeoJSON(puntgeometrie_28992,0,0))) || '""^^' || '<%geosparql%wktLiteral> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_polygon_rd> <%rdf%type> <%geom%Geometry> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_polygon_rd> <%rdf%type> <%locn%Geometry> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_polygon_rd> <%rdf%type> <%geom%Polygon> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_polygon_rd> <%geom%crs> <http://www.opengis.net/def/crs/EPSG/0/28992> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_polygon_rd> <%geosparql%asWKT> ""<%crs%28992> ' || ST_AsText(ST_GeomFromGeoJSON(ST_AsGeoJSON(pandgeometrie_28992,0,0))) || '""^^' || '<%geosparql%wktLiteral> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_point_crs84> <%rdf%type> <%geom%Geometry> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_point_crs84> <%rdf%type> <%locn%Geometry> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_point_crs84> <%rdf%type> <%geom%Point> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_point_crs84> <%geom%crs> <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_point_crs84> <%geosparql%asWKT> ""' || ST_AsText(ST_GeomFromGeoJSON(ST_AsGeoJSON(puntgeometrie_4326,5,0))) || '""^^' || '<%geosparql%wktLiteral> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_polygon_crs84> <%rdf%type> <%geom%Geometry> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_polygon_crs84> <%rdf%type> <%locn%Geometry> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_polygon_crs84> <%rdf%type> <%geom%Polygon> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_polygon_crs84> <%geom%crs> <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%geom' || id || '_polygon_crs84> <%geosparql%asWKT> ""' || ST_AsText(ST_GeomFromGeoJSON(ST_AsGeoJSON(pandgeometrie_4326,5,0))) || '""^^' || '<%geosparql%wktLiteral> .' from kerken_locatie;" >> churches_extra.nt

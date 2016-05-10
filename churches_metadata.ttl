@@ -34,6 +34,7 @@
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix wv: <http://vocab.org/waiver/terms/> .
 @prefix geonames: <http://sws.geonames.org/> .
+@prefix geom: <http://data.ign.fr/def/geometrie#> .
 
 <http://data.spider-ld.org/kerkennl/data>
   a void:Dataset, dcat:Dataset ;
