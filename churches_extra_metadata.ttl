@@ -5,8 +5,8 @@
 # Note: in Turtle, if there is no datatype URI and no language tag. datatype is xsd:string
 # So we only need to specify datatypes for non-string literals.
 
-@base <http://data.spider-ld.org/kerkennl_extra/>
-@prefix : <http://data.spider-ld.org/kerkennl_extra/>
+@base <http://data.spider-ld.org/kerkennl_extra/data/> . 
+@prefix : <http://data.spider-ld.org/kerkennl_extra/data/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -33,9 +33,9 @@
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix geom: <http://data.ign.fr/def/geometrie#> .
 
-<http://data.spider-ld.org/kerkennl_extra/>
+<http://data.spider-ld.org/kerkennl_extra/data>
   a void:Dataset, dcat:Dataset ;
-  rdfs:seeAlso <http://data.spider-ld.org/kerkennl/>;
+  rdfs:seeAlso <http://data.spider-ld.org/kerkennl/data>;
   dcterms:title "Toegevoegde data bij de dataset over kerkgebouwen in Nederland 1800-1970"@nl, "Additional data for the dataset about church buildings in the Netherlands 1800-1970"@en;
   dcterms:description "Deze dataset sluit aan op dataset http://data.spider-ld.org/kerkennl/. Hij bevat gegevens uit andere bronnen dan de oorspronkelijke bron van dataset http://data.spider-ld.org/kerkennl/."@nl, "This dataset contains addtional data for dataset http://data.spider-ld.org/kerkennl/, coming from other sources than the original source of dataset http://data.spider-ld.org/kerkennl/."@en;
   dcterms:creator <http://data.spider-ld.org/about> ; 
@@ -54,5 +54,5 @@
   void:feature <http://www.w3.org/ns/formats/JSON-LD> ; # To do: test this format
   void:sparqlEndboint <http://data.spider-ld.org/sparql> ; # To do: test 
   void:exampleResource <http://data.spider-ld.org/kerkennl_extra/locatie17> ;
-  void:vocabulary <http://www.opengis.net/ont/geosparql#>, <http://www.w3.org/ns/locn#>, <> ;
+  void:vocabulary <http://www.opengis.net/ont/geosparql#>, <http://www.w3.org/ns/locn#>, <http://data.ign.fr/def/geometrie#> ;
 .

@@ -5,7 +5,7 @@
 
 @echo off
 SETLOCAL ENABLEEXTENSIONS
-set base=http://data.spider-ld.org/kerkennl/
+set base=http://data.spider-ld.org/kerkennl/data/
 set rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#
 set rdfs=http://www.w3.org/2000/01/rdf-schema#
 set xsd=http://www.w3.org/2001/XMLSchema#
@@ -37,7 +37,7 @@ psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%r
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%rdf%type> <%dul%DesignedArtifact> .' from \"01_Hoofdtabel_Kerken\";" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%rdf%type> <%rc%Church_Building> .' from \"01_Hoofdtabel_Kerken\";" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%rdf%type> <%dbo%ArchitecturalStructure> .' from \"01_Hoofdtabel_Kerken\";" >> churches.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%void%inDataSet> <%base%> .' from \"01_Hoofdtabel_Kerken\";" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%void%inDataSet> <http://data.spider-ld.org/kerkennl/data> .' from \"01_Hoofdtabel_Kerken\";" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbo%type> <%dbp%Cathedral> .' from \"01_Hoofdtabel_Kerken\" where \"Functie_kathedraal\" = '1';" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbo%type> <%dbp%Minor_basilica> .' from \"01_Hoofdtabel_Kerken\" where \"Eretitel_Basiliek\" = '1';" >> churches.nt
 :: Weird double quotes, but it works.
