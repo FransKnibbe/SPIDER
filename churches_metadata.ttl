@@ -49,7 +49,7 @@
   dcat:theme aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057, <http://brt.kadaster.nl/doc/begrip/Kerk> ;
   dcterms:spatial :spatialExtent ; 
   dcterms:temporal :temporalExtent ; 
-  dcterms:created "2016-01-15"^^xsd:Date ;
+  dcterms:created "2016-05-14"^^xsd:Date ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
   dcterms:license <http://www.opendatacommons.org/licenses/by/> ; # To do: discuss with Herman
   wv:waiver <http://www.opendatacommons.org/odc-public-domain-dedication-and-licence/> ; # To do: discuss with Herman

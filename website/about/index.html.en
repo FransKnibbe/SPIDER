@@ -1,6 +1,7 @@
-<html>
+<html lang="en">
 <head>
 <title>About SPIDER</title>
+<link rel="stylesheet" type="text/css" href="../css/spider.css" />
 </head>
 <body>
 <h1>About SPIDER</h1>

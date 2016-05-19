@@ -1,13 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
 <head>
-
-
   <title>SPIDER - Enriching Digital Humanities through Semantic Web technology</title>
-
   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
   <meta name="author" content="fullahead.org - studio7designs.com, adapted by Xander Wilcke for SPIDER" />
   <meta name="description" content="Enriching Digital Humanities through Semantic Web technology" />

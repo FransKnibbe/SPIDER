@@ -1,0 +1,9 @@
+@import url("<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>")
+
+body {
+ font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  color: orange;
+}
