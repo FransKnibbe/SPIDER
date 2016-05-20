@@ -42,14 +42,14 @@
   dcterms:title "Kerkgebouwen in Nederland 1800-1970"@nl, "Church buildings in The Netherlands 1800-1970"@en;
   dcterms:description "Deze dataset bevat gegevens over kerkgebouwen de zijn gebouwd in de periode 1800-1970. De dataset is samengesteld om te helpen de cultuurhistorische waarde van deze gebouwen te meten."@nl, "This dataset contains data about church buildings that were built in the Netherlands in the years 1800-1970. The data are collected with the aim of helping measuring cultural and historical value of church buildings."@en;
   dcterms:creator <http://www.hermanwesselink.nl/>, <http://www.godgeleerdheid.vu.nl/nl/over-de-faculteit/medewerkers/wetenschappelijk-personeel-t-z/he-wesselink/index.aspx> ; 
-  dcterms:publisher <http://spider-ld.org/about> ; #To Do: create and maintain this page
+  dcterms:publisher <http://spider-ld.org/about> ;
   dcterms:source <http://www.hdc.vu.nl/nl/online-informatie/ikgn/index.asp>, <http://www.reliwiki.nl/> ;
-  foaf:homepage <http://spider-ld.org/kerkennl/about> ; #To Do: create and maintain this page
+  foaf:homepage <http://spider-ld.org/kerkennl/about> ;
   dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057, <http://brt.kadaster.nl/doc/begrip/Kerk> ;
   dcat:theme aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057, <http://brt.kadaster.nl/doc/begrip/Kerk> ;
   dcterms:spatial :spatialExtent ; 
   dcterms:temporal :temporalExtent ; 
-  dcterms:created "2016-05-14"^^xsd:Date ;
+  dcterms:created "2016-05-20"^^xsd:Date ;
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
   dcterms:license <http://www.opendatacommons.org/licenses/by/> ; # To do: discuss with Herman
   wv:waiver <http://www.opendatacommons.org/odc-public-domain-dedication-and-licence/> ; # To do: discuss with Herman
@@ -58,9 +58,9 @@
   void:feature <http://www.w3.org/ns/formats/Turtle> ; # To do: test this format
   void:feature <http://www.w3.org/ns/formats/N3> ; # To do: test this format
   void:feature <http://www.w3.org/ns/formats/JSON-LD> ; # To do: test this format
-  void:sparqlEndpoint <http://service.spider-ld.org/sparql> ;
+  void:sparqlEndpoint <http://data.spider-ld.org/marmotta/sparql> ;
   void:exampleResource <http://data.spider-ld.org/kerkennl/data/kerk17> ; 
-  void:vocabulary <http://www.cidoc-crm.org/cidoc-crm/>, <http://data.cultureelerfgoed.nl/semnet/>, <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> ;
+  void:vocabulary <http://www.cidoc-crm.org/cidoc-crm/>, <http://data.cultureelerfgoed.nl/semnet/>, <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>, <http://www.w3.org/ns/locn#>, <http://www.opengis.net/ont/geosparql#> ;
 .
 
 :spatialExtent
