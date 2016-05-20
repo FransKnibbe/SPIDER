@@ -60,7 +60,7 @@
   void:feature <http://www.w3.org/ns/formats/JSON-LD> ; # To do: test this format
   void:sparqlEndpoint <http://data.spider-ld.org/marmotta/sparql> ;
   void:exampleResource <http://data.spider-ld.org/kerkennl/data/kerk17> ; 
-  void:vocabulary <http://www.cidoc-crm.org/cidoc-crm/>, <http://data.cultureelerfgoed.nl/semnet/>, <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>, <http://www.w3.org/ns/locn#>, <http://www.opengis.net/ont/geosparql#> ;
+  void:vocabulary <http://www.cidoc-crm.org/cidoc-crm/>, <http://data.cultureelerfgoed.nl/semnet/>, <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> ;
 .
 
 :spatialExtent

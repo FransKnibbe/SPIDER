@@ -5,6 +5,8 @@
 # Note: in Turtle, if there is no datatype URI and no language tag. datatype is xsd:string
 # So we only need to specify datatypes for non-string literals.
 
+# transform to ntriples: riot --formatted=ntriples churches_extra_metadata.ttl > churches_extra_metadata.nt
+
 @base <http://data.spider-ld.org/kerkennl_extra/data/> . 
 @prefix : <http://data.spider-ld.org/kerkennl_extra/data/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -32,27 +34,33 @@
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix geom: <http://data.ign.fr/def/geometrie#> .
+@prefix geonames: <http://sws.geonames.org/> .
 
 <http://data.spider-ld.org/kerkennl_extra/data>
   a void:Dataset, dcat:Dataset ;
   rdfs:seeAlso <http://data.spider-ld.org/kerkennl/data>;
   dcterms:title "Toegevoegde data bij de dataset over kerkgebouwen in Nederland 1800-1970"@nl, "Additional data for the dataset about church buildings in the Netherlands 1800-1970"@en;
-  dcterms:description "Deze dataset sluit aan op dataset http://data.spider-ld.org/kerkennl/. Hij bevat gegevens uit andere bronnen dan de oorspronkelijke bron van dataset http://data.spider-ld.org/kerkennl/."@nl, "This dataset contains addtional data for dataset http://data.spider-ld.org/kerkennl/, coming from other sources than the original source of dataset http://data.spider-ld.org/kerkennl/."@en;
+  dcterms:description "Deze dataset sluit aan op dataset http://data.spider-ld.org/kerkennl/data. Hij bevat gegevens uit andere bronnen dan de oorspronkelijke bron van dataset http://data.spider-ld.org/kerkennl/."@nl, "This dataset contains addtional data for dataset http://data.spider-ld.org/kerkennl/, coming from other sources than the original source of dataset http://data.spider-ld.org/kerkennl/data."@en;
   dcterms:creator <http://data.spider-ld.org/about> ; 
-  dcterms:publisher <http://data.spider-ld.org/about> ; #To Do: create and maintain this page
-  foaf:homepage <http://data.spider-ld.org/kerkennl_extra/about> ; #To Do: create and maintain this page
+  dcterms:publisher <http://data.spider-ld.org/about> ;
+  foaf:homepage <http://data.spider-ld.org/kerkennl_extra/about> ; 
   dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057, <http://brt.kadaster.nl/doc/begrip/Kerk> ;
   dcat:theme aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057, <http://brt.kadaster.nl/doc/begrip/Kerk> ;
   dcterms:spatial :spatialExtent ;
-  dcterms:temporal :temporalExtent ;
-  dcterms:created "2016-03-10"^^xsd:Date ;
-  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
+  dcterms:created "2016-05-20"^^xsd:Date ;
   dcterms:license <http://www.opendatacommons.org/licenses/by/> ; 
-  void:feature <http://www.w3.org/ns/formats/RDF_XML> ;  # To do: test this format
-  void:feature <http://www.w3.org/ns/formats/Turtle> ; # To do: test this format
-  void:feature <http://www.w3.org/ns/formats/N3> ; # To do: test this format
-  void:feature <http://www.w3.org/ns/formats/JSON-LD> ; # To do: test this format
-  void:sparqlEndboint <http://data.spider-ld.org/sparql> ; # To do: test 
+  void:feature <http://www.w3.org/ns/formats/RDF_XML> ; 
+  void:feature <http://www.w3.org/ns/formats/Turtle> ; 
+  void:feature <http://www.w3.org/ns/formats/N3> ; 
+  void:feature <http://www.w3.org/ns/formats/JSON-LD> ; 
+  void:sparqlEndpoint <http://data.spider-ld.org/marmotta/sparql> ;
   void:exampleResource <http://data.spider-ld.org/kerkennl_extra/locatie17> ;
   void:vocabulary <http://www.opengis.net/ont/geosparql#>, <http://www.w3.org/ns/locn#>, <http://data.ign.fr/def/geometrie#> ;
 .
+
+:spatialExtent
+  a dcterms:Location;
+  rdfs:seeAlso geonames:2750405;
+  rdfs:seeAlso dbp:Netherlands;
+  locn:geometry "POLYGON((3.3080 50.7504,3.3079 53.5764,7.2275 53.5764,7.2275 50.7504,3.3080 50.7504))"^^geosparql:wktLiteral;
+  .
