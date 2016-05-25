@@ -4,8 +4,10 @@
 # Note: in Turtle, if there is no datatype URI and no language tag. datatype is xsd:string
 # So we only need to specify datatypes for non-string literals.
 
-@base <http://data.spider-ld.org/kerkennl/>
-@prefix : <http://data.spider-ld.org/kerkennl/>
+# transform to ntriples: riot --formatted=ntriples churches_reference_data.ttl > churches_reference_data.nt
+
+@base <http://data.spider-ld.org/kerkennl/data>
+@prefix : <http://data.spider-ld.org/kerkennl/data/>
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -32,10 +34,8 @@
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 
 
-
-
 ## start usage types 
-# Does it make sense to add rdf:labels?
+# Does it make sense to add rdfs:labels?
 
 :usage_church
   a cidoc:E55_type ;
@@ -110,7 +110,7 @@
 # the following mapping needs confirmation from Herman:
 :usage_none
   a cidoc:E55_type ;
-  dcterms:subject egt:ce21134b-4819-4efb-9ecd-612736a93111 ;
+  dcterms:subject eth:ce21134b-4819-4efb-9ecd-612736a93111 ;
 .
 
 ##  end usage types 
