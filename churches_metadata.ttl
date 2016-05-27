@@ -58,7 +58,7 @@
   void:feature <http://www.w3.org/ns/formats/Turtle> ; # To do: test this format
   void:feature <http://www.w3.org/ns/formats/N3> ; # To do: test this format
   void:feature <http://www.w3.org/ns/formats/JSON-LD> ; # To do: test this format
-  void:sparqlEndpoint <http://data.spider-ld.org/marmotta/sparql> ;
+  void:sparqlEndpoint <http://data.spider-ld.org/marmotta/sparql/select> ;
   void:exampleResource <http://data.spider-ld.org/kerkennl/data/kerk17> ; 
   void:vocabulary <http://www.cidoc-crm.org/cidoc-crm/>, <http://data.cultureelerfgoed.nl/semnet/>, <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> ;
 .
