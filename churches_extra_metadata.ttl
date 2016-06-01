@@ -54,7 +54,7 @@
   void:feature <http://www.w3.org/ns/formats/N3> ; 
   void:feature <http://www.w3.org/ns/formats/JSON-LD> ; 
   void:sparqlEndpoint <http://data.spider-ld.org/marmotta/sparql> ;
-  void:exampleResource <http://data.spider-ld.org/kerkennl_extra/locatie17> ;
+  void:exampleResource <http://data.spider-ld.org/kerkennl_extra/data/locatie17> ;
   void:vocabulary <http://www.opengis.net/ont/geosparql#>, <http://www.w3.org/ns/locn#>, <http://data.ign.fr/def/geometrie#> ;
 .
 
