@@ -31,8 +31,11 @@
 	</div>
 
 	<nav>
-		<a href="about.html.nl">About</a>
-		<a href="projects.html.nl">Projects</a>
+		<div class="inactive">
+			<a href="./index.html.en">Home</a>
+		</div>
+		<a href="./about/index.html.en">About</a>
+		<a href="./projects/index.html.en">Projects</a>
 	</nav>
 
 	<section>
