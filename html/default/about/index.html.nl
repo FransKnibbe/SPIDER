@@ -1,78 +1,46 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	  xml:lang="nl" lang="nl">
 <head>
   <title>SPIDER - Enriching Digital Humanities through Semantic Web technology</title>
   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-  <meta name="author" content="fullahead.org - studio7designs.com, adapted by Xander Wilcke for SPIDER" />
+  <meta name="author" content="SPIDER" />
   <meta name="description" content="Enriching Digital Humanities through Semantic Web technology" />
-  <meta name="keywords" content="Linked Data, Semantic Web, Vrije Universiteit, SPINlab, Digital Humanities, Machine Learning, Data Mining, Visualisation, RDF, Geospatial, GIS" />
+  <meta name="keywords" content="Linked Data, Semantic Web, Vrije Universiteit Amsterdam, SPINlab, Digital Humanities, Machine Learning, Data Mining, Visualisation, RDF, Geospatial, GIS" />
   <meta name="robots" content="index, follow, noarchive" />
-  <meta name="googlebot" content="noarchive" />
-
-  <link rel="stylesheet" type="text/css" href="../css/layout.css" media="screen, projection, tv " />
-  <link rel="stylesheet" type="text/css" href="../css/html.css" media="screen, projection, tv " />
-
-  
-  <style type="text/css">
-<!--
-.style2 {color: #627E9A}
-.style3 {color: #62CC3C}
-.style6 {color: #5C8096}
--->
-  </style>
+  <meta name="googlebot" content="index, follow, noarchive" />
+  <link rel="stylesheet" type="text/css" href="../css/spides.css"/>
 </head>
 
 <body>
+	<header>
+		<h1>SPIDER</h1>
+		<h2>Enriching Digital Humanities through Semantic Web technology</h2>
+		<div id="headerIMG"></div>
+	</header>
 
-<!-- #content: holds all except site footer - causes footer to stick to bottom -->
-<div id="content">
+	<div class="languagebar">
+		<div class="active">
+			<a href="../about/index.html.nl">NL</a>
+		</div>
+		/
+		<div class="inactive">
+			<a href="../about/index.html.en">EN</a>
+		</div>
+	</div>
 
-  <!-- #header: holds the logo and top links -->   
-  <div id="header" class="width">
-  
-    <ul>
-      <li><a href="../index.html">Back to Main page</a></li>
-      <li><a href="./index.html">About us</a></li>
-    </ul>
+	<nav>
+		<a href="../index.html.nl">Home</a>
+		<div class="inactive">
+			<a href="../about/index.html.nl">About</a>
+		</div>
+		<a href="../projects/index.html.nl">Projects</a>
+	</nav>
 
-  </div>
-  <!-- #header end -->
+	<section class="intro">
+      <h1>Wie zijn wij</h1>
 
-
-  <!-- #headerImg: holds the main header image or flash -->
-  <div id="headerImg" class="width"></div>
-
-
-
-
-  <!-- #menu: the main large box site menu -->
-  <div id="menu" class="width">
-	  <p></p>
-
-
-  </div>
-  <!-- #menu end -->
-
-
-
-  <!-- #page: holds the page content -->
-  <div id="page">
-
-
-    <!-- #columns: holds the columns of the page -->
-    <div id="columns" class="widthPad">
-
-
-
-
-
-    <!-- Center news column -->
-    <div class="floatLeft width300">
-      <h1>About</h1>
-
-
-      <!-- Start Post -->
 	  <p>SPIDER staat (voorlopig) voor <strong>S</strong>emantic <strong>P</strong>erspectives and <strong>I</strong>nterlinked <strong>D</strong>ata from <strong>E</strong>-humanities <strong>R</strong>esearch. In dit project willen we de meerwaarde van toepassing van de principes van Linked Data bij de publicatie van resultaten van wetenschappelijk onderzoek in de geesteswetenschappen aantonen. </p>
 	  <center><p>
 		  <table> 
@@ -82,8 +50,10 @@
 			  <tr> <td><i>The SPIDER stack builds upon Linked Geospatial Humanities Data<br>with interactive Visualisation and Machine Learning</i></td> </tr> 
 		  </table>
 	  </p></center>
+	</section>
 
-	  <h2>Members</h2>
+	<section>
+	  <h1>Members</h1>
 	  <p><dl>
 		 <dt><strong>Frans Knibbe</strong> (frans.knibbe AT geodan.nl)
 		 <dd>About Frans...
@@ -93,7 +63,10 @@
 		 <dd>About Xander...
 	  </dl>
 	  </p>
-	  <h2>Voordelen van Linked Data</h2>
+	</section>
+
+	<section>
+	  <h1>Voordelen van Linked Data</h1>
       <p>Datasets die als Linked Data zijn gepubliceerd zijn: </p>
       <p><dl>
          <dt><strong>Duurzaam</strong>
@@ -108,8 +81,10 @@
       </p>
       <p>We denken dat deze algemene eigenschappen zeer effectief kunnen zijn in de geesteswetenschappen, een terrein waarin traditioneel minder informatietechnologie wordt toegepast dan in de bètawetenschappen. </p>
       <p>In dit project zouden deze theoretische voordelen via praktische toepassing aangetoond moeten worden, zodanig dat andere onderzoekers geïnspireerd en aangespoord worden om verder te bouwen het dataweb.</p>
+	</section>
 
-      <h2>Voorziene resultaten</h2>
+	<section>
+      <h1>Voorziene resultaten</h1>
       <p>De gewenste resultaten van het project zijn: </p>
       <p><ol>
              <li> Datasets beschikbaar als Linked Data, beschreven in één of meerdere datacatologi. 
@@ -118,51 +93,19 @@
              <li> Laagdrempelige interactie door eindgebruikers met oorspronkelijke data en dataverrijkingen, bijvoorbeeld door visualisatie via een kaart met een tijdbalk. 
          </ol>
       </p>
+	</section>
 
-      <h2>Themas</h2>
+	<section>
+      <h1>Themas</h1>
       <p>In de loop van het project komen verschillende algemene vraagstukken aan de orde: </p>
       <p><ol>
              <li><a href='http://www.pilod.nl/wiki/Versies_van_dingen_in_een_dataset'>Versies van dingen in een dataset.</a>
              <li><a href='http://www.pilod.nl/wiki/SKOS-concepten_als_temporele_eigenschappen'>SKOS-concepten als temporele eigenschappen.</a>
          </ol>
       </p>
+	</section>
 
-
-      <!-- End Post -->
-
-
-    </div>
-    <!-- Center news column end -->
-	
-
-
-    </div>
-    <!-- #columns end -->
-	
-
-  </div>
-  <!-- #page end -->
-
-</div>
-<!-- #content end -->
-
-<!-- #footer: holds the site footer (logo and links) -->
-<div id="footer">
-
-	<!-- #bg: applies the site width and footer background -->
-	<div id="bg" class="width">
-
-
-
-	</div>
-	<!-- #bg end -->
-
-</div>
-<!-- #footer end -->
-
-
-
-
+	<footer>
+		<p>This is the footer</p>
+	</footer>
 </body>
-
-</html>
