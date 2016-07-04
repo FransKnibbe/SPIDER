@@ -1,48 +1,39 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	  xml:lang="nl" lang="nl">
+<html lang="nl">
 <head>
-  <title>SPIDER - Enriching Digital Humanities through Semantic Web technology</title>
+  <title>SPIDER</title>
   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
   <meta name="author" content="SPIDER" />
   <meta name="description" content="Enriching Digital Humanities through Semantic Web technology" />
   <meta name="keywords" content="Linked Data, Semantic Web, Vrije Universiteit Amsterdam, SPINlab, Digital Humanities, Machine Learning, Data Mining, Visualisation, RDF, Geospatial, GIS" />
   <meta name="robots" content="index, follow, noarchive" />
   <meta name="googlebot" content="index, follow, noarchive" />
-  <link rel="stylesheet" type="text/css" href="./css/spides.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/spider.css"/>
 </head>
 
 <body>
-	<header>
-		<h1>SPIDER</h1>
-		<h2>Enriching Digital Humanities through Semantic Web technology</h2>
-		<div id="headerIMG"></div>
-	</header>
+<header>SPIDER</header>
+<nav>
+  <a href="datasets.html">datasets</a>&nbsp &nbsp <a href="contact.html">contact</a>
+</nav>
 
-	<div class="languagebar">
-		<div class="active">
-			<a href="index.html.nl">NL</a>
-		</div>
-		/
-		<div class="inactive">
-			<a href="index.html.en">EN</a>
-		</div>
-	</div>
+<section>
+  <h1>Welkom bij SPIDER</h1>
+  <p>SPIDER (kort voor <i>Semantic Perspectives and Interlinked Data from E-humanities Research</i>) is een onderzoeksproject dat zich richt op toepassing van de principes van <a href="https://nl.wikipedia.org/wiki/Linked_data">Linked Data</a> in de <a href="https://nl.wikipedia.org/wiki/Geesteswetenschappen">geesteswetenschappen</a>.</p>
+  <p>SPIDER is één van de projecten van het <a href="http://www.pilod.nl/">Platform Linked Data Nederland</a>.</p>
+  <h2>Voorziene resultaten</h2>
+  <p>SPIDER wil het volgende leveren:
+  <ol>
+  <li><a href="datasets.html">Datasets</a> beschikbaar als Linked Data, beschreven in één of meerdere datacatalogi;</li>
+  <li>Ondersteuning van onderzoekers bij publicatie van data;</li>
+  <li>Slimme automatische methodes om relaties, vooral spatiotemporele relaties, tussen data te ontdekken, zowel binnen als tussen datasets;</li>
+  <li>Laagdrempelige interactie door eindgebruikers met oorspronkelijke data en dataverrijkingen, bijvoorbeeld door visualisatie via een kaart met een tijdbalk.</li> 
+  </ol>
+  </p>
+</section>
 
-	<nav>
-		<div class="inactive">
-			<a href="./index.html.en">Home</a>
-		</div>
-		<a href="./about/index.html.nl">About</a>
-		<a href="./projects/index.html.nl">Projecten</a>
-	</nav>
+<footer>
+  <b>S</b>emantic <b>P</b>erspectives and <b>I</b>nterlinked <b>D</b>ata from <b>E</b>-humanities <b>R</b>esearch
+</footer>
 
-	<section>
-		<p>Welkom bij SPIDER!</p>
-	</section>
-
-	<footer>
-		<p>Dit is de footer</p>
-	</footer>
 </body>
+</html>
