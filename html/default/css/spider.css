@@ -4,7 +4,7 @@ body {
   padding:0;
 }
 a {
-  color:dodgerblue;
+  color:royalblue;
 }
 nav a {
   color:white;
@@ -15,19 +15,17 @@ a:link , a:visited {
 a:hover, a:active {
   text-decoration:underline;
 }
-/*
-a[href^="mailto:"] { 
-  color:royalblue;
+h1 {
+  font-size:24px;
 }
-*/
-.center-div {
-  margin:0 auto;
-  width:700px; 
-  background-color: #ccc;
+h2 {
+  font-size:18px;
+}
+h3 {
+  font-size:16px;
 }
 header {
   background-color:dodgerblue;
-  /*background: linear-gradient(to right,dodgerblue,royalblue); */
   color:white;
   text-align:center;
   position:fixed;
@@ -41,7 +39,6 @@ header {
 }
 nav {
   line-height:30px;
-  /*background-color:royalblue;*/
   background:linear-gradient(to right,royalblue, dodgerblue); 
   color:white;
   text-align:left;
@@ -52,18 +49,14 @@ nav {
   height:30px;
 }
 section {
-  padding-top:120px;
+  padding-top:110px;
   padding-bottom:20px;
   text-align:left;
   margin:0 auto;
-  /*width:900px; */
   max-width:900px;
-  /*top:100;*/
-  /*position:absolute;*/
   z-index: -1;
 }
 footer {
-  /* background-color:dodgerblue; */
   background: linear-gradient(to right,dodgerblue,royalblue);
   color:white;
   clear:both;
