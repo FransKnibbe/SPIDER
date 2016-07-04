@@ -1,6 +1,7 @@
 <html lang="nl">
 <head>
   <title>Contactgegevens</title>
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="css/spider.css" />
 </head>
 <body>
