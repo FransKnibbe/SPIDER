@@ -66,3 +66,13 @@ footer {
   width:100%;
   bottom: 0;
 }
+.e-mail::before {
+	content: attr(data-website);
+	unicode-bidi: bidi-override;
+	direction: rtl;
+}
+.e-mail::after {
+	content: attr(data-user);
+	unicode-bidi: bidi-override;
+	direction: rtl;
+}
