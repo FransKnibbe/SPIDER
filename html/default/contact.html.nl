@@ -24,7 +24,7 @@
   <h3>Vrije Universiteit Amsterdam</h3>
   Mark Opmeer (<a href="mailto:m.opmeer@vu.nl?Subject=SPIDER">m.opmeer@vu.nl</a>)<br>
   Xander Wilcke (<a href="mailto:&#119;&#46;&#120;&#46;&#119;&#105;&#108;&#99;&#107;&#101;%40%76%75%2E%6E%6C?Subject=SPIDER">
-	<span class="e-mail" data-user="ekcliw.x.w" data-website="ln.uv">@</span>)<br>
+	<span class="e-mail" data-user="ekcliw.x.w" data-website="ln.uv">@</span></a>)<br>
 </section>
 
 <footer>
