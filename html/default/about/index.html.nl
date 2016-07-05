@@ -35,8 +35,8 @@
 <h1>Thema's</h1>
 <p>In de loop van het project komen verschillende algemene vraagstukken aan de orde: </p>
 <p><ol>
- <li><a href='http://www.pilod.nl/wiki/Versies_van_dingen_in_een_dataset'>Versies van dingen in een dataset.</a>
- <li><a href='http://www.pilod.nl/wiki/SKOS-concepten_als_temporele_eigenschappen'>SKOS-concepten als temporele eigenschappen.</a>
+ <li><a href='http://www.pilod.nl/wiki/Versies_van_dingen_in_een_dataset' target="_blank">Versies van dingen in een dataset.</a>
+ <li><a href='http://www.pilod.nl/wiki/SKOS-concepten_als_temporele_eigenschappen' target="_blank">SKOS-concepten als temporele eigenschappen.</a>
 </ol>
 </p>
 </section>

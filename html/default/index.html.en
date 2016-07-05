@@ -18,8 +18,8 @@
 
 <section>
   <h1>Welkom to SPIDER</h1>
-  <p>SPIDER (short for <i>Semantic Perspectives and Interlinked Data from E-humanities Research</i>) is a research project that aims at applying the principles of <a href="https://en.wikipedia.org/wiki/Linked_data">Linked Data</a> in de <a href="https://en.wikipedia.org/wiki/Humanities">humanities</a>.</p>
-  <p>SPIDER is one of the projects in the <a href="http://www.pilod.nl/">Platform Linked Data Nederland</a>.</p>
+  <p>SPIDER (short for <i>Semantic Perspectives and Interlinked Data from E-humanities Research</i>) is a research project that aims at applying the principles of <a href="https://en.wikipedia.org/wiki/Linked_data" target="_blank">Linked Data</a> in de <a href="https://en.wikipedia.org/wiki/Humanities" target="_blank">humanities</a>.</p>
+  <p>SPIDER is one of the projects in the <a href="http://www.pilod.nl/" target="_blank">Platform Linked Data Nederland</a>.</p>
   <h2>Why Linked Data?</h2>
   <p>Datasets that are published as Linked Data are: </p>
   <p><dl>
@@ -30,7 +30,7 @@
      <dt><strong>Selfdescribing</strong>
      <dd>Research data can be published in such a way that the are self-explanatory for man and machine. This means data users won't have to find and read external documents to make sense of the data or to interpret them correctly. 
      <dt><strong>Well suited for automatic analysis and enhancement</strong>
-     <dd>Because data are well-structured and make use of a common data model (<a href="https://www.w3.org/RDF/">RDF</a>) more data can be derived from original research data. Derived data can inferred logically, but also be probabilistic, having a certain uncertainty. Of course the probabailty of derived data can be recorded as Linked Data and thus be used in further data processing and analysis. 
+     <dd>Because data are well-structured and make use of a common data model (<a href="https://www.w3.org/RDF/" target="_blank">RDF</a>) more data can be derived from original research data. Derived data can inferred logically, but also be probabilistic, having a certain uncertainty. Of course the probabailty of derived data can be recorded as Linked Data and thus be used in further data processing and analysis. 
      </dl>
   </p>
   <p>These characteristics of Linked Data could be very effective in the humanities, a domain in which the use of information technology is less widespread than in the natural sciences.</p>

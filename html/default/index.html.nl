@@ -18,8 +18,8 @@
 
 <section>
   <h1>Welkom bij SPIDER</h1>
-  <p>SPIDER (kort voor <i>Semantic Perspectives and Interlinked Data from E-humanities Research</i>) is een onderzoeksproject dat zich richt op toepassing van de principes van <a href="https://nl.wikipedia.org/wiki/Linked_data">Linked Data</a> in de <a href="https://nl.wikipedia.org/wiki/Geesteswetenschappen">geesteswetenschappen</a>.</p>
-  <p>SPIDER is één van de projecten van het <a href="http://www.pilod.nl/">Platform Linked Data Nederland</a>.</p>
+  <p>SPIDER (kort voor <i>Semantic Perspectives and Interlinked Data from E-humanities Research</i>) is een onderzoeksproject dat zich richt op toepassing van de principes van <a href="https://nl.wikipedia.org/wiki/Linked_data" target="_blank">Linked Data</a> in de <a href="https://nl.wikipedia.org/wiki/Geesteswetenschappen" target="_blank">geesteswetenschappen</a>.</p>
+  <p>SPIDER is één van de projecten van het <a href="http://www.pilod.nl/" target="_blank">Platform Linked Data Nederland</a>.</p>
   <h2>Waarom Linked Data?</h2>
   <p>Datasets die als Linked Data zijn gepubliceerd zijn: </p>
   <p><dl>
@@ -30,7 +30,7 @@
      <dt><strong>Zelfbeschrijvend</strong>
      <dd>Onderzoeksresultaten kunnen zodanig worden gepubliceerd dat er geen externe documenten hoeven te worden geraadpleegd om ze te goed te kunnen interpreteren. 
      <dt><strong>Goed automatisch te analyseren en te verrijken</strong>
-     <dd>Doordat gegevens goed gestructureerd zijn en van een universeel datamodel (<a href ="https://nl.wikipedia.org/wiki/Resource_Description_Framework">RDF</a>) gebruik maken kunnen er vele gegevens met zekerheid worden afgeleid uit bestaande gegevens. Ook kunnen gegevens worden afgeleid die niet zeker zijn, maar een zekere waarschijnlijkheid hebben. Die waarschijnlijkheid kan worden vastgelegd en worden gebruikt in verdere analyses. 
+     <dd>Doordat gegevens goed gestructureerd zijn en van een universeel datamodel (<a href ="https://nl.wikipedia.org/wiki/Resource_Description_Framework" target="_blank">RDF</a>) gebruik maken kunnen er vele gegevens met zekerheid worden afgeleid uit bestaande gegevens. Ook kunnen gegevens worden afgeleid die niet zeker zijn, maar een zekere waarschijnlijkheid hebben. Die waarschijnlijkheid kan worden vastgelegd en worden gebruikt in verdere analyses. 
      </dl>
   </p>
   <p>Deze algemene eigenschappen kunnen zeer effectief kunnen zijn in de geesteswetenschappen, een terrein waarin traditioneel minder informatietechnologie wordt toegepast dan in de bètawetenschappen. </p>
