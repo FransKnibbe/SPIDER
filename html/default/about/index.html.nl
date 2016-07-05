@@ -22,21 +22,6 @@
       <tr> <td><i>The SPIDER stack builds upon Linked Geospatial Humanities Data<br>with interactive Visualisation and Machine Learning</i></td> </tr> 
     </table>
   </center>
-<h1>Voordelen van Linked Data</h1>
-  <p>Datasets die als Linked Data zijn gepubliceerd zijn: </p>
-  <p><dl>
-     <dt><strong>Duurzaam</strong>
-     <dd>Data-elementen worden aangeduid met permanente HTTP-URIs. Onderzoeksresultaten kunnen altijd beschikbaar blijven.
-     <dt><strong>Koppelbaar</strong>
-     <dd>Via HTTP-URIs kan een wereldwijd web van data worden gevormd. Gegevens kunnen worden gerelateerd aan tal van andere gegevens.
-     <dt><strong>Zelfbeschrijvend</strong>
-     <dd>Onderzoeksresultaten kunnen zodanig worden gepubliceerd dat er geen externe documenten hoeven te worden geraadpleegd om ze te goed te kunnen interpreteren. 
-     <dt><strong>Goed automatisch te analyseren en te verrijken</strong>
-     <dd>Doordat gegevens goed gestructureerd zijn en van een universeel datamodel (RDF) gebruik maken kunnen er vele gegevens met zekerheid worden afgeleid uit bestaande gegevens. Ook kunnen gegevens worden afgeleid die niet zeker zijn, maar een zekere waarschijnlijkheid hebben. Die waarschijnlijkheid kan worden vastgelegd en worden gebruikt in verdere analyses. 
-     </dl>
-  </p>
-  <p>We denken dat deze algemene eigenschappen zeer effectief kunnen zijn in de geesteswetenschappen, een terrein waarin traditioneel minder informatietechnologie wordt toegepast dan in de bètawetenschappen. </p>
-  <p>In dit project zouden deze theoretische voordelen via praktische toepassing aangetoond moeten worden, zodanig dat andere onderzoekers geïnspireerd en aangespoord worden om verder te bouwen het dataweb.</p>
 
 <h1>Voorziene resultaten</h1>
 <p>De gewenste resultaten van het project zijn: </p>

@@ -30,10 +30,10 @@
      <dt><strong>Zelfbeschrijvend</strong>
      <dd>Onderzoeksresultaten kunnen zodanig worden gepubliceerd dat er geen externe documenten hoeven te worden geraadpleegd om ze te goed te kunnen interpreteren. 
      <dt><strong>Goed automatisch te analyseren en te verrijken</strong>
-     <dd>Doordat gegevens goed gestructureerd zijn en van een universeel datamodel (RDF) gebruik maken kunnen er vele gegevens met zekerheid worden afgeleid uit bestaande gegevens. Ook kunnen gegevens worden afgeleid die niet zeker zijn, maar een zekere waarschijnlijkheid hebben. Die waarschijnlijkheid kan worden vastgelegd en worden gebruikt in verdere analyses. 
+     <dd>Doordat gegevens goed gestructureerd zijn en van een universeel datamodel (<a href ="https://nl.wikipedia.org/wiki/Resource_Description_Framework">RDF</a>) gebruik maken kunnen er vele gegevens met zekerheid worden afgeleid uit bestaande gegevens. Ook kunnen gegevens worden afgeleid die niet zeker zijn, maar een zekere waarschijnlijkheid hebben. Die waarschijnlijkheid kan worden vastgelegd en worden gebruikt in verdere analyses. 
      </dl>
   </p>
-  <p>We denken dat deze algemene eigenschappen zeer effectief kunnen zijn in de geesteswetenschappen, een terrein waarin traditioneel minder informatietechnologie wordt toegepast dan in de bètawetenschappen. </p>
+  <p>Deze algemene eigenschappen kunnen zeer effectief kunnen zijn in de geesteswetenschappen, een terrein waarin traditioneel minder informatietechnologie wordt toegepast dan in de bètawetenschappen. </p>
   <p>In dit project zouden deze theoretische voordelen via praktische toepassing aangetoond moeten worden, zodanig dat andere onderzoekers geïnspireerd en aangespoord worden om verder te bouwen het dataweb.</p>
   <h2>Voorziene resultaten</h2>
   <p>SPIDER wil het volgende leveren:

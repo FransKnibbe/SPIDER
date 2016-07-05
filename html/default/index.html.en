@@ -28,13 +28,13 @@
      <dt><strong>Linkable</strong>
      <dd>HTTP(S) URIs can be used to link things together (that is how the World Wide Web works). That means that data and datasets can be linked to other data and datasets, in many different ways.
      <dt><strong>Selfdescribing</strong>
-     <dd>Onderzoeksresultaten kunnen zodanig worden gepubliceerd dat er geen externe documenten hoeven te worden geraadpleegd om ze te goed te kunnen interpreteren. 
+     <dd>Research data can be published in such a way that the are self-explanatory for man and machine. This means data users won't have to find and read external documents to make sense of the data or to interpret them correctly. 
      <dt><strong>Well suited for automatic analysis and enhancement</strong>
-     <dd>Doordat gegevens goed gestructureerd zijn en van een universeel datamodel (RDF) gebruik maken kunnen er vele gegevens met zekerheid worden afgeleid uit bestaande gegevens. Ook kunnen gegevens worden afgeleid die niet zeker zijn, maar een zekere waarschijnlijkheid hebben. Die waarschijnlijkheid kan worden vastgelegd en worden gebruikt in verdere analyses. 
+     <dd>Because data are well-structured and make use of a common data model (<a href="https://www.w3.org/RDF/">RDF</a>) more data can be derived from original research data. Derived data can inferred logically, but also be probabilistic, having a certain uncertainty. Of course the probabailty of derived data can be recorded as Linked Data and thus be used in further data processing and analysis. 
      </dl>
   </p>
-  <p>We denken dat deze algemene eigenschappen zeer effectief kunnen zijn in de geesteswetenschappen, een terrein waarin traditioneel minder informatietechnologie wordt toegepast dan in de bètawetenschappen. </p>
-  <p>In dit project zouden deze theoretische voordelen via praktische toepassing aangetoond moeten worden, zodanig dat andere onderzoekers geïnspireerd en aangespoord worden om verder te bouwen het dataweb.</p>
+  <p>These characteristics of Linked Data could be very effective in the humanities, a domain in which the use of information technology is less widespread than in the natural sciences.</p>
+  <p>SPIDER aims to prove these supposed theoretical advantages by developing a few practical applications that hopefully will inspire other researchers to continue building a high value web of data.</p>
   <h2>Deliverables</h2>
   <p>SPIDER wants to provide the following:
   <ol>
