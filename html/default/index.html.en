@@ -13,11 +13,11 @@
 <body>
 <header>SPIDER</header>
 <nav>
-  <a href="datasets.html">datasets</a>&nbsp &nbsp <a href="contact.html">contact</a>
+  <a href="index.html">home</a>&nbsp &nbsp <a href="projects/index.html">projects</a>&nbsp &nbsp <a href="datasets/index.html">datasets</a>&nbsp &nbsp <a href="recommendations/index.html">recommendations</a>&nbsp &nbsp <a href="examples/index.html">examples</a>&nbsp &nbsp <a href="contact.html">contact</a>
 </nav>
 
 <section>
-  <h1>Welkom to SPIDER</h1>
+  <h1>Welcome to SPIDER</h1>
   <p>SPIDER (short for <i>Semantic Perspectives and Interlinked Data from E-humanities Research</i>) is a research project that aims at applying the principles of <a href="https://en.wikipedia.org/wiki/Linked_data" target="_blank">Linked Data</a> in de <a href="https://en.wikipedia.org/wiki/Humanities" target="_blank">humanities</a>.</p>
   <p>SPIDER is one of the projects in the <a href="http://www.pilod.nl/" target="_blank">Platform Linked Data Nederland</a>.</p>
   <h2>Why Linked Data?</h2>

@@ -14,7 +14,7 @@
 <header>SPIDER</header>
 
 <nav>
-  <a href="index.html">hoofdpagina</a>
+ <a href="index.html">hoofdpagina</a>&nbsp &nbsp <a href="projects/index.html">projecten</a>&nbsp &nbsp <a href="datasets/index.html">datasets</a>&nbsp &nbsp <a href="recommendations/index.html">aanbevelingen</a>&nbsp &nbsp <a href="examples/index.html">voorbeelden</a>&nbsp &nbsp <a href="contact.html">contact</a>
 </nav>
 
 <section>

@@ -10,7 +10,7 @@
   <meta name="keywords" content="Linked Data, Semantic Web, Vrije Universiteit Amsterdam, SPINlab, Digital Humanities, Machine Learning, Data Mining, Visualisation, RDF, Geospatial, GIS" />
   <meta name="robots" content="index, follow, noarchive" />
   <meta name="googlebot" content="index, follow, noarchive" />
-  <link rel="stylesheet" type="text/css" href="../css/spides.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/spider.css"/>
 </head>
 
 <body>

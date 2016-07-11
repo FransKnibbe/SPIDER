@@ -1,51 +1,31 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	  xml:lang="en" lang="en">
+<html lang="en">
 <head>
-  <title>SPIDER - Enriching Digital Humanities through Semantic Web technology</title>
+  <title>SPIDER</title>
   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
   <meta name="author" content="SPIDER" />
   <meta name="description" content="Enriching Digital Humanities through Semantic Web technology" />
   <meta name="keywords" content="Linked Data, Semantic Web, Vrije Universiteit Amsterdam, SPINlab, Digital Humanities, Machine Learning, Data Mining, Visualisation, RDF, Geospatial, GIS" />
   <meta name="robots" content="index, follow, noarchive" />
   <meta name="googlebot" content="index, follow, noarchive" />
-  <link rel="stylesheet" type="text/css" href="../css/spides.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/spider.css"/>
 </head>
 
 <body>
-	<header>
-		<h1>SPIDER</h1>
-		<h2>Enriching Digital Humanities through Semantic Web technology</h2>
-		<div id="headerIMG"></div>
-	</header>
+<header>SPIDER</header>
+<nav>
+  <a href="../index.html">home</a>&nbsp &nbsp <a href="../projects/index.html">projects</a>&nbsp &nbsp <a href="../datasets/index.html">datasets</a>&nbsp &nbsp <a href="../recommendations/index.html">recommendations</a>&nbsp &nbsp <a href="../examples/index.html">examples</a>&nbsp &nbsp <a href=".../contact.html">contact</a>
+</nav>
 
-	<div class="languagebar">
-		<div class="inactive">
-			<a href="index.html.nl">NL</a>
-		</div>
-		/
-		<div class="active">
-			<a href="index.html.en">EN</a>
-		</div>
-	</div>
+<section>
+  <h1>Projects</h1>
+  <p>SPIDER is involved in the following projects:</p>
+  <ul>
+    <li>Church buildings in Nederland van 1800-1970</li>
+  </ul>
+</section>
 
-	<nav>
-		<a href="../index.html.en">Home</a>
-		<a href="../about/index.html.en">About</a>
-		<div class="inactive">
-			<a href="../projects/index.html.en">Projects</a>
-		</div>
-	</nav>
+<footer>
+  <b>S</b>emantic <b>P</b>erspectives and <b>I</b>nterlinked <b>D</b>ata from <b>E</b>-humanities <b>R</b>esearch
+</footer>
 
-	<section>
-		<h1>We are currently involved in the following projects.</h1>
-		
-		<h2><a href="../kerkennl/index.html.nl">Churches on the Map</a></h2>
-		<p>Short description.</p>
-	</section>
-
-	<footer>
-		<p>This is the footer</p>
-	</footer>
 </body>
