@@ -19,9 +19,8 @@
 <section>
   <h1>Projecten</h1>
   <p>SPIDER is bij de volgende projecten betrokken:</p>
-  <ul>
-    <li>Kerkgebouwen in Nederland van 1800-1970</li>
-  </ul>
+  <h2>Kerkgebouwen in Nederland van 1800-1970</h2>
+  <p>Het promotieonderzoek van <a href="">Herman Wesselink</a> bij de faculteit van godgeleerdheid van de Vrije Universiteit van Amsterdam gaat over kerkgebouwen in Nederland die in de periode van 1800 tot en met 1970 in gebruik zijn genomen. Van de gebouwen zijn verschillende kenmerken in een database vastgelegd, met als belangrijkste doel het kunnen classificeren van de kerkgebouwen op cultuurhistorische waarde.</p>
 </section>
 
 <footer>

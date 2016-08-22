@@ -17,12 +17,15 @@
 </nav>
 
 <section>
-  <h1>Recommendations</h1>
-  <p>In the course of making data available on the web some problems were encountered. Below are descriptions of those problems, along with proposed solutions:</p>
+  <h1>Examples</h1>
+  <p>On this page examples of the <i>usage</i> of the data that are published on the web bij SPIDER can be found.</p>
+  <h2>Web applications</h2>
+  <p>Web data by nature are well suited for use in (graphic) web applications. Here are examples of simple web pages that use SPIDER data:</p>
   <ul>
-    <li><a href="http://www.pilod.nl/wiki/Versies_van_dingen_in_een_dataset" target="_blank">Versions of things in a dataset (only in Dutch at the moment) </a></li>
-    <li><a href="http://www.pilod.nl/wiki/SKOS-concepten_als_temporele_eigenschappen" target="_blank">SKOS concepts as temporal properties (only in Dutch at the moment)</a></li>
+  <li><a href="./example1" target="_blank">Location of church building on a map</a></li>
   </ul>
+  <h2>SPARQL queries</h2>
+  <p><a href="https://nl.wikipedia.org/wiki/SPARQL" target="_blank">SPARQL</a> is a query language for <abbr title="Resource Description Framework">RDF</abbr>-based data. It is similar to <abbr title="Structured Query Language">SQL</abbr>, the query language for relational databases. SPARQL can be used to ask questions and to request data. Some examples:</p>
 </section>
 
 <footer>

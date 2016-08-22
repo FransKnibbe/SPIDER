@@ -18,19 +18,19 @@
 
 <section>
   <h1>Welcome to SPIDER</h1>
-  <p>SPIDER (short for <i>Semantic Perspectives and Interlinked Data from E-humanities Research</i>) is a research project that aims at applying the principles of <a href="https://en.wikipedia.org/wiki/Linked_data" target="_blank">Linked Data</a> in de <a href="https://en.wikipedia.org/wiki/Humanities" target="_blank">humanities</a>.</p>
-  <p>SPIDER is one of the projects in the <a href="http://www.pilod.nl/" target="_blank">Platform Linked Data Nederland</a>.</p>
+  <p>SPIDER (short for <i>Semantic Perspectives and Interlinked Data from E-humanities Research</i>) is a research project that aims at applying the principles of <a href="https://en.wikipedia.org/wiki/Linked_data">Linked Data</a> in the <a href="https://en.wikipedia.org/wiki/Humanities">humanities</a>.</p>
+  <p>SPIDER is one of the projects in the <a href="http://www.pilod.nl/">Platform Linked Data Nederland</a>.</p>
   <h2>Why Linked Data?</h2>
-  <p>Datasets that are published as Linked Data are: </p>
+  <p>Datasets that are published as Linked Data are:</p>
   <p><dl>
      <dt><strong>Durable</strong>
-     <dd>Data are assigned persistent HTTP(S) URIs. That means research results can be available on the web indefinitely.
+     <dd>Data are assigned persistent <abbr title="(Secure) Hypertext Transfer Protocol">HTTP(S)</abbr> <abbr title="Uniform Resource Identifier">URI</abbr>s. That means research results can be available on the web forever.
      <dt><strong>Linkable</strong>
-     <dd>HTTP(S) URIs can be used to link things together (that is how the World Wide Web works). That means that data and datasets can be linked to other data and datasets, in many different ways.
+     <dd><abbr title="(Secure) Hypertext Transfer Protocol">HTTP(S)</abbr> <abbr title="Uniform Resource Identifier">URI</abbr>s can be used to link things together (that is how the World Wide Web works). That means that data and datasets can be linked to other data and datasets, in many different ways.
      <dt><strong>Selfdescribing</strong>
      <dd>Research data can be published in such a way that the are self-explanatory for man and machine. This means data users won't have to find and read external documents to make sense of the data or to interpret them correctly. 
      <dt><strong>Well suited for automatic analysis and enhancement</strong>
-     <dd>Because data are well-structured and make use of a common data model (<a href="https://www.w3.org/RDF/" target="_blank">RDF</a>) more data can be derived from original research data. Derived data can inferred logically, but also be probabilistic, having a certain uncertainty. Of course the probabailty of derived data can be recorded as Linked Data and thus be used in further data processing and analysis. 
+     <dd>Because data are well-structured and make use of a common data model (<a href="https://www.w3.org/RDF/">RDF</a>) more data can be derived from original research data. Derived data can inferred logically, but also be probabilistic, having a certain uncertainty. Of course the probabailty of derived data can be recorded as Linked Data and thus be used in further data processing and analysis. 
      </dl>
   </p>
   <p>These characteristics of Linked Data could be very effective in the humanities, a domain in which the use of information technology is less widespread than in the natural sciences.</p>
@@ -38,12 +38,13 @@
   <h2>Deliverables</h2>
   <p>SPIDER wants to provide the following:
   <ol>
-  <li><a href="datasets.html">Datasets</a> available as Linked Data, decribed in one or more data catalogues;</li>
+  <li><a href="datasets/index.html">Datasets</a> available as Linked Data, decribed in one or more data catalogues;</li>
   <li>Support for researchers with publishing data;</li>
   <li>Smart automatic methods for discovery of relationships (especially of the spatial or temporal kind) between data, within or between datasets;</li>
   <li>Simple ways for end users to interact with data, for example using maps and time sliders.</li> 
   </ol>
   </p>
+  <hr>
 </section>
 
 <footer>

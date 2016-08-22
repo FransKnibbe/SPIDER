@@ -18,7 +18,7 @@
 </nav>
 
 <section>
-  <h2>Contactgegevens</h2>
+  <h1>Contactgegevens</h1>
   <h3>Geodan</h3>
   Frans Knibbe (<a href="mailto:frans.knibbe@geodan.nl?Subject=SPIDER">frans.knibbe@geodan.nl</a>)
   <h3>Vrije Universiteit Amsterdam</h3>

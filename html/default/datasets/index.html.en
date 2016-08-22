@@ -18,10 +18,12 @@
 
 <section>
   <h1>Datasets</h1>
-  <p>SPIDER makes the following datasets available:</p>
-  <ul>
-    <li>Church buildings in the Netherlands from 1800 to 1970</li>
-    <li>Extra data with church buildings in the Netherlands from 1800 to 1970</li>
+  <p>Each SPIDER dataset has its own <abbr title="Uniform Resource Identifier">URI</abbr> which provides access to the metadata that describe the dataset. The metadata should provide all information necessary for using the dataset (see the 'metadata'recommendation).</p>
+  <p>The following datasets have been made available:</b>
+  <h2>Church buildings in the Netherlands 1800-1970</h2>
+  <a href="http://data.spider-ld.org/kerkennl/data">http://data.spider-ld.org/kerkennl/data</a>
+  <h2>Extra data for Kerkgebouwen church buildings in the Netherlands 1800-1970</h2>
+  <a href="http://data.spider-ld.org/kerkennl_extra/data">http://data.spider-ld.org/kerkennl_extra/data</a>
   </ul>
 </section>
 
