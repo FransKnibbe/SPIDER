@@ -17,6 +17,7 @@
 </nav>
 
 <section>
+  <p class="note">Deze website is beschikbaar in het Nederlands en het Engels. Er wordt gebruik gemaakt van <i>content negotiation</i> om de voorkeurstaal te kiezen. Meestal is dat gebaseeerd op de taalinstelling van de webbrowser. De standaardtaal is Engels.</p>
   <h1>Welkom bij SPIDER</h1>
   <p>SPIDER (kort voor <i>Semantic Perspectives and Interlinked Data from E-humanities Research</i>) is een onderzoeksproject dat zich richt op toepassing van de principes van <a href="https://nl.wikipedia.org/wiki/Linked_data">Linked Data</a> in de <a href="https://nl.wikipedia.org/wiki/Geesteswetenschappen">geesteswetenschappen</a>.</p>
   <p>SPIDER is één van de projecten van het <a href="http://www.pilod.nl/">Platform Linked Data Nederland</a>.</p>

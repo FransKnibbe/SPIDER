@@ -90,27 +90,52 @@ ol>li:before {
   content:counter(item) ".";
 }
 dl{
-  border: 3px double #ccc;
-  padding: 0.5em;
+  border:3px double #ccc;
+  padding:0.5em;
 }
 dt {
-  float: left;
-  clear: left;
-  width: 200px;
-  text-align: right;
-  font-weight: bold;
+  float:left;
+  clear:left;
+  width:200px;
+  text-align:right;
+  font-weight:bold;
 }
 dd {
-  margin: 0 0 0 210px;
-  padding: 0 0 0.5em 0;
+  margin:0 0 0 210px;
+  padding:0 0 0.5em 0;
 }
+.note {
+  background:Azure;
+  border-radius:10px;
+  border:1px solid LightBlue;
+  padding:10px;
+  color:#666;
+  font-size:95%;
+}
+.note:lang(en):before{
+  content:"Note: ";
+  color:DodgerBlue;
+  font-weight:bold;
+}
+.note:lang(nl):before{
+  content:"Opmerking: ";
+  color:DodgerBlue;
+  font-weight:bold;
+}
+/*
+.note_tag::before::lang(en) {
+  content:"Note: ";
+  color:royalblue;
+  font-style:bold;
+}
+*/
 .e-mail::before {
-	content: attr(data-website);
-	unicode-bidi: bidi-override;
-	direction: rtl;
+  content:attr(data-website);
+  unicode-bidi:bidi-override;
+  direction:rtl;
 }
 .e-mail::after {
-	content: attr(data-user);
-	unicode-bidi: bidi-override;
-	direction: rtl;
+  content:attr(data-user);
+  unicode-bidi:bidi-override;
+  direction:rtl;
 }

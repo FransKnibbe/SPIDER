@@ -17,6 +17,7 @@
 </nav>
 
 <section>
+  <p class="note">This website is available in two languages: Dutch and English. It makes use of <a href="https://en.wikipedia.org/wiki/Content_negotiation">content negotiation</a> to display the preferred language of the client (typically your web browser). English is the default language.</p>
   <h1>Welcome to SPIDER</h1>
   <p>SPIDER (short for <i>Semantic Perspectives and Interlinked Data from E-humanities Research</i>) is a research project that aims at applying the principles of <a href="https://en.wikipedia.org/wiki/Linked_data">Linked Data</a> in the <a href="https://en.wikipedia.org/wiki/Humanities">humanities</a>.</p>
   <p>SPIDER is one of the projects in the <a href="http://www.pilod.nl/">Platform Linked Data Nederland</a>.</p>
