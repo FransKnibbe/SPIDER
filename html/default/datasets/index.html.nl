@@ -20,9 +20,9 @@
   <h1>Datasets</h1>
   <p>Elke dataset heeft een eigen <abbr title="Uniform Resource Identifier">URI</abbr>, die toegang geeft tot de metadata die de dataset beschrijven. Een uitgangspunt is dat die metadata alle informatie verstrekken die nodig is voor gebruik van de dataset (zie de aanbeveling 'metadata').</p>
   <p>SPIDER stelt de volgende datasets ter beschikking:</p>
-  <h2>Kerkgebouwen in Nederland van 1800-1970</h2>
+  <h2><a name="kerkennl"></a>Kerkgebouwen in Nederland van 1800-1970</h2>
   <a href="http://data.spider-ld.org/kerkennl/data">http://data.spider-ld.org/kerkennl/data</a>
-  <h2>Extra data bij Kerkgebouwen in Nederland van 1800-1970</h2>
+  <h2><a name="kerkennl_extra"></a>Extra data bij Kerkgebouwen in Nederland van 1800-1970</h2>
   <a href="http://data.spider-ld.org/kerkennl_extra/data">http://data.spider-ld.org/kerkennl_extra/data</a>
   </ul>
 </section>
