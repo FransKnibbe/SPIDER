@@ -41,9 +41,9 @@
   rdfs:seeAlso <http://data.spider-ld.org/kerkennl/data>;
   dcterms:title "Toegevoegde data bij de dataset over kerkgebouwen in Nederland 1800-1970"@nl, "Additional data for the dataset about church buildings in the Netherlands 1800-1970"@en;
   dcterms:description "Deze dataset sluit aan op dataset http://data.spider-ld.org/kerkennl/data. Hij bevat gegevens uit andere bronnen dan de oorspronkelijke bron van dataset http://data.spider-ld.org/kerkennl/."@nl, "This dataset contains addtional data for dataset http://data.spider-ld.org/kerkennl/, coming from other sources than the original source of dataset http://data.spider-ld.org/kerkennl/data."@en;
-  dcterms:creator <http://data.spider-ld.org/about> ; 
-  dcterms:publisher <http://data.spider-ld.org/about> ;
-  foaf:homepage <http://data.spider-ld.org/kerkennl_extra/about> ; 
+  dcterms:creator <http://www.spider-ld.org> ; 
+  dcterms:publisher <http://www.spider-ld.org> ;
+  foaf:homepage <http://spider-ld.org/datasets/index.html#kerkennl_extra> ; 
   dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057, <http://brt.kadaster.nl/doc/begrip/Kerk> ;
   dcat:theme aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057, <http://brt.kadaster.nl/doc/begrip/Kerk> ;
   dcterms:spatial :spatialExtent ;
