@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>SPIDER</title>
+  <title>SPIDER: datasets</title>
   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
   <meta name="author" content="SPIDER" />
   <meta name="description" content="Enriching Digital Humanities through Semantic Web technology" />
@@ -17,6 +17,17 @@
 </nav>
 
 <section>
+  <h1>Introduction datasets</h2>
+  <p>A dataset is a collection of data that somehow belong together. Every dataset has a  <abbr title="Uniform Resource Identifier">URI</abbr>, which gives access to the <a href="https://en.wikipedia.org/wiki/Metadata">metadata</a> describing the dataset. The metadata should tell all there is to know about a dataset.</p>
+  <h2>Direct access</h2>
+  <p>Datasets can be used online by requesting <abbr title="Uniform Resource Identifier">URI</abbr>s. Datasets in Linked Data contain many URIs which can be requested (dereferenced) to access the data identified. An example of such a data URI is <a href="http://data.spider-ld.org/kerkennl/data/year1800">http://data.spider-ld.org/kerkennl/data/year1800</a>.
+  Dereferencing a URI can be done in a web browser, by the <a href="https://en.wikipedia.org/wiki/Command-line_interface">command line</a> by using tools like <a href="https://en.wikipedia.org/wiki/CURL">cURL</a> or <a href="https://en.wikipedia.org/wiki/Wget">Wget</a>, or in programming code.</p>
+  <p>When data are requested by dereferencing a HTTP(S) URI, <a href="https://en.wikipedia.org/wiki/Content_negotiation">content negotiation</a> is used to serve the data in the most appropriate format.</p>
+  <h2>Datadumps</h2>
+  <p>Datasets zijn compleet te downloaden via <a href="http://spider-ld.org/data">de map met datadumps</a>. Dat geeft de mogelijkheid de gegevens in een eigen databank op te slaan.</p>
+  <h2>Bevraging</h2>
+  Om selecties van data te maken en die op te vragen kan de ondervragingstaal <a href="https://nl.wikipedia.org/wiki/SPARQL">SPARQL</a> worden gebruikt. 
+  </p>
   <h1>Datasets</h1>
   <p>Each SPIDER dataset has its own <abbr title="Uniform Resource Identifier">URI</abbr> which provides access to the metadata that describe the dataset. The metadata should provide all information necessary for using the dataset (see the 'metadata'recommendation).</p>
   <p>The following datasets have been made available:</b>
