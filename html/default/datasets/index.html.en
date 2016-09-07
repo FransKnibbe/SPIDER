@@ -26,7 +26,7 @@
   <h2>Data dumps</h2>
   <p>Complete datasets can be downloaded from <a href="http://spider-ld.org/data">this folder</a> in various <abbr title="Resource Description Framework">RDF</abbr> formats.</p>
   <h2>Querying</h2>
-  <p>To make selections of data the query language <a href="https://nl.wikipedia.org/wiki/SPARQL">SPARQL</a> can be used.</p>
+  <p>To make selections of data the query language <a href="https://nl.wikipedia.org/wiki/SPARQL">SPARQL</a> can be used. The URI http://data.spider-ld.org/marmotta/sparql/select?query= can be used to issue SPARQL queries on the command line or in prgogramming code. This interactive web page allows SPARQL queries to be entered and run.</p>
   <h1>Datasets</h1>
   <p>Each SPIDER dataset has its own <abbr title="Uniform Resource Identifier">URI</abbr> which provides access to the metadata that describe the dataset. The metadata should provide all information necessary for using the dataset (see the 'metadata'recommendation).</p>
   <p>The following datasets have been made available:</b>
@@ -41,6 +41,12 @@
     </ul>
   <h2><a name="kerkennl_extra"></a>Extra data for church buildings in the Netherlands 1800-1970</h2>
   <p>Dataset <abbr title="Uniform Resource Identifier">URI</abbr>: <a href="http://data.spider-ld.org/kerkennl_extra/data">http://data.spider-ld.org/kerkennl_extra/data</a></p>
+  <h3>Data dumps</h3>
+  <ul>
+  <li><a href="http://spider-ld.org/data/kerkennl_extra_2016-09-06.rdf">RDF/XML</a></li>
+  <li><a href="http://spider-ld.org/data/kerkennl_extra_2016-09-06.ttl">Turtle</a></li>
+  <li><a href="http://spider-ld.org/data/kerkennl_extra_2016-09-06.json-ld">JSON-LD</a></li>
+  <li><a href="http://spider-ld.org/data/kerkennl_extra_2016-09-06.nt">Ntriples</a></li>
   </ul>
 </section>
 
