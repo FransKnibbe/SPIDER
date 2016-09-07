@@ -1,6 +1,6 @@
 <html lang="nl">
 <head>
-  <title>Contactgegevens</title>
+  <title>SPIDER: contactgegevens</title>
   <meta name="author" content="SPIDER" />
   <meta name="description" content="Enriching Digital Humanities through Semantic Web technology" />
   <meta name="keywords" content="Linked Data, Semantic Web, Vrije Universiteit Amsterdam, SPINlab, Digital Humanities, Machine Learning, Data Mining, Visualisation, RDF, Geospatial, GIS" />
