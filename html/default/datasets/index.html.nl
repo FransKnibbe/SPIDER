@@ -35,7 +35,7 @@
   <h2>Data dumps</h2>
   <p>Datasets zijn compleet te downloaden via <a href="http://spider-ld.org/data">de map met datadumps</a> in verschillende <abbr title="Resource Description Framework">RDF</abbr>-formaten. Dat geeft de mogelijkheid de gegevens in een eigen databank op te slaan.</p>
   <h2>Bevraging</h2>
-  <p>Om selecties van data te maken en die op te vragen kan de ondervragingstaal <a href="https://nl.wikipedia.org/wiki/SPARQL">SPARQL</a> worden gebruikt. Om in programmacode of op de commandoregel van SPARQL gebruik te maken kan de URI http://data.spider-ld.org/marmotta/sparql/select?query= worden gebruikt. SPARQL-query's kunnen op deze interactieve webpagina worden ingevoerd en uitgevoerd.
+  <p>Om selecties van data te maken en die op te vragen kan de ondervragingstaal <a href="https://nl.wikipedia.org/wiki/SPARQL">SPARQL</a> worden gebruikt. Om in programmacode of op de commandoregel van SPARQL gebruik te maken kan de URI http://data.spider-ld.org/marmotta/sparql/select?query= worden gebruikt. SPARQL-query's kunnen ook op <a href="../squebi/spider_squebi.html">deze interactieve webpagina</a> worden ingevoerd en uitgevoerd.
   </p>
   <h1>Datasets</h1>
   <p>SPIDER stelt de volgende datasets ter beschikking:</p>

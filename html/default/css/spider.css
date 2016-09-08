@@ -148,3 +148,9 @@ dd {
   unicode-bidi:bidi-override;
   direction:rtl;
 }
+.squebi{
+  height:100%;
+  width:100%;
+  border:none;
+  overflow:hidden;
+}
