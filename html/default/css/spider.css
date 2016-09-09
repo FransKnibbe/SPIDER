@@ -113,6 +113,20 @@ dd {
   margin:0 0 0 210px;
   padding:0 0 0.5em 0;
 }
+pre {
+  padding:10px;
+  border-radius: 10px;
+  background-color:azure;
+  white-space: pre-wrap;                 /* CSS3 browsers  */
+  white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
+  white-space: -pre-wrap;                /* Opera 4 thru 6 */
+  white-space: -o-pre-wrap;              /* Opera 7 and up */
+  word-wrap: break-word;                 /* IE 5.5+ and up */
+  /* overflow-x: auto; */                /* Firefox 2 only */
+  /* width: 99%; */		       /* only if needed */
+}
+  
+}
 .note {
   background:Azure;
   border-radius:10px;
@@ -153,4 +167,25 @@ dd {
   width:100%;
   border:none;
   overflow:hidden;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+.toggleVis {
+  text-decoration: none;
+  font-weight: bold;
+}
+.expandOrCollapse {
+  font-weight: bold;
+  color: royalblue;
+}
+.sparqluri {
+  font-weight: bold;
+  color: royalblue;
+}
+.sparqluri:hover, .sparqluri:active {
+  text-decoration:underline;
 }

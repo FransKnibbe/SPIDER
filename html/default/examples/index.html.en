@@ -8,6 +8,35 @@
   <meta name="robots" content="index, follow, noarchive" />
   <meta name="googlebot" content="index, follow, noarchive" />
   <link rel="stylesheet" type="text/css" href="../css/spider.css"/>
+  <script type="text/javascript">
+  window.onload = init;
+  function init() {
+    var divs = document.getElementsByTagName("div");
+    for (var i = 0; i < divs.length; i++ ) {
+      if (divs[i+1].className=='visible') {
+        divs[i+1].className = 'hidden';
+        divs[i].innerHTML = '&#9654; SPARQL query text (click to expand):';
+
+      }
+    }
+  }
+  function toggleVisibility(elem) { // expand or collapse the next div
+    var divs = document.getElementsByTagName("div");
+    for(var i = 0; i < divs.length;i++) // find the next div element
+      if(divs[i] == elem) {
+        var item = divs[i + 1];
+      }
+    if (item) {
+      if (item.className=='hidden') {
+        item.className = 'visible';
+        elem.innerHTML = '&#9650; SPARQL query text (click to collapse):';
+      } else {
+        item.className = 'hidden';
+        elem.innerHTML = '&#9654; SPARQL query text (click to expand):';
+      }
+    }
+  }
+</script>
 </head>
 
 <body>
@@ -25,7 +54,46 @@
   <li><a href="./example1" target="_blank">Location of church building on a map</a></li>
   </ul>
   <h2>SPARQL queries</h2>
-  <p><a href="https://nl.wikipedia.org/wiki/SPARQL" target="_blank">SPARQL</a> is a query language for <abbr title="Resource Description Framework">RDF</abbr>-based data. It is similar to <abbr title="Structured Query Language">SQL</abbr>, the query language for relational databases. SPARQL can be used to ask questions and to request data. Some examples:</p>
+  <p><a href="https://nl.wikipedia.org/wiki/SPARQL" target="_blank">SPARQL</a> is a query language for <abbr title="Resource Description Framework">RDF</abbr>-based data. It is similar to <abbr title="Structured Query Language">SQL</abbr>, the query language for relational databases. SPARQL can be used to ask questions and to request data. Below are some examples of SPARQL queries. The queries can be copied to the <a href="../squebi/spider_squebi.html">SPARQL interface page</a> to play around with, or be executed immediately via the query link that executes the query as a HTTP request.</p>
+  <h3>Get church name labels and coordinates</h3>
+  <p>This query asks for the names of the churches and the coordinates of the point location of the church building in <a href="https://en.wikipedia.org/wiki/Well-known_text">WKT format</a>. Such data could be used to plot locations on a map.</p>
+  <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aprefix%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aprefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0Aprefix%20geom%3A%20%20%3Chttp%3A%2F%2Fdata.ign.fr%2Fdef%2Fgeometrie%23%3E%0Aprefix%20geosp%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect%20%3Fname%20%3Fwkt%0Awhere%20%7B%0A%3Fchurch%20a%20schema%3AChurch%20.%0A%3Fchurch%20dcterms%3Atitle%20%3Fname%20.%0A%3Fchurch%20locn%3Alocation%20%3Floc%20.%0A%3Floc%20locn%3Ageometry%20%3Fgeom%20.%0A%3Fgeom%20a%20geom%3APoint%20.%0A%3Fgeom%20geom%3Acrs%20%3Chttp%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F28992%3E.%0A%3Fgeom%20geosp%3AasWKT%20%3Fwkt%20.%0A%7D">HTTP request (click to execute)</a>
+  <div class="expandOrCollapse" onclick="toggleVisibility(this)">&#9654; SPARQL query (click to expand):</div>
+  <div class="visible">
+  <pre>
+prefix schema: &lthttp://schema.org/&gt
+prefix dcterms: &lthttp://purl.org/dc/terms/&gt
+prefix locn: &lthttp://www.w3.org/ns/locn#&gt
+prefix geom:  &lthttp://data.ign.fr/def/geometrie#&gt
+prefix geosp: &lthttp://www.opengis.net/ont/geosparql#&gt
+select ?name ?wkt
+where {
+  ?church a schema:Church .
+  ?church dcterms:title ?name .
+  ?church locn:location ?loc .
+  ?loc locn:geometry ?geom .
+  ?geom a geom:Point .
+  ?geom geom:crs &lthttp://www.opengis.net/def/crs/EPSG/0/28992&gt.
+  ?geom geosp:asWKT ?wkt .
+}
+  </pre>
+  </div>
+  <h3>Count church buildings by function</h3>
+  <p>This query groups church buildings by their function and counts the number of churches for each function.</p>
+    <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20dbo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Frdfs%2Fcidoc_crm_v6.2-draft-2015August.rdfs%23%3E%0Aselect%20%3Fusage%20(count(%3Fchurch)%20as%20%3Fnumber_of_churches)%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20dbo%3AChurch%20.%0A%20%20%3Fchurch%20cidoc%3AP103_was_intended_for%20%3Fusage%20.%0A%7D%0Agroup%20by%20%3Fusage">HTTP request (click to execute)</a>
+  <div class="expandOrCollapse" onclick="toggleVisibility(this)">&#9654; SPARQL query (click to expand):</div>
+  <div class="visible">
+  <pre>
+prefix dbo: &lthttp://dbpedia.org/ontology/&gt
+prefix cidoc: &lthttp://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#&gt
+select ?usage (count(?church) as ?number_of_churches)
+where {
+  ?church a dbo:Church .
+  ?church cidoc:P103_was_intended_for ?usage .
+}
+group by ?usage
+  </pre>
+  </div>
 </section>
 
 <footer>
