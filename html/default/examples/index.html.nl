@@ -58,8 +58,8 @@
   
   <h3>Welke eigenschappen heeft een kerkgebouw?</h3>
   <p>In deze vraag worden de nagegaan welke eigenschappen worden aangetroffen voor dingen die als kerk zijn gedefinieerd.</p>
-    <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=select%20distinct%20%3Fproperty%0Awhere%20%7B%0A%09%3Fs%20a%20%3Chttp%3A%2F%2Fschema.org%2FChurch%3E%20.%0A%09%3Fs%20%3Fproperty%20%3Fo%20.%0A%7D">HTTP request (click to execute)</a>
-  <div class="expandOrCollapse" onclick="toggleVisibility(this)">&#9654; SPARQL query (click to expand):</div>
+    <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=select%20distinct%20%3Fproperty%0Awhere%20%7B%0A%09%3Fs%20a%20%3Chttp%3A%2F%2Fschema.org%2FChurch%3E%20.%0A%09%3Fs%20%3Fproperty%20%3Fo%20.%0A%7D">HTTP-verzoek (klik om uit te voeren)</a>
+  <div class="expandOrCollapse" onclick="toggleVisibility(this)">&#9654; tekst SPARQL query (klik om uit te klappen):</div>
   <div class="visible">
   <pre>
 select distinct ?property
@@ -95,9 +95,9 @@ where {
   </div>
   
   <h3>Kerken in Oosterbeek</h3>
-  <p>Hier wordt gevraagd om alle kerkgebouwen met een adres in Oosterbeek</p>
-    <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%20%0Aprefix%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aselect%20%3Fchurch%20%3Fstreet%20%3Fnumber%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20schema%3AChurch%20.%20%0A%20%20%3Fchurch%20locn%3Aaddress%20%3Faddress%20.%20%0A%20%20%3Faddress%20locn%3ApostName%20%E2%80%98Oosterbeek%E2%80%99%20.%0A%20%20%3Faddress%20locn%3Athoroughfare%20%3Fstreet%20.%0A%20%20%3Faddress%20locn%3AlocatorDesignator%20%3Fnumber%20.%0A%7D">HTTP request (click to execute)</a>
-  <div class="expandOrCollapse" onclick="toggleVisibility(this)">&#9654; SPARQL query (click to expand):</div>
+  <p>Hier wordt gevraagd om alle kerkgebouwen met een adres in Oosterbeek.</p>
+    <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%20%0Aprefix%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aselect%20%3Fchurch%20%3Fstreet%20%3Fnumber%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20schema%3AChurch%20.%20%0A%20%20%3Fchurch%20locn%3Aaddress%20%3Faddress%20.%20%0A%20%20%3Faddress%20locn%3ApostName%20%E2%80%98Oosterbeek%E2%80%99%20.%0A%20%20%3Faddress%20locn%3Athoroughfare%20%3Fstreet%20.%0A%20%20%3Faddress%20locn%3AlocatorDesignator%20%3Fnumber%20.%0A%7D">HTTP-verzoek (klik om uit te voeren)</a>
+  <div class="expandOrCollapse" onclick="toggleVisibility(this)">&#9654; tekst SPARQL query (klik om uit te klappen):</div>
   <div class="visible">
   <pre>
 prefix locn: &lthttp://www.w3.org/ns/locn#&gt 

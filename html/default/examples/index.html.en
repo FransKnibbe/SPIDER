@@ -95,7 +95,7 @@ where {
   </div>
   
   <h3>Show church buildings in Oosterbeek</h3>
-  <p>This query selects church buildings with an address in the town of Oosterbeek</p>
+  <p>This query selects church buildings with an address in the town of Oosterbeek.</p>
     <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%20%0Aprefix%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aselect%20%3Fchurch%20%3Fstreet%20%3Fnumber%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20schema%3AChurch%20.%20%0A%20%20%3Fchurch%20locn%3Aaddress%20%3Faddress%20.%20%0A%20%20%3Faddress%20locn%3ApostName%20%E2%80%98Oosterbeek%E2%80%99%20.%0A%20%20%3Faddress%20locn%3Athoroughfare%20%3Fstreet%20.%0A%20%20%3Faddress%20locn%3AlocatorDesignator%20%3Fnumber%20.%0A%7D">HTTP request (click to execute)</a>
   <div class="expandOrCollapse" onclick="toggleVisibility(this)">&#9654; SPARQL query (click to expand):</div>
   <div class="visible">
