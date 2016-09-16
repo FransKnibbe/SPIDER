@@ -45,7 +45,7 @@
   dcterms:publisher <http://www.spider-ld.org> ;
   dcterms:source <http://www.hdc.vu.nl/nl/online-informatie/ikgn/index.asp>, <http://www.reliwiki.nl/> ;
   foaf:homepage <http://spider-ld.org/datasets/index.html#kerkennl> ;
-  dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057, <http://brt.kadaster.nl/doc/begrip/Kerk> ;
+  dcterms:subject aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057, <http://brt.kadaster.nl/doc/begrip/Kerk>, <http://inspire.ec.europa.eu/codelist/BuildingNatureValue/church> ;
   dcat:theme aat:300007466, eth:c15af234-87b0-433c-bbe1-880a6f717057, <http://brt.kadaster.nl/doc/begrip/Kerk> ;
   dcterms:spatial :spatialExtent ; 
   dcterms:temporal :temporalExtent ; 

@@ -9,7 +9,8 @@
     "samples": [
     {"name":"Select first 10 triples", "value":"SELECT * WHERE {\n  ?subject ?property ?object\n}\nLIMIT 10","type":"browse"},
     {"name":"List types", "value":"SELECT DISTINCT ?type WHERE {\n  [] a ?type\n} ORDER BY ?type","type":"browse"},
-    {"name":"List properties", "value":"SELECT DISTINCT ?property WHERE {\n  [] ?property []\n} ORDER BY ?property","type":"browse"}
+    {"name":"List properties", "value":"SELECT DISTINCT ?property WHERE {\n  [] ?property []\n} ORDER BY ?property","type":"browse"},
+    {"name":"List church properties", "value":"select distinct ?property where {?s  a <http://schema.org/Church> . ?s ?property ?o .}","type":"browse"}    
     ],
     "writers": [
     "browse","csv","json","pie","xml"

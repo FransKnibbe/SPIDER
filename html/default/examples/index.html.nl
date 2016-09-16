@@ -55,6 +55,21 @@
   </ul>
   <h2>SPARQL-query's</h2>
   <p><a href="https://nl.wikipedia.org/wiki/SPARQL" target="_blank">SPARQL</a> is een bevragingstaal voor data die op <abbr title="Resource Description Framework">RDF</abbr> zijn gebaseerd. Het is vergelijkbaar met <abbr title="Structured Query Language">SQL</abbr>, de bevragingstaal voor relationele databases. Via SPARQL kunnen op een standaardmanier simpele en complexe vragen aan datasets worden gesteld. Hieronder zie je wat voorbeelden van SPARQL-query's. De tekst van de query's kan worden gekopieerd naar de <a href="../squebi/spider_squebi.html">interactieve SPARQL-pagina</a>, om er mee te experimenteren, of kan direct als HTTP-verzoek worden uitgevoerd.</p>
+  
+  <h3>Welke eigenschappen heeft een kerkgebouw?</h3>
+  <p>In deze vraag worden de nagegaan welke eigenschappen worden aangetroffen voor dingen die als kerk zijn gedefinieerd.</p>
+    <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=select%20distinct%20%3Fproperty%0Awhere%20%7B%0A%09%3Fs%20a%20%3Chttp%3A%2F%2Fschema.org%2FChurch%3E%20.%0A%09%3Fs%20%3Fproperty%20%3Fo%20.%0A%7D">HTTP request (click to execute)</a>
+  <div class="expandOrCollapse" onclick="toggleVisibility(this)">&#9654; SPARQL query (click to expand):</div>
+  <div class="visible">
+  <pre>
+select distinct ?property
+where {
+	?s a <http://schema.org/Church> .
+	?s ?property ?o .
+}
+  </pre>
+  </div>
+  
   <h3>Geef de naam en coordinaten van alle kerkgebouwen</h3>
   <p>Hier wordt gevraagd naar de naam van de kerk, en de puntlocatie in <a href="https://en.wikipedia.org/wiki/Well-known_text">WKT-formaat</a>. Zulke data kunnen bijvoorbeeld worden gebruikt om op een kaart te tekenen.</p>
   <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aprefix%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aprefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0Aprefix%20geom%3A%20%20%3Chttp%3A%2F%2Fdata.ign.fr%2Fdef%2Fgeometrie%23%3E%0Aprefix%20geosp%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect%20%3Fname%20%3Fwkt%0Awhere%20%7B%0A%3Fchurch%20a%20schema%3AChurch%20.%0A%3Fchurch%20dcterms%3Atitle%20%3Fname%20.%0A%3Fchurch%20locn%3Alocation%20%3Floc%20.%0A%3Floc%20locn%3Ageometry%20%3Fgeom%20.%0A%3Fgeom%20a%20geom%3APoint%20.%0A%3Fgeom%20geom%3Acrs%20%3Chttp%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F28992%3E.%0A%3Fgeom%20geosp%3AasWKT%20%3Fwkt%20.%0A%7D">HTTP-verzoek (klik om uit te voeren)</a>
@@ -78,6 +93,7 @@ where {
 }
   </pre>
   </div>
+  
   <h3>Tel het aantal kerken per gebruiksfunctie</h3>
   <p>In deze vraag worden kerken gegroepeerd per gebruiksfunctie en wordt het aantal voorkomens per gebruiksfunctie geteld.</p>
     <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20dbo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Frdfs%2Fcidoc_crm_v6.2-draft-2015August.rdfs%23%3E%0Aselect%20%3Fusage%20(count(%3Fchurch)%20as%20%3Fnumber_of_churches)%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20dbo%3AChurch%20.%0A%20%20%3Fchurch%20cidoc%3AP103_was_intended_for%20%3Fusage%20.%0A%7D%0Agroup%20by%20%3Fusage">HTTP-verzoek (klik om uit te voeren</a>
@@ -92,8 +108,10 @@ where {
   ?church cidoc:P103_was_intended_for ?usage .
 }
 group by ?usage
+order by desc(?number_of_churches)
   </pre>
   </div>
+  
 </section>
 
 <footer>
