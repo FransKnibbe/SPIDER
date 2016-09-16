@@ -64,7 +64,7 @@
   <pre>
 select distinct ?property
 where {
-	?s a <http://schema.org/Church> .
+	?s a &lthttp://schema.org/Church?gt .
 	?s ?property ?o .
 }
   </pre>
