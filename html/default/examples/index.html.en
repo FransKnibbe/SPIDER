@@ -94,6 +94,25 @@ where {
   </pre>
   </div>
   
+  <h3>Show church buildings in Oosterbeek</h3>
+  <p>This query selects church buildings with an address in the town of Oosterbeek</p>
+    <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%20%0Aprefix%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aselect%20%3Fchurch%20%3Fstreet%20%3Fnumber%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20schema%3AChurch%20.%20%0A%20%20%3Fchurch%20locn%3Aaddress%20%3Faddress%20.%20%0A%20%20%3Faddress%20locn%3ApostName%20%E2%80%98Oosterbeek%E2%80%99%20.%0A%20%20%3Faddress%20locn%3Athoroughfare%20%3Fstreet%20.%0A%20%20%3Faddress%20locn%3AlocatorDesignator%20%3Fnumber%20.%0A%7D">HTTP request (click to execute)</a>
+  <div class="expandOrCollapse" onclick="toggleVisibility(this)">&#9654; SPARQL query (click to expand):</div>
+  <div class="visible">
+  <pre>
+prefix locn: &lthttp://www.w3.org/ns/locn#&gt 
+prefix schema: &lthttp://schema.org/&gt
+select ?church ?street ?number
+where {
+  ?church a schema:Church . 
+  ?church locn:address ?address . 
+  ?address locn:postName ‘Oosterbeek’ .
+  ?address locn:thoroughfare ?street .
+  ?address locn:locatorDesignator ?number .
+}
+  </pre>
+  </div>
+  
   <h3>Count church buildings by function</h3>
   <p>This query groups church buildings by their function and counts the number of churches for each function.</p>
     <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20dbo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Frdfs%2Fcidoc_crm_v6.2-draft-2015August.rdfs%23%3E%0Aselect%20%3Fusage%20(count(%3Fchurch)%20as%20%3Fnumber_of_churches)%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20dbo%3AChurch%20.%0A%20%20%3Fchurch%20cidoc%3AP103_was_intended_for%20%3Fusage%20.%0A%7D%0Agroup%20by%20%3Fusage">HTTP request (click to execute)</a>

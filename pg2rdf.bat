@@ -47,6 +47,7 @@ psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <
 :: Long literals ("""like this""") are needed if the string can contain newlines or double quotes
 :: commented out because Riot (Jena) and Cliopatria do not seem to accept triple quotes.
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%rdfs%comment> """"""' || \"Bijzonderheden\" || '\""""" .' from \"01_Hoofdtabel_Kerken\" where \"Bijzonderheden\" is not null";" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%locn%address> <%base%kerk' || \"ID\" || '/address> .' from \"01_Hoofdtabel_Kerken\" where \"Plaats\" is not null;" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/address> <%rdf%type> <%locn%Address> .' from \"01_Hoofdtabel_Kerken\" where \"Plaats\" is not null;" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/address> <%locn%postName> ""' || \"Plaats\" || '"" .' from \"01_Hoofdtabel_Kerken\" where \"Plaats\" is not null;" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/address> <%locn%thoroughfare> ""' || \"Straatnaam\" || '"" .' from \"01_Hoofdtabel_Kerken\" where \"Straatnaam\" is not null;" >> churches.nt

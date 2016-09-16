@@ -17,8 +17,9 @@
 </nav>
 
 <section>
-<iframe class="squebi" scrolling="no" src="index.html"></iframe>
+<iframe class="squebi" src="index.html"></iframe>
 </section>
+
 
 <footer>
   <b>S</b>emantic <b>P</b>erspectives and <b>I</b>nterlinked <b>D</b>ata from <b>E</b>-humanities <b>R</b>esearch
