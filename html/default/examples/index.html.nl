@@ -79,7 +79,7 @@ where {
 prefix schema: &lthttp://schema.org/&gt
 prefix dcterms: &lthttp://purl.org/dc/terms/&gt
 prefix locn: &lthttp://www.w3.org/ns/locn#&gt
-prefix geom:  &lthttp://data.ign.fr/def/geometrie#&gt
+prefix geom: &lthttp://data.ign.fr/def/geometrie#&gt
 prefix geosp: &lthttp://www.opengis.net/ont/geosparql#&gt
 select ?name ?wkt
 where {

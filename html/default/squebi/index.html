@@ -7,10 +7,11 @@
     selectService : "http://marmotta.spider-ld.org/marmotta/sparql/select",
     updateService : "http://marmotta.spider-ld.org/marmotta/sparql/update",
     "samples": [
-    {"name":"Select first 10 triples", "value":"SELECT * WHERE {\n  ?subject ?property ?object\n}\nLIMIT 10","type":"browse"},
-    {"name":"List types", "value":"SELECT DISTINCT ?type WHERE {\n  [] a ?type\n} ORDER BY ?type","type":"browse"},
-    {"name":"List properties", "value":"SELECT DISTINCT ?property WHERE {\n  [] ?property []\n} ORDER BY ?property","type":"browse"},
-    {"name":"List church properties", "value":"select distinct ?property where {?s  a <http://schema.org/Church> . ?s ?property ?o .}","type":"browse"}    
+    {"name":"count number of triples", "value":"select (count(*) as ?count) where {?subject ?property ?object}","type":"browse"},
+    {"name":"select first 10 triples", "value":"select * where {\n  ?subject ?property ?object\n}\nlimit 10","type":"browse"},
+    {"name":"list types", "value":"select distinct ?type where {\n  [] a ?type\n} order by ?type","type":"browse"},
+    {"name":"list properties", "value":"select distinct ?property where {\n  [] ?property []\n} order by ?property","type":"browse"},
+    {"name":"List church properties", "value":"select distinct ?property where {?s  a <http://schema.org/Church> . ?s ?property ?o .}","type":"browse"}
     ],
     "writers": [
     "browse","csv","json","pie","xml"
