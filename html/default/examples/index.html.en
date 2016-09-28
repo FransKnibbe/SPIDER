@@ -56,7 +56,7 @@
   <h2>Web applications</h2>
   <p>Web data by nature are well suited for use in (graphic) web applications. Here are examples of simple web pages that use SPIDER data:</p>
   <ul>
-  <li><a href="./example1" target="_blank">Location of church building on a map</a></li>
+  <li><a href="example1.html" target="_blank">Location of church building on a map</a></li>
   </ul>
   <h2>SPARQL queries</h2>
   <p><a href="https://nl.wikipedia.org/wiki/SPARQL" target="_blank">SPARQL</a> is a query language for <abbr title="Resource Description Framework">RDF</abbr>-based data. It is similar to <abbr title="Structured Query Language">SQL</abbr>, the query language for relational databases. SPARQL can be used to ask questions and to request data. Below are some examples of SPARQL queries. The queries can be copied to the <a href="../squebi/spider_squebi.html">SPARQL interface page</a> to play around with, or be executed immediately via the query link that executes the query as a HTTP request.</p>

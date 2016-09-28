@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SPIDER: example 1</title>
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta name="author" content="SPIDER" />
+  <meta name="description" content="Enriching Digital Humanities through Semantic Web technology" />
+  <meta name="keywords" content="Linked Data, Semantic Web, Vrije Universiteit Amsterdam, SPINlab, Digital Humanities, Machine Learning, Data Mining, Visualisation, RDF, Geospatial, GIS" />
+  <meta name="robots" content="index, follow, noarchive" />
+  <meta name="googlebot" content="index, follow, noarchive" />
+  <link rel="stylesheet" type="text/css" href="../css/spider.css"/>
+</head>
+
+<body>
+<header>SPIDER</header>
+<nav>
+  <a href="../index.html">Home</a>
+  <a href="index.html">Projects</a>
+  <a href="../datasets/index.html">Datasets</a>
+  <a href="../recommendations/index.html">Recommendations</a>
+  <a href="../examples/index.html">Examples</a>
+  <a href="../contact.html">Contact</a>
+</nav>
+
+<section class="demo">
+<iframe class="demo" src="example1/index.html"></iframe>
+<div class="helpbutton"></div>
+<div class="explanation">On this demo page the locations and names of a thousand church buildings are requested and plotted in a map. The map is created using the popular javascript library <a href="http://leafletjs.com/">Leaflet</a>.
+<p><a href="example1/index.html">Direct link to the example application</a></p></div>
+</section>
+
+<footer>
+  <b>S</b>emantic <b>P</b>erspectives and <b>I</b>nterlinked <b>D</b>ata from <b>E</b>-humanities <b>R</b>esearch
+</footer>
+
+</body>

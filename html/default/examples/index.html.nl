@@ -56,7 +56,7 @@
   <h2>Webapplicaties</h2>
   <p>Webdata lenen zich van nature goed voor presentatie in (grafische) webapplicaties. Hieronder enkele simpele webpagina's die gebruik maken van de data die via SPIDER ter beschikking worden gesteld:</p>
   <ul>
-  <li><a href="./example1" target="_blank">Locatie van kerkgebouwen op de kaart</a></li>
+  <li><a href="example1.html" target="_blank">Locatie van kerkgebouwen op de kaart</a></li>
   </ul>
   <h2>SPARQL-query's</h2>
   <p><a href="https://nl.wikipedia.org/wiki/SPARQL" target="_blank">SPARQL</a> is een bevragingstaal voor data die op <abbr title="Resource Description Framework">RDF</abbr> zijn gebaseerd. Het is vergelijkbaar met <abbr title="Structured Query Language">SQL</abbr>, de bevragingstaal voor relationele databases. Via SPARQL kunnen op een standaardmanier simpele en complexe vragen aan datasets worden gesteld. Hieronder zie je wat voorbeelden van SPARQL-query's. De tekst van de query's kan worden gekopieerd naar de <a href="../squebi/spider_squebi.html">interactieve SPARQL-pagina</a>, om er mee te experimenteren, of kan direct als HTTP-verzoek worden uitgevoerd.</p>
