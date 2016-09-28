@@ -13,13 +13,17 @@
 <body>
 <header>SPIDER</header>
 <nav>
- <a href="../index.html">hoofdpagina</a>&nbsp &nbsp <a href="../projects/index.html">projecten</a>&nbsp &nbsp <a href="../datasets/index.html">datasets</a>&nbsp &nbsp <a href="../recommendations/index.html">aanbevelingen</a>&nbsp &nbsp <a href="../examples/index.html">voorbeelden</a>&nbsp &nbsp <a href="../contact.html">contact</a>
+  <a href="../index.html">Hoofdpagina</a>
+  <a href="../projects/index.html">Projecten</a>
+  <a href="../datasets/index.html">Datasets</a>
+  <a href="../recommendations/index.html">Aanbevelingen</a>
+  <a href="../examples/index.html">Voorbeelden</a>
+  <a href="../contact.html">Contact</a>
 </nav>
 
 <section>
 <iframe class="squebi" src="index.html"></iframe>
 </section>
-
 
 <footer>
   <b>S</b>emantic <b>P</b>erspectives and <b>I</b>nterlinked <b>D</b>ata from <b>E</b>-humanities <b>R</b>esearch

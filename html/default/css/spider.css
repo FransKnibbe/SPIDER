@@ -176,7 +176,7 @@ pre {
 }
 .squebi{
   height:100%;
-  width:100%;
+  width:900px;
   border:none;
 }
 .hidden {
@@ -228,7 +228,6 @@ pre {
 }
 */
 
-
 /*
 .helpbutton {
   border:.2em solid rgba(100,200,255,0.6);
@@ -261,7 +260,6 @@ pre {
   text-decoration: none;
 }
 */
-
 .helpbutton{
   border:.3em solid rgba(100,200,255,0.6);
   border-radius:50%;
