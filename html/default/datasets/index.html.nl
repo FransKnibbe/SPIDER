@@ -13,7 +13,12 @@
 <body>
 <header>SPIDER</header>
 <nav>
- <a href="../index.html">hoofdpagina</a>&nbsp &nbsp <a href="../projects/index.html">projecten</a>&nbsp &nbsp <a href="../datasets/index.html">datasets</a>&nbsp &nbsp <a href="../recommendations/index.html">aanbevelingen</a>&nbsp &nbsp <a href="../examples/index.html">voorbeelden</a>&nbsp &nbsp <a href="../contact.html">contact</a>
+  <a href="../index.html">Hoofdpagina</a>
+  <a href="../projects/index.html">Projecten</a>
+  <a href="../datasets/index.html">Datasets</a>
+  <a href="../recommendations/index.html">Aanbevelingen</a>
+  <a href="../examples/index.html">Voorbeelden</a>
+  <a href="../contact.html">Contact</a>
 </nav>
 
 <!-- template for data dump list:
@@ -24,7 +29,6 @@
   <li><a href=".nt">Ntriples</a></li>
   </ul>
 -->
-
 <section>
   <h1>Inleiding datasets</h2>
   <p>Een dataset is een verzameling data die op een zekere logische manier bij elkaar horen. Elke dataset heeft een eigen <abbr title="Uniform Resource Identifier">URI</abbr>, die toegang geeft tot de  <a href="https://nl.wikipedia.org/wiki/Metadata">metadata</a> die de dataset beschrijven. Een uitgangspunt is dat die metadata alle informatie verstrekken die nodig is voor gebruik van de dataset (zie de aanbeveling 'metadata').</p>
@@ -57,6 +61,8 @@
   <li><a href="http://spider-ld.org/data/kerkennl_extra_2016-09-06.json-ld">JSON-LD</a></li>
   <li><a href="http://spider-ld.org/data/kerkennl_extra_2016-09-06.nt">Ntriples</a></li>
   </ul>
+  <br>
+  <hr>
 </section>
 
 <footer>

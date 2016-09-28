@@ -13,7 +13,12 @@
 <body>
 <header>SPIDER</header>
 <nav>
- <a href="../index.html">hoofdpagina</a>&nbsp &nbsp <a href="index.html">projecten</a>&nbsp &nbsp <a href="../datasets/index.html">datasets</a>&nbsp &nbsp <a href="../recommendations/index.html">aanbevelingen</a>&nbsp &nbsp <a href="../examples/index.html">voorbeelden</a>&nbsp &nbsp <a href="../contact.html">contact</a>
+  <a href="../index.html">Hoofdpagina</a>
+  <a href="index.html">Projecten</a>
+  <a href="../datasets/index.html">Datasets</a>
+  <a href="../recommendations/index.html">Aanbevelingen</a>
+  <a href="../examples/index.html">Voorbeelden</a>
+  <a href="../contact.html">Contact</a>
 </nav>
 
 <section>
@@ -23,6 +28,8 @@
     <li><a href="http://www.pilod.nl/wiki/Versies_van_dingen_in_een_dataset" target="_blank">Versies van dingen in een dataset</a></li>
     <li><a href="http://www.pilod.nl/wiki/SKOS-concepten_als_temporele_eigenschappen" target="_blank">SKOS-concepten als temporele eigenschappen</a></li>
   </ul>
+  <br>
+  <hr>
 </section>
 
 <footer>

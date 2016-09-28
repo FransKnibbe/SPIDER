@@ -14,7 +14,12 @@
 <header>SPIDER</header>
 
 <nav>
- <a href="index.html">hoofdpagina</a>&nbsp &nbsp <a href="projects/index.html">projecten</a>&nbsp &nbsp <a href="datasets/index.html">datasets</a>&nbsp &nbsp <a href="recommendations/index.html">aanbevelingen</a>&nbsp &nbsp <a href="examples/index.html">voorbeelden</a>&nbsp &nbsp <a href="contact.html">contact</a>
+  <a href="index.html">Hoofdpagina</a>
+  <a href="projects/index.html">Projecten</a>
+  <a href="datasets/index.html">Datasets</a>
+  <a href="recommendations/index.html">Aanbevelingen</a>
+  <a href="examples/index.html">Voorbeelden</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
 <section>
@@ -24,6 +29,8 @@
   <h3>Vrije Universiteit Amsterdam</h3>
   Mark Opmeer (<a href="mailto:m.opmeer@vu.nl?Subject=SPIDER">m.opmeer@vu.nl</a>)<br>
   Xander Wilcke (<a href="mailto:&#119;&#46;&#120;&#46;&#119;&#105;&#108;&#99;&#107;&#101;%40%76%75%2E%6E%6C?Subject=SPIDER"><span class="e-mail" data-user="ekcliw.x.w" data-website="ln.uv">@</span></a>)<br>
+  <br>
+  <hr width="500px">
 </section>
 
 <footer>

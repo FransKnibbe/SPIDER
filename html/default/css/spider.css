@@ -5,33 +5,6 @@ body {
   padding:0;
   font-size: 94%;
 }
-a {
-  color:royalblue;
-}
-nav a {
-  color:white;
-}
-a:link , a:visited {
-  text-decoration:none;
-}
-a:hover, a:active {
-  text-decoration:underline;
-}
-h1 {
-  margin-top:30px;
-  font-size:2.3em;
-  padding:2px;
-  padding-left:5px;
-  color:white;
-  background: linear-gradient(to right,royalblue,white);
-}
-h2 {
-  font-size:1.8em;
-  border-bottom: thin solid black;
-}
-h3 {
-  font-size:1.4em;
-}
 header {
   background-color:dodgerblue;
   color:white;
@@ -51,19 +24,60 @@ nav {
   background:linear-gradient(to right,royalblue, dodgerblue); 
   color:white;
   text-align:left;
-  padding:5px 15px;
   position:fixed;
   width:100%;
-  top:60;
+  top:60px;
   height:30px;
 }
+a {
+  color:royalblue;
+}
+nav a {
+  color:white;
+  margin-right:10px;
+  padding:5px;
+  text-decoration:none;
+}
+nav a:hover {
+  background-color:darkslateblue;
+}
+h1 {
+  margin-top:30px;
+  font-size:2.3em;
+  padding:2px;
+  padding-left:5px;
+  color:white;
+  background: linear-gradient(to right,royalblue,white);
+}
+h2 {
+  font-size:1.8em;
+  border-bottom: thin solid black;
+}
+h3 {
+  font-size:1.4em;
+}
 section {
-  padding-top:110px;
-  padding-bottom:60px;
+  position:fixed;
+  top:90px;
+  bottom:30px;
   text-align:left;
-  margin:0 auto;
   max-width:900px;
-  z-index: -1;
+  max-height:100%;
+  overflow-y:auto;
+  left:50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  padding: 10px;
+  /*z-index: -1;*/
+}
+section.demo {
+  max-width:none;
+}
+iframe.demo {
+  position:absolute;
+  height:100%;
+  width:100%;
+  border:none;
 }
 footer {
   background: linear-gradient(to right,dodgerblue,royalblue);
@@ -123,9 +137,7 @@ pre {
   white-space: -o-pre-wrap;              /* Opera 7 and up */
   word-wrap: break-word;                 /* IE 5.5+ and up */
   /* overflow-x: auto; */                /* Firefox 2 only */
-  /* width: 99%; */		       /* only if needed */
-}
-  
+  /* width: 99%; */          /* only if needed */
 }
 .note {
   background:Azure;
@@ -188,3 +200,96 @@ pre {
 .sparqluri:hover, .sparqluri:active {
   text-decoration:underline;
 }
+/*
+#explanation{
+  position:fixed;
+  top:0px;
+  padding:10px;
+  width:600px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background-color:rgba(200,200,255,0.8);
+}
+#explanation:hover{
+  top:100;
+}
+#explanation_shown{
+  height:200px;
+  float:top;    
+}
+#explanation_hidden{
+  height:10px;   
+  float:top;    
+}
+*/
+
+
+/*
+.helpbutton {
+  border:.2em solid rgba(100,200,255,0.6);
+  font-size:36px;
+  font-weight: bold;
+  line-height:1.1em;
+  color:#ffffff;
+  background-color:rgba(255,100,50,0.9);
+  border-radius:50%;
+  height:60px;
+  width:60px;
+  margin-left:50%;
+  margin-top:-400px;
+  float:left;
+  z-index:10;
+  position:relative;
+}
+.helpbutton:hover {
+  background-color:rgba(255,100,20,1);
+  text-decoration:none;
+  border-color:rgba(100,150,255,0.8);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+.helpbutton:visited {
+  background-color:rgba(255,200,50,0.7);
+  border-color:rgba(100,200,255,0.5);
+  text-decoration: none;
+}
+*/
+
+.helpbutton{
+  border:.3em solid rgba(100,200,255,0.6);
+  border-radius:50%;
+  position:absolute;
+  font-size:44px;
+  font-weight: bold;
+  text-align:center;
+  vertical-align:middle;
+  top:120px;
+  margin-left:48%;
+  width:60px;
+  height:60px;
+  color:#ffffff;
+  background-color:rgba(255,100,50,0.9);
+  z-index:0;
+}
+.helpbutton:hover {
+  background-color:rgba(255,100,20,1);
+  text-decoration:none;
+  border-color:rgba(100,150,255,0.8);
+  -webkit-transition:all 500ms ease;
+  -moz-transition:all 500ms ease;
+  -ms-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+}
+.helpbutton:visited {
+  background-color:rgba(255,200,50,0.7);
+  border-color:rgba(100,200,255,0.5);
+  text-decoration: none;
+}
+

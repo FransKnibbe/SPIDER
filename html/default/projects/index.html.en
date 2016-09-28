@@ -13,7 +13,12 @@
 <body>
 <header>SPIDER</header>
 <nav>
-  <a href="../index.html">home</a>&nbsp &nbsp <a href="../projects/index.html">projects</a>&nbsp &nbsp <a href="../datasets/index.html">datasets</a>&nbsp &nbsp <a href="../recommendations/index.html">recommendations</a>&nbsp &nbsp <a href="../examples/index.html">examples</a>&nbsp &nbsp <a href=".../contact.html">contact</a>
+  <a href="../index.html">Home</a>
+  <a href="../projects/index.html">Projects</a>
+  <a href="../datasets/index.html">Datasets</a>
+  <a href="../recommendations/index.html">Recommendations</a>
+  <a href="../examples/index.html">Examples</a>
+  <a href=".../contact.html">Contact</a>
 </nav>
 
 <section>
@@ -26,6 +31,8 @@
     <li><a href="../datasets/index.html#kerkennl">Church buildings in the Netherlands 1800-1970</a></li>
     <li><a href="../datasets/index.html#kerkennl_extra">Extra data for church buildings in the Netherlands 1800-1970</a></li>
   </ol>
+  <br>
+  <hr>
 </section>
 
 <footer>

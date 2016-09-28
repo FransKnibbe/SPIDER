@@ -13,8 +13,14 @@
 <body>
 <header>SPIDER</header>
 <nav>
- <a href="index.html">hoofdpagina</a>&nbsp &nbsp <a href="projects/index.html">projecten</a>&nbsp &nbsp <a href="datasets/index.html">datasets</a>&nbsp &nbsp <a href="recommendations/index.html">aanbevelingen</a>&nbsp &nbsp <a href="examples/index.html">voorbeelden</a>&nbsp &nbsp <a href="contact.html">contact</a>
+  <a href="index.html">Hoofdpagina</a>
+  <a href="projects/index.html">Projecten</a>
+  <a href="datasets/index.html">Datasets</a>
+  <a href="recommendations/index.html">Aanbevelingen</a>
+  <a href="examples/index.html">Voorbeelden</a>
+  <a href="contact.html">Contact</a>
 </nav>
+
 
 <section>
   <p class="note">Deze website is beschikbaar in het Nederlands en het Engels. Er wordt gebruik gemaakt van <i>content negotiation</i> om de voorkeurstaal te kiezen. Meestal is dat gebaseeerd op de taalinstelling van de webbrowser. De standaardtaal is Engels.</p>
