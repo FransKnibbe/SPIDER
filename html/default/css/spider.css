@@ -34,8 +34,8 @@ a {
 }
 nav a {
   color:white;
-  margin-right:10px;
-  padding:5px;
+  margin-left:10px;
+  padding:2px;
   text-decoration:none;
 }
 nav a:hover {
@@ -200,7 +200,6 @@ pre {
   color: royalblue;
 }
 .sparqluri {
-  font-weight: bold;
   color: royalblue;
 }
 .sparqluri:hover, .sparqluri:active {

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="nl">
 <head>
   <title>SPIDER: hoofdpagina</title>
@@ -20,7 +21,6 @@
   <a href="examples/index.html">Voorbeelden</a>
   <a href="contact.html">Contact</a>
 </nav>
-
 
 <section>
   <p class="note">Deze website is beschikbaar in het Nederlands en het Engels. Er wordt gebruik gemaakt van <i>content negotiation</i> om de voorkeurstaal te kiezen. Meestal is dat gebaseeerd op de taalinstelling van de webbrowser. De standaardtaal is Engels.</p>

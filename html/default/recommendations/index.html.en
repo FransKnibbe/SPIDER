@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>SPIDER: recommendations</title>
@@ -23,11 +24,23 @@
 
 <section>
   <h1>Recommendations</h1>
-  <p>In the course of making data available on the web some problems were encountered. Below are descriptions of those problems, along with proposed solutions:</p>
+  <p>Making data available on the web is a useful and noble act, and it really helps data usage, but it is not that easy to do for the data supplier. While working on SPIDER we have encountered several problems and challenges, which we tried to solve as good as possible. This leads to recommendations that we would like to share. The recommendations are grouped into the different stages that one usually go through.</p>
+  <h2>Read up</h2>
+  <p>Of course the web is a good place to find documents that give advice on how to publish data on the web:</p>
+  <ul>
+  <li><a href="http://linkeddatabook.com/editions/1.0/">Linked Data: Evolving the Web into a Global Data Space</a>: This book is made avialable as a single HTML page. Reading it requires no prior knowledge of the subject.</li>
+  <li><a href="https://www.w3.org/TR/dwbp/">Data on the Web Best Practices</a>: an overview of recommendations for publishing data on the web from the <abbr title="World Wide Web Consortium">W3C</abbr>. These recommendations are more general than the Linked Data concept.</li>
+  <li><a href="https://developers.google.com/search/docs/data-types/datasets">Science Datasets</a>: recommendations from Google on how to publish research data on the web in a search engine friendly way, to assure your datasets will actually be found.</a>  
+  </ul>
+  <h2>Making URIs</h2>
+  <h2>Describe datasets with metadata</h2>
+  <h2>Add meaning: semantics</h2>
   <ul>
     <li><a href="http://www.pilod.nl/wiki/Versies_van_dingen_in_een_dataset" target="_blank">Versions of things in a dataset (only in Dutch at the moment) </a></li>
     <li><a href="http://www.pilod.nl/wiki/SKOS-concepten_als_temporele_eigenschappen" target="_blank">SKOS concepts as temporal properties (only in Dutch at the moment)</a></li>
   </ul>
+  <h2>Transform data to RDF</h2>
+  <h2>Serve data on the web</h2>
   <br>
   <hr>
 </section>
