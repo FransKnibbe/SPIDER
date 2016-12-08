@@ -62,6 +62,7 @@
   void:exampleResource <http://data.spider-ld.org/kerkennl/data/kerk17> ; 
   void:vocabulary <http://www.cidoc-crm.org/cidoc-crm/>, <http://data.cultureelerfgoed.nl/semnet/>, <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> ;
   void:dataDump <http://spider-ld.org/data/kerkennl_2016-09-06.rdf>, <http://spider-ld.org/data/kerkennl_2016-09-06.ttl>, <http://spider-ld.org/data/kerkennl_2016-09-06.nt>, <http://spider-ld.org/data/kerkennl_2016-09-06.json-ld>
+  # To do: provide more links to the actual data, for instance by listing subsets (per province?)
 .
 
 :spatialExtent

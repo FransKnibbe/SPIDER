@@ -30,6 +30,7 @@
   <ul>
   <li><a href="http://linkeddatabook.com/editions/1.0/">Linked Data: Evolving the Web into a Global Data Space</a>: This book is made avialable as a single HTML page. Reading it requires no prior knowledge of the subject.</li>
   <li><a href="https://www.w3.org/TR/dwbp/">Data on the Web Best Practices</a>: an overview of recommendations for publishing data on the web from the <abbr title="World Wide Web Consortium">W3C</abbr>. These recommendations are more general than the Linked Data concept.</li>
+  <li><a href="https://www.w3.org/TR/ld-bp/">Best Practices for Publishing Linked Data</a>: Step by step recommendations for publishing Linked Data.</li> 
   <li><a href="https://developers.google.com/search/docs/data-types/datasets">Science Datasets</a>: recommendations from Google on how to publish research data on the web in a search engine friendly way, to assure your datasets will actually be found.</a>  
   </ul>
   <h2>Making URIs</h2>
