@@ -24,8 +24,8 @@
 
 <section>
   <h1>Recommendations</h1>
-  <p>Making data available on the web is a useful and noble act, and it really helps data usage, but it is not that easy to do for the data supplier. While working on SPIDER we have encountered several problems and challenges, which we tried to solve as good as possible. This leads to recommendations that we would like to share. The recommendations are grouped into the different stages that one usually go through.</p>
-  <h2>Read up</h2>
+  <p>Making data available on the web is a useful and noble act. It really helps data usage, but it is not that easy to do for the data supplier. While working on SPIDER we have encountered several problems and challenges, which we tried to solve as good as possible. This leads to recommendations that we would like to share. The recommendations are grouped into the different stages that one usually goes through when publishing data as Linked Data. With the recommendations come explanations of some of the choices made when publshing data for SPIDER.</p>
+  <h2 id="read">Read up</h2>
   <p>Of course the web is a good place to find documents that give advice on how to publish data on the web:</p>
   <ul>
   <li><a href="http://linkeddatabook.com/editions/1.0/">Linked Data: Evolving the Web into a Global Data Space</a>: This book is made avialable as a single HTML page. Reading it requires no prior knowledge of the subject.</li>
@@ -34,9 +34,17 @@
   <li><a href="https://developers.google.com/search/docs/data-types/datasets">Science Datasets</a>: recommendations from Google on how to publish research data on the web in a search engine friendly way, to assure your datasets will actually be found.</a>
   <li><a href="https://www.w3.org/TR/ld-glossary/">Linked Data Glossary</a>: A glossary of terms used in Linked Data.</li>
   </ul>
-  <h2>Making URIs</h2>
-  <h2>Describe datasets with metadata</h2>
-  <h2>Add meaning: semantics</h2>
+  
+  <h2 id="uris">Making URIs</h2>
+  <p>According to the Linked Data paradigm, data on the web are identified and accessed using HTTP(S) <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier">URIs</a>. Determining the URI's to use for the elements in your dataset therefore is an important step. It is also a step that should be taken with some care and foresight. When data are made available on the web, there is much you can change afterwards, but changing URIs, once published, is best avoided. Once URIs are added to the web, anyone can use them as references in other web publications. So it is bad form to stop URIs from working. This also means that once a URI identifies something, it should keep on identifying that same thing. You can change the data that describe a thing (resource) on the web, but its URI should be stable and persistent.
+  </p>
+  <p>Making (minting) good URIs often starts with choosing the first bit, the host name part. What the host name looks like does not matter much, because URIs or parts of URIs do not need to be interpreted. What matters is making sure the host name can remain stable, to avoid having to change URIs once they are set free on the web. In the case of SPIDER, the domain "spider-ld.org" was bought by Geodan and it was decided to use "http://data.spider-ld.org" as the basis of all data URIs. We also thought that we were likely to publish multiple datasets, so a dataset identifier should also be part of the URI. This leads to "http://data.spider-ld.org/kerkennl", in which "kerkennl" names a dataset. Because it could be possible that we would like to publish other things about this dataset next to its raw data (for instance nicely readable documentation), we expanded the URI path to "http://data.spider-ld.org/kerkennl/data". This enables publishing documentation under "http://data.spider-ld.org/kerkennl/doc", for instance.</p>
+  <p>In order to have a URI for each individual resource in the dataset we were fortunate to be able to use existing unique identifiers in the soource dataset. Such unique keys only identify one thing, and always the same thing, regardless of the changes a dataset may undergo. This makes them very useful to make part of a URI. In the URI "http://data.spider-ld.org/kerkennl/data/kerk17", which leads to data about a particular church building, the number 17 is a primary key in a table in the source dataset (an Access file in this case).</p>
+  <p>For more advice on how to mint URIs see the chapter <a href="https://www.w3.org/TR/ld-bp/#HTTP-URIS">'The Role of "Good URIs" for Linked Data'</a> in <a href="https://www.w3.org/TR/ld-bp">Best Practices for Publishing Linked Data</a>.</p>
+  
+  <h2 id="metadata">Describe datasets with metadata</h2>
+  
+  <h2 id="semantics">Add meaning: semantics</h2>
   <ul>
     <li><a href="http://www.pilod.nl/wiki/Versies_van_dingen_in_een_dataset" target="_blank">Versions of things in a dataset (only in Dutch at the moment) </a></li>
     <li><a href="http://www.pilod.nl/wiki/SKOS-concepten_als_temporele_eigenschappen" target="_blank">SKOS concepts as temporal properties (only in Dutch at the moment)</a></li>
