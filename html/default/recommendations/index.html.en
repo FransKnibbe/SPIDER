@@ -24,7 +24,7 @@
 
 <section>
   <h1>Recommendations</h1>
-  <p>Making data available on the web is a useful and noble act. It really helps data usage, but it is not that easy to do for the data supplier. While working on SPIDER we have encountered several problems and challenges, which we tried to solve as good as possible. This leads to recommendations that we would like to share. The recommendations are grouped into the different stages that one usually goes through when publishing data as Linked Data. With the recommendations come explanations of some of the choices made when publshing data for SPIDER.</p>
+  <p>Making data available on the web is a useful and noble act. It really helps data usage, but it is not that easy to do for the data supplier. While working on SPIDER we have encountered several problems and challenges, which we tried to solve as good as possible. This leads to recommendations that we would like to share below. The recommendations are grouped into the different stages that one usually goes through when publishing data as Linked Data. With the recommendations come explanations of some of the choices made when publshing data for SPIDER.</p>
   <h2 id="read">Read up</h2>
   <p>Of course the web is a good place to find documents that give advice on how to publish data on the web:</p>
   <ul>
@@ -38,19 +38,61 @@
   <h2 id="uris">Making URIs</h2>
   <p>According to the Linked Data paradigm, data on the web are identified and accessed using HTTP(S) <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier">URIs</a>. Determining the URI's to use for the elements in your dataset therefore is an important step. It is also a step that should be taken with some care and foresight. When data are made available on the web, there is much you can change afterwards, but changing URIs, once published, is best avoided. Once URIs are added to the web, anyone can use them as references in other web publications. So it is bad form to stop URIs from working. This also means that once a URI identifies something, it should keep on identifying that same thing. You can change the data that describe a thing (resource) on the web, but its URI should be stable and persistent.
   </p>
-  <p>Making (minting) good URIs often starts with choosing the first bit, the host name part. What the host name looks like does not matter much, because URIs or parts of URIs do not need to be interpreted. What matters is making sure the host name can remain stable, to avoid having to change URIs once they are set free on the web. In the case of SPIDER, the domain "spider-ld.org" was bought by Geodan and it was decided to use "http://data.spider-ld.org" as the basis of all data URIs. We also thought that we were likely to publish multiple datasets, so a dataset identifier should also be part of the URI. This leads to "http://data.spider-ld.org/kerkennl", in which "kerkennl" names a dataset. Because it could be possible that we would like to publish other things about this dataset next to its raw data (for instance nicely readable documentation), we expanded the URI path to "http://data.spider-ld.org/kerkennl/data". This enables publishing documentation under "http://data.spider-ld.org/kerkennl/doc", for instance.</p>
-  <p>In order to have a URI for each individual resource in the dataset we were fortunate to be able to use existing unique identifiers in the soource dataset. Such unique keys only identify one thing, and always the same thing, regardless of the changes a dataset may undergo. This makes them very useful to make part of a URI. In the URI "http://data.spider-ld.org/kerkennl/data/kerk17", which leads to data about a particular church building, the number 17 is a primary key in a table in the source dataset (an Access file in this case).</p>
+  <p>Making (minting) good URIs often starts with choosing the first bit, the host name part. What the host name looks like does not matter much, because URIs or parts of URIs do not need to be interpreted. What matters is making sure the host name can remain stable, to avoid having to change URIs once they are set free on the web. In the case of SPIDER, the domain <b>spider-ld.org</b> was bought by Geodan and it was decided to use <b>http://data.spider-ld.org</b> as the basis of all data URIs. We also thought that we were likely to publish multiple datasets, so a dataset identifier should also be part of the URI. This leads to <b>http://data.spider-ld.org/kerkennl</b>, in which <b>kerkennl</b> names a dataset. Because it could be possible that we would like to publish other things about this dataset next to its raw data (for instance nicely readable documentation), we expanded the URI path to <b>http://data.spider-ld.org/kerkennl/data</b>. This enables publishing documentation under <b>http://data.spider-ld.org/kerkennl/doc</b>, for instance.</p>
+  <p>In order to have a URI for each individual resource in the dataset we were fortunate to be able to use existing unique identifiers in the soource dataset. Such unique keys only identify one thing, and always the same thing, regardless of the changes a dataset may undergo. This makes them very useful to make part of a URI. In the URI <b>http://data.spider-ld.org/kerkennl/data/kerk17</b>, which leads to data about a particular church building, the number 17 is a primary key in a table in the source dataset (an Access file in this case).</p>
   <p>For more advice on how to mint URIs see the chapter <a href="https://www.w3.org/TR/ld-bp/#HTTP-URIS">'The Role of "Good URIs" for Linked Data'</a> in <a href="https://www.w3.org/TR/ld-bp">Best Practices for Publishing Linked Data</a>.</p>
   
   <h2 id="metadata">Describe datasets with metadata</h2>
+  <p><a href="https://en.wikipedia.org/wiki/Metadata">Metadata</a> are data about data and are very useful to have. Having good and extensive metadata can assure your dataset is easy to find, easy to understand and easy to use. And it lessens the chance of misuse of data. So describing as many characteristics of data is highly recommended.</p>
+  <p>Metadata are a type of data, so they can be made available as Linked Data, using HTTP(S) URIs. Using commonly used <a href="https://www.w3.org/TR/ld-glossary/#vocabulary">vocabularies</a> (collections of definitions) for metadata will help. Datasets can be about many different things, but metadata describing datasets usually cover the same topics, like</p>
+    <ul>
+    <li>Who owns the data?</li>
+    <li>Who publishes the data?</li>
+    <li>What are the terms and/or conditions for using the data?</li>
+    <li>What is the temporal or spatial extent of the data?</li>
+  </ul>
+  <p>Some useful vocabularies for describing metadata can be found on the web. They nicely supplement each other:</p>
+  <ul>
+  <li><a href="http://dublincore.org/documents/dcmi-terms/">Dublin Core metadata (DC Terms)</a>: General metadata concepts.</li>
+  <li><a href="https://www.w3.org/TR/void/">The Vocabulary of Interlinked Datasets (VoID)</a>: Metadata elements especially for RDF datasets.</li>
+  <li><a href="https://www.w3.org/TR/vocab-dcat/">The Data Catalog Vocabulary (DCAT)</a>: Terms for describing data catalogues.</i>
+  </ul>
+  <p>
+  An example of metadata describing a dataset are the metadata of the dataset "Church buildings in the Netherlands 1800-1970", which can be accessed using the URI of the dataset: <a href="http://data.spider-ld.org/kerkennl/data">http://data.spider-ld.org/kerkennl/data</a>. In SPIDER, metadata are managed by simple maintaining a text file in <a href="https://nl.wikipedia.org/wiki/Turtle_(syntaxis)">Turtle-formaat</a> (Turtle is notation for RDF that relatively easy to read and write for humans). The file can be edited with any text editor. Its contents can be validated using an online validator for Turtle (search for 'RDF turtle validator'), or on the command line, for example using 'riot', part of the Open Source project  <a href="https://jena.apache.org/">Apache Jena</a>. In SPIDER, we import a metadata file into our data publication platform of choice (more about that in <a href="#publish">Serve data on the web</a>) afer each change.</p>
+  </p>
+  
   
   <h2 id="semantics">Add meaning: semantics</h2>
+  <p>
+  An important step in sharing data on the web is making the meaning known of the various elements in a dataset. On the web of data, the preferred method is using existing commong semantics. This archieves an important goal: <a href="https://en.wikipedia.org/wiki/Semantic_interoperability"> semantic interoperability</a>. Semantic interoperabilty facilitates finding and combining data from different sources and reduces the risk of misinterpretation of data.
+  </p>
+  <p>On the web many <a href="https://www.w3.org/TR/ld-glossary/#vocabulary">vocabularies</a> can be found that contain defintions of many different concepts. There are different kinds of vocabularies. Some contain only general terms, like the various <a href="https://en.wikipedia.org/wiki/Upper_ontology">upper ontologies</a> that have been developed. Or <a href="http://schema.org/">schema.org</a>, that is made available by makers of search engines to allow making data and web pages easier to index. There are also specialized vocabularies that only contain definitions of concepts in a certain domain. For example, with the publication of the dataset "Church buildings in the Netherlands 1800-1970" SPIDER has made use of vocabularies about cultural heritage:
+  </p>
   <ul>
-    <li><a href="http://www.pilod.nl/wiki/Versies_van_dingen_in_een_dataset" target="_blank">Versions of things in a dataset (only in Dutch at the moment) </a></li>
-    <li><a href="http://www.pilod.nl/wiki/SKOS-concepten_als_temporele_eigenschappen" target="_blank">SKOS concepts as temporal properties (only in Dutch at the moment)</a></li>
+  <li><a href="http://www.cidoc-crm.org/">CIDOC-CRM</a></li>
+  <li><a href="http://www.getty.edu/research/tools/vocabularies/aat/">Getty's Art & Architecture Thesaurus</a></li>
+  <li><a href="http://www.erfgoedthesaurus.nl/">The Heritage Thesaurus</a> of the Cultural Heritage Agency of the Netherlands</li>
   </ul>
-  <h2>Transform data to RDF</h2>
-  <h2>Serve data on the web</h2>
+  <p>
+  It can be difficult to find all applicable semantics for your data on the <a href=
+  "https://en.wikipedia.org/wiki/Semantic_Web"">semantic web</a>. A useful resource for finding applicable vocabularies is  <a href="http://lov.okfn.org/dataset/lov">Linked Open Vocabularies</a>.
+  </p>
+  <p>
+  Should it really be impossible to find suitable existing semantics, then it is always possible to make something yourself and contribute that to the web. Several standards allow doing that. The <a href="https://wikipedia.org/wiki/SKOS">Simple Knowledge Organization System (SKOS)</a> is relatively simple, but lacks advanced options. More is possible when using <a href="https://wikipedia.org/wiki/RDFS">RDFS</a> and even more when using the <a href="https://nl.wikipedia.org/wiki/Web_Ontology_Language">Web Ontology Language (OWL)</a>. But using the latter properly does require quite some learning.
+  </p>
+  <h3>Modelling challenges</h3>
+  <p>
+  Next to finding appropriate semantics it can be challenging to apply semantics well, and doing so in a coherent manner. In other words, the structure and logic of a dataset should be linked to web semantics as well as possible. In SPIDER too this was difficult in some areas. A few problems and the solutions we found are described below:
+  </p>
+  <ul>
+    <li><a href="http://www.pilod.nl/wiki/Versies_van_dingen_in_een_dataset">Versions of things in a dataset (only in Dutch at the moment) </a></li>
+    <li><a href="http://www.pilod.nl/wiki/SKOS-concepten_als_temporele_eigenschappen">SKOS concepts as temporal properties (only in Dutch at the moment)</a></li>
+  </ul>
+  
+  <h2 id="transform">Transform data to RDF</h2>
+  
+  <h2 id="publish">Serve data on the web</h2>
+  
   <br>
   <hr>
 </section>
