@@ -25,6 +25,15 @@
 <section>
   <h1>Recommendations</h1>
   <p>Making data available on the web is a useful and noble act. It really helps data usage, but it is not that easy to do for the data supplier. While working on SPIDER we have encountered several problems and challenges, which we tried to solve as good as possible. This leads to recommendations that we would like to share below. The recommendations are grouped into the different stages that one usually goes through when publishing data as Linked Data. With the recommendations come explanations of some of the choices made when publshing data for SPIDER.</p>
+  
+  <h2 id="toc">Contents</h2>
+  <a href="#read">Read up</a><br>
+  <a href="#uris">Making URIs</a><br>
+  <a href="#metadata">Describe datasets with metadata</a><br>
+  <a href="#semantics">Add meaning: semantics</a><br>
+  <a href="#transform">Transform data to RDF</a><br>
+  <a href="#publish">Serve data on the web</a>
+  
   <h2 id="read">Read up</h2>
   <p>Of course the web is a good place to find documents that give advice on how to publish data on the web:</p>
   <ul>
@@ -61,7 +70,6 @@
   An example of metadata describing a dataset are the metadata of the dataset "Church buildings in the Netherlands 1800-1970", which can be accessed using the URI of the dataset: <a href="http://data.spider-ld.org/kerkennl/data">http://data.spider-ld.org/kerkennl/data</a>. In SPIDER, metadata are managed by simple maintaining a text file in <a href="https://nl.wikipedia.org/wiki/Turtle_(syntaxis)">Turtle-formaat</a> (Turtle is notation for RDF that relatively easy to read and write for humans). The file can be edited with any text editor. Its contents can be validated using an online validator for Turtle (search for 'RDF turtle validator'), or on the command line, for example using 'riot', part of the Open Source project  <a href="https://jena.apache.org/">Apache Jena</a>. In SPIDER, we import a metadata file into our data publication platform of choice (more about that in <a href="#publish">Serve data on the web</a>) afer each change.</p>
   </p>
   
-  
   <h2 id="semantics">Add meaning: semantics</h2>
   <p>
   An important step in sharing data on the web is making the meaning known of the various elements in a dataset. On the web of data, the preferred method is using existing commong semantics. This archieves an important goal: <a href="https://en.wikipedia.org/wiki/Semantic_interoperability"> semantic interoperability</a>. Semantic interoperabilty facilitates finding and combining data from different sources and reduces the risk of misinterpretation of data.
@@ -75,7 +83,7 @@
   </ul>
   <p>
   It can be difficult to find all applicable semantics for your data on the <a href=
-  "https://en.wikipedia.org/wiki/Semantic_Web"">semantic web</a>. A useful resource for finding applicable vocabularies is  <a href="http://lov.okfn.org/dataset/lov">Linked Open Vocabularies</a>.
+  "https://en.wikipedia.org/wiki/Semantic_Web"">semantic web</a>. A useful resource for finding applicable vocabularies is <a href="http://lov.okfn.org/dataset/lov">Linked Open Vocabularies</a>.
   </p>
   <p>
   Should it really be impossible to find suitable existing semantics, then it is always possible to make something yourself and contribute that to the web. Several standards allow doing that. The <a href="https://wikipedia.org/wiki/SKOS">Simple Knowledge Organization System (SKOS)</a> is relatively simple, but lacks advanced options. More is possible when using <a href="https://wikipedia.org/wiki/RDFS">RDFS</a> and even more when using the <a href="https://nl.wikipedia.org/wiki/Web_Ontology_Language">Web Ontology Language (OWL)</a>. But using the latter properly does require quite some learning.
@@ -90,9 +98,73 @@
   </ul>
   
   <h2 id="transform">Transform data to RDF</h2>
+  <p>Publishing data as Linked Data means data should use the <a href="https://wikipedia.org/wiki/Resource_Description_Framework">Resource Description Framework (RDF)</a>. In RDF data are expressed as triples of <b>subject</b>, <b>predicate</b> and <b>object</b>. Those triples can be linked to from <a href="https://en.wikipedia.org/wiki/Graph_theory">graphs</a>. For several reasons, this is a handy way to experess data. But it is very different from the way most data are initially available: in the shape of tables. So usually it is necessary to transform research data from a table structure to an RDF structure.</p>
+  <p>
+  From the previous step, finding (common) web semantics to describe data, the target RDF structure for publishing data on the web should have followed. Not only will general terms have been found (or coined), but also the way those terms relate to each other. For example, if semantics have been found for the concepts of 'book' and 'author', a term like 'was written by' could be needed to relate those terms. So let's assume we know how the data look like and how they should look like. The question then is: how can data be transformed from the starting shape to the target shape?
+  </p>
+  <p>
+  The need to transform tabular data to RDF is a common one and multiple solutions are available. To name a few:
+  </p>
+  <ul>
+  <li><a href="https://www.w3.org/TR/r2rml/">R2RML</a>: A language to describe (in RDF) how tabular data can be transformed to RDF.</li>
+  <li><a href="http://d2rq.org/d2rq-language">D2RQ</a>: A language (in <a href="https://wikipedia.org/wiki/Turtle_(syntax)">Turtle format</a>) to describe a mapping from tabular data to RDF.</li>
+  <li><a href="https://www.w3.org/wiki/ConverterToRdf">This W3C wiki page</a> has an overview of tools for transforming data in different formats to RDF.</li>
+  </ul>
+  <p>SPIDER has chosen a pragmatic solution, based on the assumption that knowledge of <a href="https://wikipedia.org/wiki/SQL">SQL</a>, the query language for tabular data, almost always is required for transformation to RDF. We chose a generally applicable method that only requires knowing SQL. The method doees require the data to be accessible via a database that supports SQL. A good Open Source relational database <a href="https://www.postgresql.org/">PostgreSQL<a>. It has many ways of manipulating data, which is useful for transformation to RDF.
+  </p>
+  <p>
+  In the first SPIDER use case, orginal data are collected in an Access file. By means of the <a href="https://www.postgresql.org/docs/current/static/postgres-fdw.html">Foreign Data Wrapper</a>, which is a PostgreSQL module for working with data external to the PostgreSQL database, it becomes possible to query the data through PostgreSQL, using SQL. This enables generating RDF triples. For example, the following SQL query
+  </p>
+  <pre>
+select '&lthttp://data.spider-ld.org/kerkennl/data/kerk' || id || '&gt &lthttp://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt &lthttp://dbpedia.org/ontology/Church&gt .' from churches;
+  </pre>
+  produces triples as below, as many as there are rows in the table 'churches'.
+  <pre>
+&lthttp://data.spider-ld.org/kerkennl/data/kerk1&gt &lthttp://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt &lthttp://dbpedia.org/ontology/Church&gt .
+&lthttp://data.spider-ld.org/kerkennl/data/kerk2&gt &lthttp://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt &lthttp://dbpedia.org/ontology/Church&gt .
+&lthttp://data.spider-ld.org/kerkennl/data/kerk3&gt &lthttp://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt &lthttp://dbpedia.org/ontology/Church&gt .
+  </pre>
+  <p>
+  The triples are written in <a href="https://en.wikipedia.org/wiki/N-Triples">N-Triples</a> format. Like other RDF formats, N-Triples can be converted to other RDF formats, or be imported into an RDF storage medium.
+  </p>
+  <p>A query like above can be executed on the command line, using <a href="https://www.postgresql.org/docs/current/static/app-psql.html">psql</a>:</p>
+  <pre>
+psql -U postgres -A -t -d spiderdb1 -c "select '&lthttp://data.spider-ld.org/kerkennl/data/kerk' || id || '&gt &lthttp://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt &lthttp://dbpedia.org/ontology/Church&gt .' from churches;" &gt churches.nt
+  </pre>
+  <p>Excuting this line will cause the generated triples to be written to the file 'churches.nt'. Several of these lines can be put together in an exectable script. Executing such a script can transform an entire dataset to RDF.
+  </p>
+  <p>
+  The example SQL query above is relatively simple. The nice thing about using an advances database like PostgreSQL is that more complex queries kan made made to get the data in the desired shape. In the example query below geographic point coordinates are expressed in <a href="https://en.wikipedia.org/wiki/Well-known_text">WKT</a> format and rounded off at the same time, using PostgreSQL's PostGIS extension:
+  </p>
+  <pre>
+select '&lthttp://data.spider-ld.org/kerkennl_extra/data/geom' || id || '_point_rd&gt &lthttp://www.opengis.net/ont/geosparql#asWKT&gt ""&lthttp://www.opengis.net/def/crs/EPSG/0/28992&gt ' || ST_AsText(ST_GeomFromGeoJSON(ST_AsGeoJSON(puntgeometrie_28992,0,0))) || '""^^' || '&lthttp://www.opengis.net/ont/geosparql#wktLiteral&gt .' from churches_location;
+  </pre>
   
   <h2 id="publish">Serve data on the web</h2>
-  
+  <p>If you have managed to obtain RDF data in a file, you could chose to use a web server to publish the file (and thereby the data) on the web. For the convenience of data consumers it would be good to offer the data in different file formats. Two recommended formats are <a href="https://wikipedia.org/wiki/HyperText_Markup_Language">HTML</a> and <a href="http://json-ld.org/">JSON-LD</a>. Formatting data as HTML pages is useful because web browsers know how to render HTML by default. That makes HTML a good format to provide direct insight into data for human users. Also, HTML can provide clickable hyperlinks that can be used to discover more data.</p>
+  <p>JSON-LD is useful because it is easy to process in web applications, because it is based on <a href="https://wikipedia.org/wiki/JSON">JSON</a>. JSON-LD can be regarded as a format for RDF, just like Turtle or N-Triples. That means JSON-LD allows retrieving data as a graph.</p>
+  <p>
+  When publishing data as files it is recommended to configure the web server to support <a href="https://en.wikipedia.org/wiki/Content_negotiation">content negotiation</a>. This allows consumers to easily request data in the required format.
+  </p>
+  <p>
+  For small and simple datasets perhaps it is sufficient to serve data in file format. But using specialised software to publish Linked Data can greatly increase user friendliness, especially for large datasets. Platforms for publishing and managing RDF data can also offer advanced ways of analyzing, selecting and retreiving data. Different API's could be made available, <a href="https://nl.wikipedia.org/wiki/SPARQL">SPARQL</a> for instance, a standard query language for RDF data.
+  </p>
+  <p>
+  There are many platforms for publishing Linked Data to chose from. Sometimes such a system has its own storage capability, a triple <a href="https://en.wikipedia.org/wiki/Triplestore">triplestore</a> or quadstore, optimised for storing and retrieving RDF data. A platform can also be linked to a relational database, with the platform taking care of conversion to RDF. Some platforms that can be used for free are:
+  </p>
+  <ul>
+  <li><a href="https://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSIndex">Virtusoso Open Source</a></li>
+  <li><a href="http://d2rq.org/d2r-server">D2R Server</a></li>
+  <li><a href="http://aksw.org/Projects/Sparqlify.html">Sparqlify</a></li>
+  <li><a href=http://silkframework.org/">SILK</a></li>
+  <li><a href="http://www.swi-prolog.org/web/ClioPatria/">ClioPatria</a></li>
+  <li><a href="http://marmotta.apache.org/">Apache Marmotta</a></li>
+  <li><a href="http://neo4j-org-dev.herokuapp.com/develop/linked_data">Neo4J</a></li>
+  <li><a href="http://allegrograph.com/allegrograph/">AllegroGraph Free Edition</a></li>
+  </ul>
+  <p>And of course there are several platforms that have to be paid for.</p>
+  <p>SPIDER has chosen to use the Open Source project <a href="http://marmotta.apache.org/">Marmotta</a> because of its current functionality, its future support for <a href="http://www.opengeospatial.org/standards/geosparql">GeoSPARQL</a>, but above all because it is user friendly. Installing and activating Marmotta is not much work, making it a good choice for the humanities student wanting to share interesting data on the web.
+  </p>
   <br>
   <hr>
 </section>
