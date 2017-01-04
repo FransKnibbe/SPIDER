@@ -1,0 +1,96 @@
+<html lang="nl">
+<head>
+  <title>SPIDER: datasets</title>
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta name="author" content="SPIDER" />
+  <meta name="description" content="Enriching Digital Humanities through Semantic Web technology" />
+  <meta name="keywords" content="Linked Data, Semantic Web, Vrije Universiteit Amsterdam, SPINlab, Digital Humanities, Machine Learning, Data Mining, Visualisation, RDF, Geospatial, GIS" />
+  <meta name="robots" content="index, follow, noarchive" />
+  <meta name="googlebot" content="index, follow, noarchive" />
+  <link rel="stylesheet" type="text/css" href="../css/spider.css"/>
+</head>
+
+<body>
+<header>SPIDER</header>
+<nav>
+  <a href="../index.html">Hoofdpagina</a>
+  <a href="../projects/index.html">Projecten</a>
+  <a href="../data/index.html">Data</a>
+  <a href="../recommendations/index.html">Aanbevelingen</a>
+  <a href="../examples/index.html">Voorbeelden</a>
+  <a href="../contact.html">Contact</a>
+</nav>
+
+<!-- template for data dump list:
+  <ul>
+  <li><a href=".rdf">RDF/XML</a></li>
+  <li><a href=".ttl">Turtle</a></li>
+  <li><a href=".json-ld">JSON-LD</a></li>
+  <li><a href=".nt">Ntriples</a></li>
+  </ul>
+-->
+<section>
+  <h1>Data</h1>
+  <p>Hier worden de data die via SPIDER worden gepubliceerd beschreven, en wordt beschreven hoe die data op verschillende manieren toegangelijk zijn.</p>
+  
+  <h2 id="toc">Inhoud</h2>
+  <a href="#datasets">Datasets</a><br>
+  &emsp;<a href="#kerkennl">Kerkgebouwen in Nederland van 1800-1970</a><br>
+  &emsp;<a href="#kerkennl">Extra data bij Kerkgebouwen in Nederland van 1800-1970</a><br>
+  <a href="#gettingData">Data opvragen</a><br>
+  &emsp;<a href="#direcAccess">Directe toegang</a><br>
+  &emsp;<a href="#dumps">Datadumps</a><br>
+  &emsp;<a href="#sparql">Bevraging via SPARQL</a><br>
+  
+  <h1>Datasets</h1>
+  <p>Data worden vaak gegroepeerd in datasets. Zo ook bij SPIDER. Een dataset is een verzameling data die op een zekere logische manier bij elkaar horen. Elke dataset heeft een eigen <abbr title="Uniform Resource Identifier">URI</abbr>, die toegang geeft tot de <a href="https://nl.wikipedia.org/wiki/Metadata">metadata</a> die de dataset beschrijven. Een uitgangspunt is dat die metadata alle informatie verstrekken die nodig is voor gebruik van de dataset (zie de aanbeveling <a href="../recommendations/index.html#metadata">Datasets beschrijven via metadata</a>).SPIDER stelt de volgende datasets ter beschikking:</p>
+  
+  <h2 id="kerkennl">Kerkgebouwen in Nederland van 1800-1970</h2>
+  <p><abbr title="Uniform Resource Identifier">URI</abbr> van de dataset: <a href="http://data.spider-ld.org/kerkennl/data">http://data.spider-ld.org/kerkennl/data</a></p>
+  
+  <h3>Datadumps</h3>
+  <ul>
+  <li><a href="http://spider-ld.org/datadump/kerkennl_2016-09-06.rdf">RDF/XML</a></li>
+  <li><a href="http://spider-ld.org/datdump/kerkennl_2016-09-06.ttl">Turtle</a></li>
+  <li><a href="http://spider-ld.org/datdump/kerkennl_2016-09-06.json-ld">JSON-LD</a></li>
+  <li><a href="http://spider-ld.org/datdump/kerkennl_2016-09-06.nt">Ntriples</a></li>
+  </ul>
+  
+  <h2 id="kerkennl_extra">Extra data bij Kerkgebouwen in Nederland van 1800-1970</h2>
+  <p><abbr title="Uniform Resource Identifier">URI</abbr> van de dataset: <a href="http://data.spider-ld.org/kerkennl_extra/data">http://data.spider-ld.org/kerkennl_extra/data</a></p>
+  
+  <h3>Datadumps</h3>
+  <ul>
+  <li><a href="http://spider-ld.org/datdump/kerkennl_extra_2016-09-06.rdf">RDF/XML</a></li>
+  <li><a href="http://spider-ld.org/datdump/kerkennl_extra_2016-09-06.ttl">Turtle</a></li>
+  <li><a href="http://spider-ld.org/datdump/kerkennl_extra_2016-09-06.json-ld">JSON-LD</a></li>
+  <li><a href="http://spider-ld.org/datdump/kerkennl_extra_2016-09-06.nt">Ntriples</a></li>
+  </ul>
+  
+  <h1 id="gettingData">Data Opvragen</h2>
+  <p>Data kunnen op meerder manieren worden opgevraagd. SPIDER ondersteund verschillende standaardmethoden: het direct opvragen van URI's, het downloaden van bestanden met complete datasets, en bevraging via <a href="https://nl.wikipedia.org/wiki/SPARQL">SPARQL</a>. Dit zijn echter niet de enige mogelijkheden om data toegankelijk te maken, er zouden nog andere API's kunnen worden gedefinieerd.</p>
+  
+  <h2 id="directAccess">Directe toegang</h2>
+  <p>Datasets zijn online te gebruiken door middel van het opvragen van <abbr title="Uniform Resource Identifier">URI</abbr>'s. Datasets in Linked Data bestaan voor een groot gedeelte uit URI's, die ieder opgevraagd kunnen worden om toegang te krijgen tot de achterliggende data. Een voorbeeld van zo'n data-URI is <a href="http://data.spider-ld.org/kerkennl/data/year1800">http://data.spider-ld.org/kerkennl/data/year1800</a>.
+  Het opvragen van een URI kan via de webbrowser, via de <a href="https://nl.wikipedia.org/wiki/Command-line-interface">commandoregel</a> met behulp van hulpmiddelen als <a href="https://en.wikipedia.org/wiki/CURL">cURL</a> of <a href="https://en.wikipedia.org/wiki/Wget">Wget</a>, via software die kan werken met webdata, of in zelf geschreven programmacode.</p>
+  <p>Bij het opvragen van een URI wordt <a href="https://en.wikipedia.org/wiki/Content_negotiation">content negotiation</a> toegepast om de data in het meest geschikte formaat te geven.</p>
+  
+  <h2 id="dumps">Datadumps</h2>
+  <p>Datasets zijn compleet te downloaden via <a href="http://spider-ld.org/datadump">de map met datadumps</a> in verschillende <abbr title="Resource Description Framework">RDF</abbr>-formaten. Dat geeft de mogelijkheid de gegevens in een eigen databank op te slaan.</p>
+  
+  <h2 id="sparql">Bevraging via SPARQL</h2>
+  <p>Om selecties van data te maken en die op te vragen kan de ondervragingstaal <a href="https://nl.wikipedia.org/wiki/SPARQL">SPARQL</a> worden gebruikt. Om in programmacode of op de commandoregel van SPARQL gebruik te maken kan de URI <b>http://data.spider-ld.org/marmotta/sparql/select?query=</b> worden gebruikt. SPIDER stelt enkele grafische gebruikersomgevingen beschikbaar om SPARQL-query's uit te voeren en de resultaten te bekijken:
+  </p>
+  <ul>
+  <li id="squebi"><a href="../squebi/spider_squebi.html">Squebi</a></li>
+  <li id="yasgui"><a href="../yasgui/spider_yasgui.html">YASGUI</a></li>
+  </ul>
+  <br>
+  <hr>
+</section>
+
+<footer>
+  <b>S</b>emantic <b>P</b>erspectives and <b>I</b>nterlinked <b>D</b>ata from <b>E</b>-humanities <b>R</b>esearch
+</footer>
+
+</body>

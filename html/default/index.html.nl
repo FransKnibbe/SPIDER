@@ -16,7 +16,7 @@
 <nav>
   <a href="index.html">Hoofdpagina</a>
   <a href="projects/index.html">Projecten</a>
-  <a href="datasets/index.html">Datasets</a>
+  <a href="data/index.html">Data</a>
   <a href="recommendations/index.html">Aanbevelingen</a>
   <a href="examples/index.html">Voorbeelden</a>
   <a href="contact.html">Contact</a>

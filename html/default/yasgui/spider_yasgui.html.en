@@ -1,7 +1,6 @@
-<!DOCTYPE html>
 <html lang="nl">
 <head>
-  <title>SPIDER: Squebi</title>
+  <title>SPIDER: YASGUI</title>
   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
   <meta name="author" content="SPIDER" />
   <meta name="description" content="Enriching Digital Humanities through Semantic Web technology" />
@@ -14,17 +13,16 @@
 <body>
 <header>SPIDER</header>
 <nav>
-  <a href="../index.html">Hoofdpagina</a>
-  <a href="../projects/index.html">Projecten</a>
+  <a href="../index.html">Home</a>
+  <a href="../projects/index.html">Projects</a>
   <a href="../datasets/index.html">Datasets</a>
-  <a href="../recommendations/index.html">Aanbevelingen</a>
-  <a href="../examples/index.html">Voorbeelden</a>
+  <a href="../recommendations/index.html">Recommendations</a>
+  <a href="../examples/index.html">Examples</a>
   <a href="../contact.html">Contact</a>
 </nav>
 
 <section>
-<h1>Squebi</h1>
-<p>Dit is de <a href="https://github.com/tkurz/squebi">Squebi</a> SPARQL client. Squebi kan op elke website worden geïnstalleerd. Het is hier ingesteld op het SPARQL-endpoint van SPIDER (http://data.spider-ld.org/marmotta/sparql/select?query=).</p>
+<p>This is the <a href="http://doc.yasgui.org/">YASGUI</a> SPARQL client.</p>
 <iframe class="squebi" src="index.html"></iframe>
 </section>
 

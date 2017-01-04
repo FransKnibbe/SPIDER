@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>SPIDER: examples</title>
@@ -44,7 +45,7 @@
 <nav>
   <a href="../index.html">Home</a>
   <a href="../projects/index.html">Projects</a>
-  <a href="../datasets/index.html">Datasets</a>
+  <a href="../data/index.html">Data</a>
   <a href="../recommendations/index.html">Recommendations</a>
   <a href="../examples/index.html">Examples</a>
   <a href="../contact.html">Contact</a>
@@ -59,7 +60,7 @@
   <li><a href="example1.html" target="_blank">Location of church building on a map</a></li>
   </ul>
   <h2>SPARQL queries</h2>
-  <p><a href="https://nl.wikipedia.org/wiki/SPARQL" target="_blank">SPARQL</a> is a query language for <abbr title="Resource Description Framework">RDF</abbr>-based data. It is similar to <abbr title="Structured Query Language">SQL</abbr>, the query language for relational databases. SPARQL can be used to ask questions and to request data. Below are some examples of SPARQL queries. The queries can be copied to the <a href="../squebi/spider_squebi.html">SPARQL interface page</a> to play around with, or be executed immediately via the query link that executes the query as a HTTP request.</p>
+  <p><a href="https://nl.wikipedia.org/wiki/SPARQL">SPARQL</a> is a query language for <abbr title="Resource Description Framework">RDF</abbr>-based data. It is similar to <abbr title="Structured Query Language">SQL</abbr>, the query language for relational databases. SPARQL can be used to ask questions and to request data. Below are some examples of SPARQL queries. The queries can be copied to the <a href="../squebi/spider_squebi.html">SPARQL interface page</a> to play around with, or be executed immediately via the query link that executes the query as a HTTP request.</p>
   
   <h3><a name="properties"></a>See currently defined properties of a church building</h3>
   <p>This query shows all properties defined for things that are defined as a church</p>
