@@ -16,7 +16,7 @@
 <nav>
   <a href="../index.html">Hoofdpagina</a>
   <a href="../projects/index.html">Projecten</a>
-  <a href="../datasets/index.html">Datasets</a>
+  <a href="../data/index.html">Data</a>
   <a href="../recommendations/index.html">Aanbevelingen</a>
   <a href="../examples/index.html">Voorbeelden</a>
   <a href="../contact.html">Contact</a>
@@ -24,7 +24,7 @@
 
 <section>
 <h1>YASGUI</h1>
-<p>Dit is de <a href="http://doc.yasgui.org/">YASGUI</a> SPARQL client. YASGUI kan op elke website worden geïnstalleerd. Het is hier ingesteld op het SPARQL-endpoint van SPIDER (http://data.spider-ld.org/marmotta/sparql/select?query=).</p>
+<p>Dit is de <a href="http://doc.yasgui.org/">YASGUI</a> SPARQL client. YASGUI kan op elke website worden geïnstalleerd. Om het met SPIDER te laten werken moet het SPARQL-endpoint van SPIDER worden ingesteld: <b>http://data.spider-ld.org/marmotta/sparql/select</b>.</p>
 <iframe class="yasgui" src="index.html"></iframe>
 </section>
 

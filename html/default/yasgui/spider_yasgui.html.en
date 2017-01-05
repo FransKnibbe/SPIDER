@@ -1,4 +1,4 @@
-<html lang="nl">
+<html lang="en">
 <head>
   <title>SPIDER: YASGUI</title>
   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
@@ -15,15 +15,15 @@
 <nav>
   <a href="../index.html">Home</a>
   <a href="../projects/index.html">Projects</a>
-  <a href="../datasets/index.html">Datasets</a>
+  <a href="../data/index.html">Data</a>
   <a href="../recommendations/index.html">Recommendations</a>
   <a href="../examples/index.html">Examples</a>
   <a href="../contact.html">Contact</a>
 </nav>
 
 <section>
-<p>This is the <a href="http://doc.yasgui.org/">YASGUI</a> SPARQL client.</p>
-<iframe class="squebi" src="index.html"></iframe>
+<p>This is the <a href="http://doc.yasgui.org/">YASGUI</a> SPARQL client. It can be installed on any website. To work with SPIDER data, the SPARQL endpoint should be entered: <b>http://data.spider-ld.org/marmotta/sparql/select</b>.</p>
+<iframe class="yasgui" src="index.html"></iframe>
 </section>
 
 <footer>
