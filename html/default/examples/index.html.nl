@@ -121,7 +121,7 @@ where {
   
   <h3><a name="count_by_function"></a>Tel het aantal kerken per gebruiksfunctie</h3>
   <p>In deze vraag worden kerken gegroepeerd per gebruiksfunctie en wordt het aantal voorkomens per gebruiksfunctie geteld.</p>
-    <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20dbo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Frdfs%2Fcidoc_crm_v6.2-draft-2015August.rdfs%23%3E%0Aselect%20%3Fusage%20(count(%3Fchurch)%20as%20%3Fnumber_of_churches)%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20dbo%3AChurch%20.%0A%20%20%3Fchurch%20cidoc%3AP103_was_intended_for%20%3Fusage%20.%0A%7D%0Agroup%20by%20%3Fusage%0Aorder%20by%20desc(%3Fnumber_of_churches)">HTTP-verzoek (klik om uit te voeren</a>
+    <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20dbo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Frdfs%2Fcidoc_crm_v6.2-draft-2015August.rdfs%23%3E%0Aselect%20%3Fusage%20(count(%3Fchurch)%20as%20%3Fnumber_of_churches)%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20dbo%3AChurch%20.%0A%20%20%3Fchurch%20cidoc%3AP103_was_intended_for%20%3Fusage%20.%0A%7D%0Agroup%20by%20%3Fusage">HTTP-verzoek (klik om uit te voeren</a>
   <div class="expandOrCollapse" onclick="toggleVisibility(this)">&#9654; tekst SPARQL query (klik om uit te klappen):</div>
   <div class="visible">
   <pre>
@@ -133,8 +133,9 @@ where {
   ?church cidoc:P103_was_intended_for ?usage .
 }
 group by ?usage
-order by desc(?number_of_churches)
   </pre>
+<!--order by desc(?number_of_churches)-->
+<!-- Order by is commented out because it results in an error in Marmotta 3.4.0 development version-->
   </div>
   <br>
   <hr>
