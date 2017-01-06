@@ -38,7 +38,7 @@
   &emsp;<a href="#kerkennl">Kerkgebouwen in Nederland van 1800-1970</a><br>
   &emsp;<a href="#kerkennl">Extra data bij Kerkgebouwen in Nederland van 1800-1970</a><br>
   <a href="#gettingData">Data opvragen</a><br>
-  &emsp;<a href="#direcAccess">Directe toegang</a><br>
+  &emsp;<a href="#directAccess">Directe toegang</a><br>
   &emsp;<a href="#dumps">Datadumps</a><br>
   &emsp;<a href="#querying">Bevraging via SPARQL</a><br>
   
