@@ -50,7 +50,7 @@
   <li>Laagdrempelige interactie door eindgebruikers met oorspronkelijke data en dataverrijkingen, bijvoorbeeld door visualisatie via een kaart met een tijdbalk.</li> 
   </ol>
   </p>
-  <h2>Dankbetuigingen</h2>
+  <h2>Dankbetuiging</h2>
   <p>SPIDER is mogelijk gemaakt door <a href="http://www.geodan.nl">Geodan</a> en de <a href="http://www.vu.nl">Vrije Universiteit van Amsterdam</a>.</p>
   <br>
   <hr>

@@ -60,7 +60,7 @@
   <li><a href="example1.html" target="_blank">Location of church building on a map</a></li>
   </ul>
   <h2>SPARQL queries</h2>
-  <p><a href="https://nl.wikipedia.org/wiki/SPARQL">SPARQL</a> is a query language for <abbr title="Resource Description Framework">RDF</abbr>-based data. It is similar to <abbr title="Structured Query Language">SQL</abbr>, the query language for relational databases. SPARQL can be used to ask questions and to request data. Below are some examples of SPARQL queries. The queries can be copied to the <a href="../squebi/spider_squebi.html">SPARQL interface page</a> to play around with, or be executed immediately via the query link that executes the query as a HTTP request.</p>
+  <p><a href="https://nl.wikipedia.org/wiki/SPARQL">SPARQL</a> is a query language for <abbr title="Resource Description Framework">RDF</abbr>-based data. It is similar to <abbr title="Structured Query Language">SQL</abbr>, the query language for relational databases. SPARQL can be used to ask questions and to request data. Below are some examples of SPARQL queries. The queries can be copied to one of the <graphical user interfaces for SPARQL (<a href="../squebi/spider_squebi.html">Squebi</a> or <a href="../yasgui/spider_yasgui.html">YASGUI</a>) to play around with, or be executed immediately via the query link that executes the query as a HTTP request.</p>
   
   <h3><a name="properties"></a>See currently defined properties of a church building</h3>
   <p>This query shows all properties defined for things that are defined as a church</p>
@@ -102,7 +102,7 @@ where {
   
   <h3><a name="oosterbeek"></a>Show church buildings in Oosterbeek</h3>
   <p>This query selects church buildings with an address in the town of Oosterbeek.</p>
-    <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%20%0Aprefix%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aselect%20%3Fchurch%20%3Fstreet%20%3Fnumber%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20schema%3AChurch%20.%20%0A%20%20%3Fchurch%20locn%3Aaddress%20%3Faddress%20.%20%0A%20%20%3Faddress%20locn%3ApostName%20%E2%80%98Oosterbeek%E2%80%99%20.%0A%20%20%3Faddress%20locn%3Athoroughfare%20%3Fstreet%20.%0A%20%20%3Faddress%20locn%3AlocatorDesignator%20%3Fnumber%20.%0A%7D">HTTP request (click to execute)</a>
+    <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%20%0Aprefix%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aselect%20%3Fchurch%20%3Fstreet%20%3Fnumber%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20schema%3AChurch%20.%20%0A%20%20%3Fchurch%20locn%3Aaddress%20%3Faddress%20.%20%0A%20%20%3Faddress%20locn%3ApostName%20%27Oosterbeek%27%20.%0A%20%20%3Faddress%20locn%3Athoroughfare%20%3Fstreet%20.%0A%20%20%3Faddress%20locn%3AlocatorDesignator%20%3Fnumber%20.%0A%7D">HTTP request (click to execute)</a>
   <div class="expandOrCollapse" onclick="toggleVisibility(this)">&#9654; SPARQL query (click to expand):</div>
   <div class="visible">
   <pre>
@@ -112,7 +112,7 @@ select ?church ?street ?number
 where {
   ?church a schema:Church . 
   ?church locn:address ?address . 
-  ?address locn:postName ‘Oosterbeek’ .
+  ?address locn:postName 'Oosterbeek' .
   ?address locn:thoroughfare ?street .
   ?address locn:locatorDesignator ?number .
 }
@@ -121,7 +121,7 @@ where {
   
   <h3><a name="count_by_function"></a>Count church buildings by function</h3>
   <p>This query groups church buildings by their function and counts the number of churches for each function.</p>
-    <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20dbo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Frdfs%2Fcidoc_crm_v6.2-draft-2015August.rdfs%23%3E%0Aselect%20%3Fusage%20(count(%3Fchurch)%20as%20%3Fnumber_of_churches)%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20dbo%3AChurch%20.%0A%20%20%3Fchurch%20cidoc%3AP103_was_intended_for%20%3Fusage%20.%0A%7D%0Agroup%20by%20%3Fusage">HTTP request (click to execute)</a>
+    <a class="sparqluri" href="http://marmotta.spider-ld.org/marmotta/sparql?query=prefix%20dbo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Frdfs%2Fcidoc_crm_v6.2-draft-2015August.rdfs%23%3E%0Aselect%20%3Fusage%20(count(%3Fchurch)%20as%20%3Fnumber_of_churches)%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20dbo%3AChurch%20.%0A%20%20%3Fchurch%20cidoc%3AP103_was_intended_for%20%3Fusage%20.%0A%7D%0Agroup%20by%20%3Fusage%0Aorder%20by%20desc(%3Fnumber_of_churches)">HTTP request (click to execute)</a>
   <div class="expandOrCollapse" onclick="toggleVisibility(this)">&#9654; SPARQL query (click to expand):</div>
   <div class="visible">
   <pre>
