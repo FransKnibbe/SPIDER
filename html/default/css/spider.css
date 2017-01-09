@@ -1,4 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
 body {
   font-family: "Open Sans";
   margin:0;
@@ -145,6 +148,10 @@ pre {
   /* overflow-x: auto; */                /* Firefox 2 only */
   /* width: 99%; */          /* only if needed */
 }
+.code{
+  font-family: "Droid Sans Mono";
+  color:#226;
+}
 .note {
   background:Azure;
   border-radius:10px;
@@ -181,6 +188,11 @@ pre {
   direction:rtl;
 }
 .squebi{
+  height:100%;
+  width:900px;
+  border:none;
+}
+.yasgui{
   height:100%;
   width:900px;
   border:none;
