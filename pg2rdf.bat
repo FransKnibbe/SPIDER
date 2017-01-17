@@ -80,6 +80,7 @@ psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%c
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_preschool> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'kinderdagverblijf' ;"  >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%cidoc%P103_was_intended_for> <%base%usage_other> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Huidige_bestemming\" = 'overig' ;"  >> churches.nt
 :: end 'bestemming'
+
 :: start 'vorm_type'
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpp%architectureType> <%eth%6297a7f8-a900-4f56-b599-5fd07f8da0b3> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Vorm_type\" = 'pseudobasiliek';"  >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpp%architectureType> <%dbprnl%Pseudobasiliek> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Vorm_type\" = 'pseudobasiliek';"  >> churches.nt
@@ -97,8 +98,43 @@ psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%d
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpp%architectureType> <%dbprnl%Hallenkerk> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Vorm_type\" = 'hallenkerk';"  >> churches.nt
 
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpp%architectureType> <%eth%4cc2952d-a9c7-438e-9286-3241c0581796> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Vorm_type\" =  'centraalbouw' or \"Vorm_type\" = 'basiliek/centraalbouw';"  >> churches.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpp%architectureType> <%dbprnl%Basiliek> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Vorm_type\" =  'centraalbouw' or \"Vorm_type\" = 'basiliek/centraalbouw';"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpp%architectureType> <%dbprnl%Basiliek> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Vorm_type\" =  'centraalbouw' or \"Vorm_type\" = 'basiliek/centraalbouw';" >> churches.nt
 
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpp%architectureType> <%eth%aa257980-4d44-42d9-9167-415d0a7af8a1> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Vorm_type\" = 'kruiskerk';"  >> churches.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpp%architectureType> <%dbprnl%Kruiskerk> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Vorm_type\" = 'basliliek';"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpp%architectureType> <%dbprnl%Kruiskerk> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Vorm_type\" = 'basliliek';" >> churches.nt
+:: end 'vorm_type'
 
+:: start 'stijl'
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%1e9cc0cf-e8c3-480b-a0b6-506e48531f5e> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'neogothiek' or \"Stijl\" = 'neogotiek';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Gothic_Revival_architecture> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'neogothiek' or \"Stijl\" = 'neogotiek';" >> churches.nt
+
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%b8a38fbe-8aa2-4dd6-969f-877e5159775c> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'expressionisme';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Expressionist_architecture> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'expressionisme';" >> churches.nt
+
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%d0de673e-2cb8-40b9-96fe-4edcca978ddf> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'neoromaans';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Romanesque_Revival_architecture> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'neoromaans';" >> churches.nt
+
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%53be61c5-deb7-4a04-8792-fc0718de4136> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'neorenaissance';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Renaissance_Revival_architecture> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'neorenaissance';" >> churches.nt
+
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%dfeca8b3-5a03-4409-ab9c-4dccf35a3369> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'eclecticisme';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Eclecticism> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'eclecticisme';" >> churches.nt
+
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%82e98a31-7c87-4ea2-ac44-dde6c33ff22f> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'neoclassicisme';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Neoclassicism> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'neoclassicisme';" >> churches.nt
+
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%56133cf2-e496-4a5e-9166-c675a6e9ec02> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'neobarok';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Baroque_Revival_architecture> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'neobarok';" >> churches.nt
+
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%faa473dc-0eeb-481f-bd36-51c43e77c609> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'traditionalisme';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Traditionalist_School_(architecture)> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'traditionalisme';" >> churches.nt
+
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%1e094ce2-e879-4687-bd3c-5968e33cd1d9> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'modernisme - functionalisme';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%03d7eb43-62dc-4d8b-8a50-d809d2d0e332> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'modernisme - functionalisme';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Modernism)> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'modernisme - functionalisme';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Functionalism_(architecture)> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'modernisme - functionalisme';" >> churches.nt
+
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%d19a7bd4-d479-422c-838a-d4d3749205a> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'rationalisme';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Rationalism_(architecture)> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'rationalisme';" >> churches.nt
+
+:: end 'stijl'
