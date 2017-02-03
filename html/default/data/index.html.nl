@@ -36,7 +36,7 @@
   <h2 id="toc">Inhoud</h2>
   <a href="#datasets">Datasets</a><br>
   &emsp;<a href="#kerkennl">Kerkgebouwen in Nederland van 1800-1970</a><br>
-  &emsp;<a href="#kerkennl">Extra data bij Kerkgebouwen in Nederland van 1800-1970</a><br>
+  &emsp;<a href="#kerkennl_extra">Extra data bij Kerkgebouwen in Nederland van 1800-1970</a><br>
   <a href="#gettingData">Data opvragen</a><br>
   &emsp;<a href="#directAccess">Directe toegang</a><br>
   &emsp;<a href="#dumps">Datadumps</a><br>
