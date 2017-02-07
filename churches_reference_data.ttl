@@ -35,82 +35,96 @@
 
 
 ## start usage types 
-# Does it make sense to add rdfs:labels?
 
 :usage_church
   a cidoc:E55_type ;
   dcterms:subject dbp:Church_service ;
+  rdfs:label "kerk"@nl, "church"@en ;
 .
 
 :usage_museum
   a cidoc:E55_type ;
   dcterms:subject dbp:Museum ;
+  rdfs:label "Museum"@nl, "Museum"@en ;
 .
 
 :usage_communitycentre
   a cidoc:E55_type ;
   dcterms:subject dbp:Community_centre ;
+  rdfs:label "gemeenschapscentrum"@nl, "community centre"@en ;
 .
 
 :usage_mosque
   a cidoc:E55_type ;
   dcterms:subject dbp:Mosque ;
+  rdfs:label "moskee"@nl, "moskee"@en ;
 .
 
 :usage_healthcentre
   a cidoc:E55_type ;
   dcterms:subject dbp:Community_health_center ;
+  rdfs:label "gezondheidscentrum"@nl, "health centre"@en ;
 .
 
 :usage_house
   a cidoc:E55_type ;
   dcterms:subject dbp:House ;
+  rdfs:label "huis"@nl, "house"@en ;
 .
 
 :usage_office
   a cidoc:E55_type ;
   dcterms:subject dbp:Office ;
+  rdfs:label "kantoor"@nl, "office"@en ;
 .
 
 :usage_culturalcentre
   a cidoc:E55_type ;
   dcterms:subject dbp:Cultural_center ;
+  rdfs:label "cultureel centrum"@nl, "cultural centre"@en ;
 .
 
 :usage_school
   a cidoc:E55_type ;
   dcterms:subject dbp:School ;
+  rdfs:label "school"@nl, "school"@en ;
 .
 
 :usage_columbarium
   a cidoc:E55_type ;
   dcterms:subject dbp:Columbarium ;
+  rdfs:label "columbarium"@nl, "columbarium"@en ;
 .
 
 :usage_library
   a cidoc:E55_type ;
   dcterms:subject dbp:Library ;
+  rdfs:label "bibliotheek"@nl, "library"@en ;
 .
 
 :usage_retail
   a cidoc:E55_type ;
   dcterms:subject dbp:Retail ;
+  rdfs:label "winkel"@nl, "shop"@en ;
 .
 
 :usage_preschool
   a cidoc:E55_type ;
   dcterms:subject dbp:Preschool ;
+  rdfs:label "kinderdagverblijf"@nl, "preschool"@en ;
 .
 
 :usage_other
   a cidoc:E55_type ;
   dcterms:subject aat:300400513 ;
+  rdfs:label "overig"@nl, "other"@en ;
 .
 
 # the following mapping needs confirmation from Herman:
 :usage_none
   a cidoc:E55_type ;
   dcterms:subject eth:ce21134b-4819-4efb-9ecd-612736a93111 ;
+  rdfs:label "geen"@nl, "none"@en ;
 .
 
 ##  end usage types 
