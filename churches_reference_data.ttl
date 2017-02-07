@@ -45,7 +45,7 @@
 :usage_museum
   a cidoc:E55_type ;
   dcterms:subject dbp:Museum ;
-  rdfs:label "Museum"@nl, "Museum"@en ;
+  rdfs:label "museum"@nl, "museum"@en ;
 .
 
 :usage_communitycentre
@@ -57,7 +57,7 @@
 :usage_mosque
   a cidoc:E55_type ;
   dcterms:subject dbp:Mosque ;
-  rdfs:label "moskee"@nl, "moskee"@en ;
+  rdfs:label "moskee"@nl, "mosque"@en ;
 .
 
 :usage_healthcentre
