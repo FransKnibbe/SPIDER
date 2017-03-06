@@ -1,67 +1,161 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Church buildings</title>
+  <title>Church buildings by province</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css">
-      html, body {
-        height: 100%;
-        margin: 0;
-      }
-      #map {
-        min-height: 100%; 
-      }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    #map {
+      min-height: 100%; 
+    }
+    select {
+      border: 1px solid lightblue;
+      border-radius: 10px;
+      padding: 4px;
+      color: white;
+      font-size: 24px;
+      width: 300px;
+      -webkit-appearance: none;
+      background-color: lightblue;
+      background-transparency: 0.5;
+      background-position: right 15px top 22px;
+      background-size: 18px 18px;
+    }
+    select:active {
+      background-color: lightskyblue;
+    }
+    #provsel {
+      color: white;
+      text-shadow: 
+        -1px -1px 0 lightskyblue,  
+        1px -1px 0  lightskyblue,
+        -1px 1px 0 lightskyblue,
+         1px 1px 0 lightskyblue;
+      font-size: 26px;
+      position: absolute;
+      margin: 22px;
+      padding-left: 60px;
+      z-index: 5000;
+    }
+    #loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 5000;
+      margin: -75px 0 0 -75px;
+      border: 14px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 14px solid #3498db;
+      width: 70px;
+      height: 70px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
   </style>
-  <link rel="stylesheet" href="../../leaflet/leaflet.css" />
-  <script src="../../leaflet/leaflet.js"></script>
+  <link rel='stylesheet' href='../../leaflet/leaflet.css' />
+  <script src='../../leaflet/leaflet.js'></script>
   <script>
+    /* Data are requested through SPARQL queries.
+      To view the queries below in a readable way, use a URL decoder. 
+      Use a URL encoder to translate any SPARQL query in readable format to a query
+      that can be used by XMLHttpRequest, and prefix it with the URI of the SPARQL
+      endpoint, which in this case is
+      "http://data.spider-ld.org/marmotta/sparql/select?query="
+    */
     var map;
-    
+    var fGroup = new L.featureGroup();
+   
     function csv2array(csv) {
       var data = [];
       var lineData;
       var lines = csv.split(/\r\n|\n/);
-      for (var i = 1; i < lines.length; i++) {
+      // below i = 1 to skip the first line containing column names
+      for (var i = 1; i < (lines.length -1); i++) { 
         data.push(lines[i].split(','));
       }
       return data;
     }
     
-    function plot(data,map) {
+    function plot(data) {
+      // the data have four columns: URI, place name, church name, WKT string
       var label, latlon, coords;
       var markers = [];
-      for (var i = 0; i < (data.length -1); i++) {
-        label = data[i][0];
-        coords = data[i][1].slice(6).slice(0,-1).split(' ');
+      fGroup.clearLayers();
+      var marker;
+      for (var i = 0; i < (data.length); i++) {
+        label = data[i][2] + ', ' + data[i][1];
+        coords = data[i][3].slice(6).slice(0,-1).split(' ');
         var latlon = L.latLng(coords[1], coords[0]);
-        markers.push(new L.marker(latlon,{title: label, riseOnHover: true}));
+        marker = new L.marker(latlon,{title: label, riseOnHover: true});
+        marker.uri = data[i][0];
+        markers.push(marker);
       }
-      var group = L.featureGroup(markers).addTo(map);
+      fGroup = L.featureGroup(markers).addTo(map);
+      fGroup.on('click', function(event) {
+        var selectedMarker = event.layer;
+        window.open(selectedMarker.uri);
+      });
+      map.fitBounds(fGroup.getBounds());
+      document.getElementById("loader").style.display = "none";
     }
     
-    function initmap() {
-      map = new L.map('map');
-      // create the tile layer with correct attribution
-      var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-      var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-      var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 18, attribution: osmAttrib});   
-      map.setView(new L.LatLng(52, 5),10);
-      map.addLayer(osm);
-      /* Data are requested through a SPARQL query.
-      To view the query below in a readable way, use a URL decoder. 
-      Use a URL encoder to translate any SPARQL query in readable format to a query that can be 
-      used by XMLHttpRequest, and prefix it with the URI of the SPARQL endpoint, which
-      in this case is "http://data.spider-ld.org/marmotta/sparql/select?query="
-      */
-      sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix+schema%3a+%3chttp%3a%2f%2fschema.org%2f%3e%0d%0aprefix+dcterms%3a+%3chttp%3a%2f%2fpurl.org%2fdc%2fterms%2f%3e%0d%0aprefix+locn%3a+%3chttp%3a%2f%2fwww.w3.org%2fns%2flocn%23%3e%0d%0aprefix+geom%3a++%3chttp%3a%2f%2fdata.ign.fr%2fdef%2fgeometrie%23%3e%0d%0aprefix+geosp%3a+%3chttp%3a%2f%2fwww.opengis.net%2font%2fgeosparql%23%3e%0d%0aselect+%3fname+%3fwkt%0d%0a%7b%0d%0a%3fchurch+a+schema%3aChurch+.%0d%0a%3fchurch+dcterms%3atitle+%3fname+.%0d%0a%3fchurch+locn%3alocation+%3floc+.%0d%0a%3floc+locn%3ageometry+%3fgeom+.%0d%0a%3fgeom+a+geom%3aPoint+.%0d%0a%3fgeom+geom%3acrs+%3chttp%3a%2f%2fwww.opengis.net%2fdef%2fcrs%2fOGC%2f1.3%2fCRS84%3e.%0d%0a%3fgeom+geosp%3aasWKT+%3fwkt+.%0d%0a%7d+limit+1000';
+    function makeProvSelection(data) {
+      var option;
+      var sel = document.getElementById('prov');
+      for (var i = 0; i < (data.length); i++) {
+        option = document.createElement('option');
+        option.text = data[i];
+        sel.add(option);
+      }
+    }
+    
+    function setProvince(prov) {
+      // retrieve data for the selected province
       var xhr = new XMLHttpRequest();
-      var csv;
-      var churches = [];
+      document.getElementById("loader").style.display = "block";
+      var sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aprefix%20dbpo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aprefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0Aprefix%20geom%3A%20%20%3Chttp%3A%2F%2Fdata.ign.fr%2Fdef%2Fgeometrie%23%3E%0Aprefix%20geosp%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect%20%3Fchurch%20%3Fplacename%20%3Fname%20%3Fwkt%0Awhere%20%7B%0A%3Fchurch%20a%20schema%3AChurch%20%3B%0Adcterms%3Atitle%20%3Fname%20%3B%0Alocn%3Alocation%20%3Floc%20%3B%0Alocn%3Aaddress%20%3Faddress%20.%0A%3Faddress%20locn%3ApostName%20%3Fplacename%20.%0A%3Floc%20dbpo%3Aprovince%20%22PROV%22%20%3B%0Alocn%3Ageometry%20%3Fgeom%20.%0A%3Fgeom%20a%20geom%3APoint%20%3B%0Ageom%3Acrs%20%3Chttp%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FOGC%2F1.3%2FCRS84%3E%3B%0Ageosp%3AasWKT%20%3Fwkt%20.%0A%7D';
+      sparql = sparql.replace('PROV',prov);
       xhr.onreadystatechange = function() {
         if (xhr.readyState == XMLHttpRequest.DONE) {
           var data = csv2array(xhr.responseText);
-          plot(data,map);
+          plot(data);
+        }
+      }
+      xhr.open('GET', sparql, true);
+      xhr.setRequestHeader("Accept", "text/csv"); 
+      xhr.send(null);
+    }
+    
+    function init() {
+      map = new L.map('map');
+      document.getElementById("loader").style.display = "none";
+      // create the tile layer with correct attribution
+      var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+      var osmAttrib='Map data &#9400; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+      var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 18, attribution: osmAttrib});
+      var xhr = new XMLHttpRequest();
+      var csv;      
+      map.setView(new L.LatLng(52, 5),8);
+      map.addLayer(osm);
+
+      // get an ordered list of distinct province names
+      sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix%20dbpo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aprefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0Aselect%20distinct%20%3Fprov%0Awhere%20%7B%0A%3Floc%20a%20dcterms%3ALocation%20.%0A%3Floc%20dbpo%3Aprovince%20%3Fprov%20.%0A%7D%0Aorder%20by%20%3Fprov'
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+          var data = csv2array(xhr.responseText);
+          makeProvSelection(data);
         }
       }
       xhr.open('GET', sparql, true);
@@ -70,7 +164,17 @@
     }
   </script>
 </head>
-<body onload="initmap()">
-  <div id="map"></div>
+<body onload='init()'>
+  <div id="map">
+    <div id="loader"></div>
+    <div id="provsel">
+      <form>
+      <label for="prov">Province:</label>
+        <select id="prov" onchange="setProvince(this.options[this.selectedIndex].text)">
+            <option >Pick one</option>
+        </select
+      </form>
+    </div>
+  </div>
 </body>
 </html>

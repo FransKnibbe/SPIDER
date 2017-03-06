@@ -28,7 +28,7 @@
     var chart = new google.visualization.PieChart(document.getElementById('chart'));
     chart.draw(view, options);
     var selectHandler = function(e) {
-      window.open(dataTable.getValue(chart.getSelection()[0]['row'],1))
+      window.open(dataTable.getValue(chart.getSelection()[0]['row'],1));
     }
     google.visualization.events.addListener(chart, 'select', selectHandler);
   }

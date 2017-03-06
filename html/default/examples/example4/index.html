@@ -30,12 +30,38 @@
     }
     #provsel {
       color: white;
-      text-outline: 1px 1px #ff0000;
-      font-size: 24px;
+      text-shadow: 
+        -1px -1px 0 lightskyblue,  
+        1px -1px 0  lightskyblue,
+        -1px 1px 0 lightskyblue,
+         1px 1px 0 lightskyblue;
+      font-size: 26px;
       position: absolute;
       margin: 22px;
       padding-left: 60px;
       z-index: 5000;
+    }
+    #loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 5000;
+      margin: -75px 0 0 -75px;
+      border: 14px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 14px solid #3498db;
+      width: 70px;
+      height: 70px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
   <link rel='stylesheet' href='../../leaflet/leaflet.css' />
@@ -63,17 +89,26 @@
     }
     
     function plot(data) {
+      // the data have four columns: URI, place name, church name, WKT string
       var label, latlon, coords;
       var markers = [];
       fGroup.clearLayers();
-      for (var i = 0; i < (data.length -1); i++) {
-        label = data[i][0];
-        coords = data[i][1].slice(6).slice(0,-1).split(' ');
+      var marker;
+      for (var i = 0; i < (data.length); i++) {
+        label = data[i][2] + ', ' + data[i][1];
+        coords = data[i][3].slice(6).slice(0,-1).split(' ');
         var latlon = L.latLng(coords[1], coords[0]);
-        markers.push(new L.marker(latlon,{title: label, riseOnHover: true}));
+        marker = new L.marker(latlon,{title: label, riseOnHover: true});
+        marker.uri = data[i][0];
+        markers.push(marker);
       }
       fGroup = L.featureGroup(markers).addTo(map);
+      fGroup.on('click', function(event) {
+        var selectedMarker = event.layer;
+        window.open(selectedMarker.uri);
+      });
       map.fitBounds(fGroup.getBounds());
+      document.getElementById("loader").style.display = "none";
     }
     
     function makeProvSelection(data) {
@@ -87,8 +122,10 @@
     }
     
     function setProvince(prov) {
+      // retrieve data for the selected province
       var xhr = new XMLHttpRequest();
-      var sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aprefix%20dbpo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aprefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0Aprefix%20geom%3A%20%20%3Chttp%3A%2F%2Fdata.ign.fr%2Fdef%2Fgeometrie%23%3E%0Aprefix%20geosp%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect%20%3Fname%20%3Fwkt%20%3Fchurch%20%0Awhere%20%7B%0A%3Fchurch%20a%20schema%3AChurch%20.%0A%3Fchurch%20dcterms%3Atitle%20%3Fname%20.%0A%3Fchurch%20locn%3Alocation%20%3Floc%20.%0A%3Floc%20dbpo%3Aprovince%20%22PROV%22%20.%0A%3Floc%20locn%3Ageometry%20%3Fgeom%20.%0A%3Fgeom%20a%20geom%3APoint%20.%0A%3Fgeom%20geom%3Acrs%20%3Chttp%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FOGC%2F1.3%2FCRS84%3E.%0A%3Fgeom%20geosp%3AasWKT%20%3Fwkt%20.%0A%7D';
+      document.getElementById("loader").style.display = "block";
+      var sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aprefix%20dbpo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aprefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0Aprefix%20geom%3A%20%20%3Chttp%3A%2F%2Fdata.ign.fr%2Fdef%2Fgeometrie%23%3E%0Aprefix%20geosp%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect%20%3Fchurch%20%3Fplacename%20%3Fname%20%3Fwkt%0Awhere%20%7B%0A%3Fchurch%20a%20schema%3AChurch%20%3B%0Adcterms%3Atitle%20%3Fname%20%3B%0Alocn%3Alocation%20%3Floc%20%3B%0Alocn%3Aaddress%20%3Faddress%20.%0A%3Faddress%20locn%3ApostName%20%3Fplacename%20.%0A%3Floc%20dbpo%3Aprovince%20%22PROV%22%20%3B%0Alocn%3Ageometry%20%3Fgeom%20.%0A%3Fgeom%20a%20geom%3APoint%20%3B%0Ageom%3Acrs%20%3Chttp%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FOGC%2F1.3%2FCRS84%3E%3B%0Ageosp%3AasWKT%20%3Fwkt%20.%0A%7D';
       sparql = sparql.replace('PROV',prov);
       xhr.onreadystatechange = function() {
         if (xhr.readyState == XMLHttpRequest.DONE) {
@@ -103,6 +140,7 @@
     
     function init() {
       map = new L.map('map');
+      document.getElementById("loader").style.display = "none";
       // create the tile layer with correct attribution
       var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
       var osmAttrib='Map data &#9400; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
@@ -128,6 +166,7 @@
 </head>
 <body onload='init()'>
   <div id="map">
+    <div id="loader"></div>
     <div id="provsel">
       <form>
       <label for="prov">Province:</label>
