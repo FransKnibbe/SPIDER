@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Church buildings by function</title>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(getData);
+  function plot(data) {
+    var dataTable = new google.visualization.DataTable();
+    dataTable.addColumn('string', 'Hyperlink');
+    dataTable.addColumn('string', 'Function');
+    dataTable.addColumn('number', 'Church buildings');
+    var lines = data.split(/\r\n|\n/);
+    for (var i = 1; i < lines.length; i++) { //skip the first line containing the column labels
+      data = lines[i].split(',');
+      row = [data[0], data[1], parseInt(data[2])];
+      dataTable.addRow(row);
+    }
+    var view = new google.visualization.DataView(dataTable);
+    view.setColumns([0, 2]);
+    var options = {'title':'Church buildings by current function'
+      ,'width':1000
+      ,'height':600
+      ,'legend':'left'
+      ,'is3D':true
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('chart'));
+    chart.draw(view, options);
+    var selectHandler = function(e) {
+      window.open(dataTable.getValue(chart.getSelection()[0]['row'],1))
+    }
+    google.visualization.events.addListener(chart, 'select', selectHandler);
+  }
+  
+  function getData() {
+    /* Data are requested through a SPARQL query.
+      To view the query below in a readable way, use a URL decoder. 
+      Use a URL encoder to translate any SPARQL query in readable format to a query that can be 
+      used by XMLHttpRequest, and prefix it with the URI of the SPARQL endpoint, which
+      in this case is "http://data.spider-ld.org/marmotta/sparql/select?query="
+    */
+    sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix%20dbo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Frdfs%2Fcidoc_crm_v6.2-draft-2015August.rdfs%23%3E%0Aprefix%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aselect%20%3Flabel%20%3Fusage%20(count(%3Fchurch)%20as%20%3Fnumber_of_churches)%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20dbo%3AChurch%20.%0A%20%20%3Fchurch%20cidoc%3AP103_was_intended_for%2Fdct%3Asubject%20%3Fusage%20.%0A%20%20%3Fchurch%20cidoc%3AP103_was_intended_for%2Frdfs%3Alabel%20%3Flabel%20.%0A%20%20FILTER%20(lang(%3Flabel)%20%3D%20%27en%27)%20.%0A%7D%0Agroup%20by%20%3Fusage%20%3Flabel'
+    var xhr = new XMLHttpRequest();
+    var csv;
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == XMLHttpRequest.DONE) {
+        plot(xhr.responseText);
+      }
+    }
+    xhr.open('GET', sparql, true);
+    xhr.setRequestHeader("Accept", "text/csv"); 
+    xhr.send(null);
+  }
+  </script>
+</head>
+
+<body>
+  <div id="chart"></div>
+</body>
+</html>

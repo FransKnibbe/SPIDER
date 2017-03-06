@@ -34,6 +34,8 @@ set extra=http://data.spider-ld.org/kerkennl_extra/data/
 set geom=http://data.ign.fr/def/geometrie#
 
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || id || '> <%locn%location> <%extra%locatie' || id || '> .' from kerken_locatie;" > churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%dbo%province> ""' || provincie || '"".' from kerken_locatie;" >> churches_extra.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%dbo%municipality> ""' || gemeente || '"".' from kerken_locatie;" >> churches_extra.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%rdf%type> <%dcterms%Location> .' from kerken_locatie;" >> churches_extra.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%void%inDataset> <http://data.spider-ld.org/kerkennl_extra/data> .' from kerken_locatie;" >> churches_extra.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%extra%locatie' || id || '> <%dbo%area> ""' || oppervlakte || '""^^<http://www.w3.org/2001/XMLSchema#double> .' from kerken_locatie;" >> churches_extra.nt

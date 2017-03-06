@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Church buildings </title>
+  <title>Church buildings</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css">
-    	html, body {
-    		height: 100%;
-    		margin: 0;
-    	}
-    	#map {
-    		min-height: 100%; 
-    	}
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      #map {
+        min-height: 100%; 
+      }
   </style>
   <link rel="stylesheet" href="../../leaflet/leaflet.css" />
   <script src="../../leaflet/leaflet.js"></script>
   <script>
     var map;
-    var ajaxRequest;
-    var plotlist;
-    var plotlayers=[];
+    
     function csv2array(csv) {
       var data = [];
       var lineData;
@@ -29,8 +27,9 @@
       }
       return data;
     }
+    
     function plot(data,map) {
-      var label, wkt, latlon, coords;
+      var label, latlon, coords;
       var markers = [];
       for (var i = 0; i < (data.length -1); i++) {
         label = data[i][0];
@@ -40,14 +39,21 @@
       }
       var group = L.featureGroup(markers).addTo(map);
     }
+    
     function initmap() {
       map = new L.map('map');
       // create the tile layer with correct attribution
       var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-      var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+      var osmAttrib='Map data Â© <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
       var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 18, attribution: osmAttrib});   
       map.setView(new L.LatLng(52, 5),10);
       map.addLayer(osm);
+      /* Data are requested through a SPARQL query.
+      To view the query below in a readable way, use a URL decoder. 
+      Use a URL encoder to translate any SPARQL query in readable format to a query that can be 
+      used by XMLHttpRequest, and prefix it with the URI of the SPARQL endpoint, which
+      in this case is "http://data.spider-ld.org/marmotta/sparql/select?query="
+      */
       sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix+schema%3a+%3chttp%3a%2f%2fschema.org%2f%3e%0d%0aprefix+dcterms%3a+%3chttp%3a%2f%2fpurl.org%2fdc%2fterms%2f%3e%0d%0aprefix+locn%3a+%3chttp%3a%2f%2fwww.w3.org%2fns%2flocn%23%3e%0d%0aprefix+geom%3a++%3chttp%3a%2f%2fdata.ign.fr%2fdef%2fgeometrie%23%3e%0d%0aprefix+geosp%3a+%3chttp%3a%2f%2fwww.opengis.net%2font%2fgeosparql%23%3e%0d%0aselect+%3fname+%3fwkt%0d%0a%7b%0d%0a%3fchurch+a+schema%3aChurch+.%0d%0a%3fchurch+dcterms%3atitle+%3fname+.%0d%0a%3fchurch+locn%3alocation+%3floc+.%0d%0a%3floc+locn%3ageometry+%3fgeom+.%0d%0a%3fgeom+a+geom%3aPoint+.%0d%0a%3fgeom+geom%3acrs+%3chttp%3a%2f%2fwww.opengis.net%2fdef%2fcrs%2fOGC%2f1.3%2fCRS84%3e.%0d%0a%3fgeom+geosp%3aasWKT+%3fwkt+.%0d%0a%7d+limit+1000';
       var xhr = new XMLHttpRequest();
       var csv;

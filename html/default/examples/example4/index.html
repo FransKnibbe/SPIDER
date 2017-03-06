@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Church buildings by province</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    #map {
+      min-height: 100%; 
+    }
+    select {
+      border: 1px solid lightblue;
+      border-radius: 10px;
+      padding: 4px;
+      color: white;
+      font-size: 24px;
+      width: 300px;
+      -webkit-appearance: none;
+      background-color: lightblue;
+      background-transparency: 0.5;
+      background-position: right 15px top 22px;
+      background-size: 18px 18px;
+    }
+    select:active {
+      background-color: lightskyblue;
+    }
+    #provsel {
+      color: white;
+      text-outline: 1px 1px #ff0000;
+      font-size: 24px;
+      position: absolute;
+      margin: 22px;
+      padding-left: 60px;
+      z-index: 5000;
+    }
+  </style>
+  <link rel='stylesheet' href='../../leaflet/leaflet.css' />
+  <script src='../../leaflet/leaflet.js'></script>
+  <script>
+    /* Data are requested through SPARQL queries.
+      To view the queries below in a readable way, use a URL decoder. 
+      Use a URL encoder to translate any SPARQL query in readable format to a query
+      that can be used by XMLHttpRequest, and prefix it with the URI of the SPARQL
+      endpoint, which in this case is
+      "http://data.spider-ld.org/marmotta/sparql/select?query="
+    */
+    var map;
+    var fGroup = new L.featureGroup();
+    
+    function csv2array(csv) {
+      var data = [];
+      var lineData;
+      var lines = csv.split(/\r\n|\n/);
+      // below i = 1 to skip the first line containing column names
+      for (var i = 1; i < (lines.length -1); i++) { 
+        data.push(lines[i].split(','));
+      }
+      return data;
+    }
+    
+    function plot(data) {
+      var label, latlon, coords;
+      var markers = [];
+      fGroup.clearLayers();
+      for (var i = 0; i < (data.length -1); i++) {
+        label = data[i][0];
+        coords = data[i][1].slice(6).slice(0,-1).split(' ');
+        var latlon = L.latLng(coords[1], coords[0]);
+        markers.push(new L.marker(latlon,{title: label, riseOnHover: true}));
+      }
+      fGroup = L.featureGroup(markers).addTo(map);
+      map.fitBounds(fGroup.getBounds());
+    }
+    
+    function makeProvSelection(data) {
+      var option;
+      var sel = document.getElementById('prov');
+      for (var i = 0; i < (data.length); i++) {
+        option = document.createElement('option');
+        option.text = data[i];
+        sel.add(option);
+      }
+    }
+    
+    function setProvince(prov) {
+      var xhr = new XMLHttpRequest();
+      var sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aprefix%20dbpo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aprefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0Aprefix%20geom%3A%20%20%3Chttp%3A%2F%2Fdata.ign.fr%2Fdef%2Fgeometrie%23%3E%0Aprefix%20geosp%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect%20%3Fname%20%3Fwkt%20%3Fchurch%20%0Awhere%20%7B%0A%3Fchurch%20a%20schema%3AChurch%20.%0A%3Fchurch%20dcterms%3Atitle%20%3Fname%20.%0A%3Fchurch%20locn%3Alocation%20%3Floc%20.%0A%3Floc%20dbpo%3Aprovince%20%22PROV%22%20.%0A%3Floc%20locn%3Ageometry%20%3Fgeom%20.%0A%3Fgeom%20a%20geom%3APoint%20.%0A%3Fgeom%20geom%3Acrs%20%3Chttp%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FOGC%2F1.3%2FCRS84%3E.%0A%3Fgeom%20geosp%3AasWKT%20%3Fwkt%20.%0A%7D';
+      sparql = sparql.replace('PROV',prov);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+          var data = csv2array(xhr.responseText);
+          plot(data);
+        }
+      }
+      xhr.open('GET', sparql, true);
+      xhr.setRequestHeader("Accept", "text/csv"); 
+      xhr.send(null);
+    }
+    
+    function init() {
+      map = new L.map('map');
+      // create the tile layer with correct attribution
+      var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+      var osmAttrib='Map data &#9400; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+      var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 18, attribution: osmAttrib});
+      var xhr = new XMLHttpRequest();
+      var csv;      
+      map.setView(new L.LatLng(52, 5),8);
+      map.addLayer(osm);
+
+      // get an ordered list of distinct province names
+      sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix%20dbpo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aprefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0Aselect%20distinct%20%3Fprov%0Awhere%20%7B%0A%3Floc%20a%20dcterms%3ALocation%20.%0A%3Floc%20dbpo%3Aprovince%20%3Fprov%20.%0A%7D%0Aorder%20by%20%3Fprov'
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+          var data = csv2array(xhr.responseText);
+          makeProvSelection(data);
+        }
+      }
+      xhr.open('GET', sparql, true);
+      xhr.setRequestHeader("Accept", "text/csv"); 
+      xhr.send(null);
+    }
+  </script>
+</head>
+<body onload='init()'>
+  <div id="map">
+    <div id="provsel">
+      <form>
+      <label for="prov">Province:</label>
+        <select id="prov" onchange="setProvince(this.options[this.selectedIndex].text)">
+            <option >Pick one</option>
+        </select
+      </form>
+    </div>
+  </div>
+</body>
+</html>

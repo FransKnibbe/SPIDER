@@ -46,12 +46,10 @@ psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%d
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <%dcterms%title> ""' || n.\"Naam_Kerk\" || '\" .' from kerken.\"01_Hoofdtabel_Kerken\" k, kerken.\"011_Naam_Kerk\" n where k.\"ID\" = n.\"ID\" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <%dbpo%buildingName> ""' || n.\"Naam_Kerk\" || '\" .' from kerken.\"01_Hoofdtabel_Kerken\" k, kerken.\"011_Naam_Kerk\" n where k.\"ID\" = n.\"ID\" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <%cidoc%E42_Identifier> ""' || n.\"Naam_Kerk\" || '\" .' from kerken.\"01_Hoofdtabel_Kerken\" k, kerken.\"011_Naam_Kerk\" n where k.\"ID\" = n.\"ID\" >> churches.nt
-:: Long literals ("""like this""") are needed if the string can contain newlines or double quotes
-:: commented out because Riot (Jena) and Cliopatria do not seem to accept triple quotes.
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%rdfs%comment> """"""' || \"Bijzonderheden\" || '\""""" .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Bijzonderheden\" is not null";" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%rdfs%comment> ""' || regexp_replace(replace(\"Bijzonderheden\", '""', '\\""') , '\r|\n', ' ', 'g') || '""@nl .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Bijzonderheden\" is not null;" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%locn%address> <%base%kerk' || \"ID\" || '/address> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Plaats\" is not null;" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/address> <%rdf%type> <%locn%Address> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Plaats\" is not null;" >> churches.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/address> <%locn%postName> ""' || \"Plaats\" || '"" .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Plaats\" is not null;" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/address> <%locn%postName> ""' || regexp_replace(\"Plaats\", '\r|\n', ' ', 'g') || '"" .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Plaats\" is not null;" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/address> <%locn%thoroughfare> ""' || \"Straatnaam\" || '"" .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Straatnaam\" is not null;" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '/address> <%locn%locatorDesignator> ""' || \"Huisnummer\" || '""^^<%xsd%Integer> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Huisnummer\" is not null and \"Huisnummer\" > 0;"  >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dcterms%created> ""' || \"Jaar_ingebruikname\" || '""^^<%xsd%gYear> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Jaar_ingebruikname\" is not null and \"Jaar_ingebruikname\" > 0;" >> churches.nt
@@ -101,7 +99,7 @@ psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%d
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpp%architectureType> <%dbprnl%Basiliek> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Vorm_type\" =  'centraalbouw' or \"Vorm_type\" = 'basiliek/centraalbouw';" >> churches.nt
 
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpp%architectureType> <%eth%aa257980-4d44-42d9-9167-415d0a7af8a1> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Vorm_type\" = 'kruiskerk';"  >> churches.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpp%architectureType> <%dbprnl%Kruiskerk> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Vorm_type\" = 'basliliek';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpp%architectureType> <%dbprnl%Kruiskerk> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Vorm_type\" = 'kruiskerk';" >> churches.nt
 :: end 'vorm_type'
 
 :: start 'stijl'
@@ -136,5 +134,18 @@ psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%d
 
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%d19a7bd4-d479-422c-838a-d4d3749205a> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'rationalisme';" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Rationalism_(architecture)> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'rationalisme';" >> churches.nt
-
 :: end 'stijl'
+
+::start monumentenstatus
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dcterms%subject> <%eth%5ac17e84-0ab0-41e1-b2d0-533ce810e4d0> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Monumenten_Status\" = 'Gemeentelijk Monument';"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dcterms%subject> <%eth%44779998-ae87-4bb0-bfd3-2463e0e250da> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Monumenten_Status\" = 'Provinciaal Monument';"  >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dcterms%subject> <%eth%44e43c88-c673-4098-bda7-6551c83e6a1c> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Monumenten_Status\" = 'Rijksmonument';"  >> churches.nt
+::end monumentenstatus
+
+
+:: start 'denominatie'
+:: psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || k.\"ID\" || '> <%dbpp%denomination> <%eth%d028c2fc-d6d3-4546-828a-7ac904241034> .' from kerken.\"01_Hoofdtabel_Kerken\" k, kerken.\"012_Denominatie\" d where k.\"ID\" = d.\"ID\" and d.\"Denominatie\" = 'Evangelisch Lutherse Kerk (PKN)';" >> churches.nt
+
+
+:: end 'denominatie'
+

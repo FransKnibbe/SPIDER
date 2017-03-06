@@ -12,12 +12,11 @@
   <script type="text/javascript">
   window.onload = init;
   function init() {
-    var divs = document.getElementsByTagName("div");
+    var divs = document.getElementsByTagName('div');
     for (var i = 0; i < divs.length; i++ ) {
-      if (divs[i+1].className=='visible') {
-        divs[i+1].className = 'hidden';
-        divs[i].innerHTML = '&#9654; tekst SPARQL query (klik om uit te klappen):';
-
+      if (divs[i].className == 'visible') {
+        divs[i].className = 'hidden';
+        divs[i-1].innerHTML = '&#9654; tekst SPARQL query (klik om uit te klappen):';
       }
     }
   }
@@ -58,6 +57,7 @@
   <p>Webdata lenen zich van nature goed voor presentatie in (grafische) webapplicaties. Hieronder enkele simpele webpagina's die gebruik maken van de data die via SPIDER ter beschikking worden gesteld:</p>
   <ul>
   <li><a href="example1.html">Locatie van kerkgebouwen op de kaart</a></li>
+  <li><a href="example2.html">Taartdiagram van kerkgebouwen per functie</a></li>
   </ul>
   <h2>SPARQL-query's</h2>
   <p><a href="https://nl.wikipedia.org/wiki/SPARQL">SPARQL</a> is een bevragingstaal voor data die op <abbr title="Resource Description Framework">RDF</abbr> zijn gebaseerd. Het is vergelijkbaar met <abbr title="Structured Query Language">SQL</abbr>, de bevragingstaal voor relationele databases. Via SPARQL kunnen op een standaardmanier simpele en complexe vragen aan datasets worden gesteld. Hieronder zie je wat voorbeelden van SPARQL-query's. De tekst van de query's kan worden gekopieerd naar één van de grafische SPARQL-gebruikersomgevingen (<a href="../squebi/spider_squebi.html">Squebi</a> of <a href="../yasgui/spider_yasgui.html">YASGUI</a>), om er mee te experimenteren, of kan direct als HTTP-verzoek worden uitgevoerd.</p>

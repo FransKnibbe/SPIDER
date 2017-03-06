@@ -12,12 +12,11 @@
   <script type="text/javascript">
   window.onload = init;
   function init() {
-    var divs = document.getElementsByTagName("div");
+    var divs = document.getElementsByTagName('div');
     for (var i = 0; i < divs.length; i++ ) {
-      if (divs[i+1].className=='visible') {
-        divs[i+1].className = 'hidden';
-        divs[i].innerHTML = '&#9654; SPARQL query text (click to expand):';
-
+      if (divs[i].className == 'visible') {
+        divs[i].className = 'hidden';
+        divs[i-1].innerHTML = '&#9654; tekst SPARQL query (klik om uit te klappen):';
       }
     }
   }
@@ -57,7 +56,8 @@
   <h2>Web applications</h2>
   <p>Web data by nature are well suited for use in (graphic) web applications. Here are examples of simple web pages that use SPIDER data:</p>
   <ul>
-  <li><a href="example1.html" target="_blank">Location of church building on a map</a></li>
+  <li><a href="example1.html">Location of church building on a map</a></li>
+  <li><a href="example2.html">Pie diagram of church buildings by function</a></li>
   </ul>
   <h2>SPARQL queries</h2>
   <p><a href="https://nl.wikipedia.org/wiki/SPARQL">SPARQL</a> is a query language for <abbr title="Resource Description Framework">RDF</abbr>-based data. It is similar to <abbr title="Structured Query Language">SQL</abbr>, the query language for relational databases. SPARQL can be used to ask questions and to request data. Below are some examples of SPARQL queries. The queries can be copied to one of the <graphical user interfaces for SPARQL (<a href="../squebi/spider_squebi.html">Squebi</a> or <a href="../yasgui/spider_yasgui.html">YASGUI</a>) to play around with, or be executed immediately via the query link that executes the query as a HTTP request.</p>
