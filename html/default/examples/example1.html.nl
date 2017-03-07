@@ -25,7 +25,7 @@
 <section class="demo">
 <iframe class="demo" src="example1/index.html"></iframe>
 <div class="helpbutton"></div>
-<div class="explanation">Op deze pagina worden eerst de namen van de in de dataset aanwezige provincies opgevraagd. Die komen in een keuzelijst. Wanneer er een provincie wordt gekozen wordt de locatie, naam, plaatsnaam en URI van kerkgebouwen in die provincie opgevraagd. De locaties worden in een kaart getekend, met behulp van de populaire javascriptbibliotheek <a href="http://leafletjs.com/">Leaflet</a>. Wordt de muisaanwijzer over een kerkpictogram bewogen, dan komen naam en plaatsnaam van het kerkgebouw in beeld. Door op een pictogram te klikken worden de data over het betreffende kerkgebouw opgevraagd.
+<div class="explanation">Op deze pagina worden eerst de namen van de in de dataset aanwezige provincies via SPARQL opgevraagd. De provincienamen komen in een keuzelijst. Wanneer er een provincie wordt gekozen wordt de locatie, naam, plaatsnaam en URI van kerkgebouwen in die provincie opgevraagd. De locaties worden in een kaart getekend, met behulp van de populaire javascriptbibliotheek <a href="http://leafletjs.com/">Leaflet</a>. Wordt de muisaanwijzer over een kerkpictogram bewogen, dan komen naam en plaatsnaam van het kerkgebouw in beeld. Door op een pictogram te klikken worden de data over het betreffende kerkgebouw opgevraagd en in een nieuwe pagina getoond.
 <p><a href="example1/index.html">Directe link naar de voorbeeldapplicatie</a></p></div>
 </section>
 

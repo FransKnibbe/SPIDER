@@ -3,6 +3,7 @@
 <head>
   <title>Church buildings by province</title>
   <meta charset="utf-8" />
+  <meta name="author" content="Frans Knibbe, Geodan">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css">
     html, body {
@@ -78,6 +79,7 @@
     var fGroup = new L.featureGroup();
    
     function csv2array(csv) {
+      //transform lines from a CSV file to an array of arrays.
       var data = [];
       var lineData;
       var lines = csv.split(/\r\n|\n/);
@@ -89,6 +91,7 @@
     }
     
     function plot(data) {
+      // add the church building data to the map
       // the data have four columns: URI, place name, church name, WKT string
       var label, latlon, coords;
       var markers = [];
@@ -112,6 +115,7 @@
     }
     
     function makeProvSelection(data) {
+      // populate the selection list with province names
       var option;
       var sel = document.getElementById('prov');
       for (var i = 0; i < (data.length); i++) {
@@ -139,6 +143,7 @@
     }
     
     function init() {
+      //prepate and show the map
       map = new L.map('map');
       document.getElementById("loader").style.display = "none";
       // create the tile layer with correct attribution
@@ -149,7 +154,7 @@
       var csv;      
       map.setView(new L.LatLng(52, 5),8);
       map.addLayer(osm);
-
+      
       // get an ordered list of distinct province names
       sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix%20dbpo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aprefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0Aselect%20distinct%20%3Fprov%0Awhere%20%7B%0A%3Floc%20a%20dcterms%3ALocation%20.%0A%3Floc%20dbpo%3Aprovince%20%3Fprov%20.%0A%7D%0Aorder%20by%20%3Fprov'
       xhr.onreadystatechange = function() {

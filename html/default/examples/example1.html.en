@@ -25,7 +25,7 @@
 <section class="demo">
 <iframe class="demo" src="example1/index.html"></iframe>
 <div class="helpbutton"></div>
-<div class="explanation">On this demo page the locations and names of a thousand church buildings are requested and plotted in a map. The map is created using the popular javascript library <a href="http://leafletjs.com/">Leaflet</a>.
+<div class="explanation">On this demo page the names of the provinces present in the dataset are requested using SPARQL. The province names are put in a selection list. When a a province is selected the location, name, place name and URI of the church buildings in that province are requested. The locations are then plotted on the map, which is made using the popular javascript library <a href="http://leafletjs.com/">Leaflet</a>. Hovering over a marker will show a tooltip with the name of the church and its place name. Clicking on a marker will open data about the church building in a new page.
 <p><a href="example1/index.html">Direct link to the example application</a></p></div>
 </section>
 

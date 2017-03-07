@@ -25,7 +25,7 @@
 <section class="demo">
 <iframe class="demo" src="example2/index.html"></iframe>
 <div class="helpbutton"></div>
-<div class="explanation">On this demo page the total number of church buildings for each type of usage is requested. The results are drawn as a pie diagram, using <a href="https://developers.google.com/chart/">Google Charts</a>. Clicking a part of the diagram will open a page following the link to the data describing the picked usage.
+<div class="explanation">On this demo page the total number of church buildings for each type of usage is requested using SPARQL. The results are drawn as a pie diagram, using <a href="https://developers.google.com/chart/">Google Charts</a>. Clicking a part of the diagram will open a page following the link to the data describing the picked usage.
 <p><a href="example2/index.html">Direct link to the example application</a></p></div>
 </section>
 
