@@ -129,7 +129,7 @@ psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%d
 
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%1e094ce2-e879-4687-bd3c-5968e33cd1d9> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'modernisme - functionalisme';" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%03d7eb43-62dc-4d8b-8a50-d809d2d0e332> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'modernisme - functionalisme';" >> churches.nt
-psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Modernism)> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'modernisme - functionalisme';" >> churches.nt
+psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Modernism> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'modernisme - functionalisme';" >> churches.nt
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%dbpr%Functionalism_(architecture)> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'modernisme - functionalisme';" >> churches.nt
 
 psql -U postgres -A -t -d spiderdb1 -c "select '<%base%kerk' || \"ID\" || '> <%dbpo%architecturalStyle> <%eth%d19a7bd4-d479-422c-838a-d4d3749205a> .' from kerken.\"01_Hoofdtabel_Kerken\" where \"Stijl\" = 'rationalisme';" >> churches.nt
