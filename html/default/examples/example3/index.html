@@ -1,59 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(getData);
-
-  function plot(data) {
-    var dataTable = new google.visualization.DataTable();
-    dataTable.addColumn('string', 'Hyperlink');
-    dataTable.addColumn('string', 'Style');
-    dataTable.addColumn('number', 'Church buildings');
-    var lines = data.split(/\r\n|\n/);
-    for (var i = 1; i < lines.length; i++) { //skip the first line containing the column labels
-      data = lines[i].split(',');
-      row = [data[0], data[1], parseInt(data[2])];
-      dataTable.addRow(row);
+  <title>Church building data by source</title>
+  <meta charset='utf-8' />
+  <meta name='author' content='Frans Knibbe, Geodan'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <style type="text/css">
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+    body {
+      font-family: "Open Sans";
+      font-size: 94%;
+      margin: 10px;
     }
-    var view = new google.visualization.DataView(dataTable);
-    view.setColumns([0, 2]);
-    
-    var options = {'title':'Church buildings by current function'
-    ,'width':1000
-    ,'height':600
-    ,'legend':'left'
-    ,'is3D':true
-    };
-    var chart = new google.visualization.PieChart(document.getElementById('chart'));
-    chart.draw(view, options);
-    var selectHandler = function(e) {
-      window.open(dataTable.getValue(chart.getSelection()[0]['row'],1))
+    h1 {
+      font-size: 20px;
     }
-    google.visualization.events.addListener(chart, 'select', selectHandler);
+    table {
+      border-collapse: collapse;
+      width: 96%;
+    }
+    td {
+      text-align: left;
+      padding: 4px;
+    }
+    th {
+      text-align: left;
+      padding: 4px;
+      background-color: palegreen;
+      font-weight: bold;
+      border: 1px solid seagreen;
+    }
+    th.key {
+      width: 25%
+    }
+    tr {
+      background-color: orange;
+    }
+    tr:nth-child(even){background-color: #f2f2f2}
+    #data {
+      overflow-x:auto;
+    }
+  </style>
+  <script type='text/javascript'>
+  function init() {
+    //start requesting data about a church building
+    var uri = 'http://data.spider-ld.org/kerkennl/data/kerk63';
+    document.getElementById('title').innerHTML = 'Some data about church building <a href=' + uri + '>'+ uri +'</a>';
+    getJsonLD(uri, function(err, data) {
+      if (err != null) {
+        alert('An error occurred: ' + err);
+      } else {
+        showData(data);
+      }
+    });
   }
   
-  function getData() {
-    //The following SPARQL query is URL encoded. The query can be URL decoded to view it in a more readable way.
-    sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix%20dbo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aselect%20%3Flabel%20%3Fstyle%20(count(%3Fchurch)%20as%20%3Fnumber_of_churches)%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20dbo%3AChurch%20.%0A%20%20%3Fchurch%20dbo%3AarchitecturalStyle%20%3Fstyle%20.%0A%20%20filter(regex(str(%3Fstyle)%2C%20%22dbpedia%22))%20.%0A%20%20bind%20(%3Fstyle%20as%20%3Flabel)%20.%0A%7D%0Agroup%20by%20%3Fstyle%20%3Flabel'
-    
+  function getJsonLD(uri, callback) {
+    // get data, ask for JSON-LD format
     var xhr = new XMLHttpRequest();
-    var csv;
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState == XMLHttpRequest.DONE) {
-        plot(xhr.responseText);
+    xhr.open('GET', uri, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status == 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status);
       }
+    };
+    xhr.setRequestHeader('Accept', 'application/ld+json'); 
+    xhr.send();
+  };
+  
+  function showData(data) {
+    /*
+    create a table with data about the church building
+    data should be human readable and colour coded according to source:
+    http://data.spider-ld.org/kerkennl/data
+    http://data.spider-ld.org/kerkennl_extra/data
+    http://dbpedia.org/ontology
+    http://dbpedia.org/resource
+    */
+    //console.log('data: ' + JSON.stringify(data));
+    var dataDiv = document.getElementById('data');
+    var src1 = 'http://data.spider-ld.org/kerkennl/data';
+    var src2 = 'http://data.spider-ld.org/kerkennl_extra/data';
+    var src3 = 'http://dbpedia.org/ontology';
+    var src4 = 'http://dbpedia.org/resource';
+    for (var i = 0; i < data.length; i++) {
+      var o = data[i];
+      console.log('object ' + i + ': ' + o);
+      console.log('object ' + i + ' keys: ' + Object.keys(o)); // show the keys of the object
+      console.log('object ' + i + ' key @graph :' + o['@id']);      
+      console.log('object ' + i + ' key @graph :' + o['@graph']);
+      var table = document.createElement('table');
+      var tr = document.createElement('tr');
+      var th0 = document.createElement('th');
+      th0.innerText = 'Dataset';
+      th0.className = 'key';
+      tr.appendChild(th0);
+      var th1 = document.createElement('th');
+      //th1.innerText = o['@id'];
+      var a = document.createElement('a');
+      a.appendChild(document.createTextNode(o['@id']));
+      //a.title = o['@id'];
+      a.href = o['@id'];
+      th1.appendChild(a);
+      tr.appendChild(th1);
+      table.appendChild(tr);
+      dataDiv.appendChild(table);
     }
-    xhr.open('GET', sparql, true);
-    xhr.setRequestHeader("Accept", "text/csv"); 
-    xhr.send(null);
   }
   </script>
 </head>
 
-<body>
-<p>Click on the diagram or the legend to open the linked data in a new tab.</p>
-<div id="chart"></div>
+<body onload='init()'>
+<h1 id='title'></h1>
+<div id='data'></div>
 </body>
 </html>
