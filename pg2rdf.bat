@@ -11,7 +11,9 @@ set rdfs=http://www.w3.org/2000/01/rdf-schema#
 set xsd=http://www.w3.org/2001/XMLSchema#
 set dcterms=http://purl.org/dc/terms/
 set geo=http://www.w3.org/2003/01/geo/wgs84_pos#
-set cidoc=http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#
+#@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> . # apparently version 5.0.4
+#@prefix cidoc: <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#> .  # Does not work any longer
+@prefix cidoc: <http://erlangen-crm.org/current/> 
 set dbpo=http://dbpedia.org/ontology/
 set dbpr=http://dbpedia.org/resource/
 set dbprnl=http://nl.dbpedia.org/resource/
