@@ -7,7 +7,7 @@
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 #@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> . # apparently version 5.0.4
 #@prefix cidoc: <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.2-draft-2015August.rdfs#> .  # Does not work any longer
-@prefix cidoc: <http://erlangen-crm.org/current/> 
+@prefix cidoc: <http://erlangen-crm.org/160714/> 
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dbp: <http://dbpedia.org/resource/> .
 @prefix aat: <http://vocab.getty.edu/aat/> .
