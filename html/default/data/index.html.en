@@ -41,20 +41,20 @@
   <p>Dataset <abbr title="Uniform Resource Identifier">URI</abbr>: <a href="http://data.spider-ld.org/kerkennl/data">http://data.spider-ld.org/kerkennl/data</a></p>
   <h3>Data dumps</h3>
     <ul>
-    <li><a href="http://spider-ld.org/datadump/kerkennl_2016-09-06.rdf">RDF/XML</a></li>
-    <li><a href="http://spider-ld.org/datadump/kerkennl_2016-09-06.ttl">Turtle</a></li>
-    <li><a href="http://spider-ld.org/datadump/kerkennl_2016-09-06.json-ld">JSON-LD</a></li>
-    <li><a href="http://spider-ld.org/datadump/kerkennl_2016-09-06.nt">Ntriples</a></li>
+    <li><a href="http://spider-ld.org/datadump/kerkennl_2017-03-14.rdf">RDF/XML</a></li>
+    <li><a href="http://spider-ld.org/datadump/kerkennl_2017-03-14.ttl">Turtle</a></li>
+    <li><a href="http://spider-ld.org/datadump/kerkennl_2017-03-14.json-ld">JSON-LD</a></li>
+    <li><a href="http://spider-ld.org/datadump/kerkennl_2017-03-14.nt">Ntriples</a></li>
     </ul>
     
   <h2 id="kerkennl_extra">Extra data for church buildings in the Netherlands 1800-1970</h2>
   <p>Dataset <abbr title="Uniform Resource Identifier">URI</abbr>: <a href="http://data.spider-ld.org/kerkennl_extra/data">http://data.spider-ld.org/kerkennl_extra/data</a></p>
   <h3>Data dumps</h3>
     <ul>
-    <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2016-09-06.rdf">RDF/XML</a></li>
-    <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2016-09-06.ttl">Turtle</a></li>
-    <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2016-09-06.json-ld">JSON-LD</a></li>
-    <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2016-09-06.nt">Ntriples</a></li>
+    <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2017-03-14.rdf">RDF/XML</a></li>
+    <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2017-03-14.ttl">Turtle</a></li>
+    <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2017-03-14.json-ld">JSON-LD</a></li>
+    <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2017-03-14.nt">Ntriples</a></li>
     </ul>
     
   <h1 id="gettingData">Getting data</h1>

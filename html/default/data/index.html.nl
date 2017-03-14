@@ -51,10 +51,10 @@
   
   <h3>Datadumps</h3>
   <ul>
-  <li><a href="http://spider-ld.org/datadump/kerkennl_2016-09-06.rdf">RDF/XML</a></li>
-  <li><a href="http://spider-ld.org/datadump/kerkennl_2016-09-06.ttl">Turtle</a></li>
-  <li><a href="http://spider-ld.org/datadump/kerkennl_2016-09-06.json-ld">JSON-LD</a></li>
-  <li><a href="http://spider-ld.org/datadump/kerkennl_2016-09-06.nt">Ntriples</a></li>
+  <li><a href="http://spider-ld.org/datadump/kerkennl_2017-03-14.rdf">RDF/XML</a></li>
+  <li><a href="http://spider-ld.org/datadump/kerkennl_2017-03-14.ttl">Turtle</a></li>
+  <li><a href="http://spider-ld.org/datadump/kerkennl_2017-03-14.json-ld">JSON-LD</a></li>
+  <li><a href="http://spider-ld.org/datadump/kerkennl_2017-03-14.nt">Ntriples</a></li>
   </ul>
   
   <h2 id="kerkennl_extra">Extra data bij Kerkgebouwen in Nederland van 1800-1970</h2>
@@ -62,10 +62,10 @@
   
   <h3>Datadumps</h3>
   <ul>
-  <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2016-09-06.rdf">RDF/XML</a></li>
-  <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2016-09-06.ttl">Turtle</a></li>
-  <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2016-09-06.json-ld">JSON-LD</a></li>
-  <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2016-09-06.nt">Ntriples</a></li>
+  <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2017-03-14.rdf">RDF/XML</a></li>
+  <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2017-03-14.ttl">Turtle</a></li>
+  <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2017-03-14.json-ld">JSON-LD</a></li>
+  <li><a href="http://spider-ld.org/datadump/kerkennl_extra_2017-03-14.nt">Ntriples</a></li>
   </ul>
   
   <h1 id="gettingData">Data Opvragen</h2>
