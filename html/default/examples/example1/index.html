@@ -51,8 +51,8 @@
       border: 14px solid #f3f3f3;
       border-radius: 50%;
       border-top: 14px solid #3498db;
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
       -webkit-animation: spin 2s linear infinite;
       animation: spin 2s linear infinite;
     }
@@ -69,7 +69,7 @@
   <script src='../../leaflet/leaflet.js'></script>
   <script>
     /* Data are requested through SPARQL queries.
-      To view the queries below in a readable way, use a URL decoder. 
+      To view the queries below in a readable way, use a URL decoder (they are avialable online). 
       Use a URL encoder to translate any SPARQL query in readable format to a query
       that can be used by XMLHttpRequest, and prefix it with the URI of the SPARQL
       endpoint, which in this case is
@@ -111,7 +111,7 @@
         window.open(selectedMarker.uri);
       });
       map.fitBounds(fGroup.getBounds());
-      document.getElementById("loader").style.display = "none";
+      document.getElementById('loader').style.display = 'none';
     }
     
     function makeProvSelection(data) {
@@ -128,7 +128,7 @@
     function setProvince(prov) {
       // retrieve data for the selected province
       var xhr = new XMLHttpRequest();
-      document.getElementById("loader").style.display = "block";
+      document.getElementById('loader').style.display = 'block';
       var sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aprefix%20dbpo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aprefix%20locn%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0Aprefix%20geom%3A%20%20%3Chttp%3A%2F%2Fdata.ign.fr%2Fdef%2Fgeometrie%23%3E%0Aprefix%20geosp%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect%20%3Fchurch%20%3Fplacename%20%3Fname%20%3Fwkt%0Awhere%20%7B%0A%3Fchurch%20a%20schema%3AChurch%20%3B%0Adcterms%3Atitle%20%3Fname%20%3B%0Alocn%3Alocation%20%3Floc%20%3B%0Alocn%3Aaddress%20%3Faddress%20.%0A%3Faddress%20locn%3ApostName%20%3Fplacename%20.%0A%3Floc%20dbpo%3Aprovince%20%22PROV%22%20%3B%0Alocn%3Ageometry%20%3Fgeom%20.%0A%3Fgeom%20a%20geom%3APoint%20%3B%0Ageom%3Acrs%20%3Chttp%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FOGC%2F1.3%2FCRS84%3E%3B%0Ageosp%3AasWKT%20%3Fwkt%20.%0A%7D';
       sparql = sparql.replace('PROV',prov);
       xhr.onreadystatechange = function() {
@@ -138,14 +138,14 @@
         }
       }
       xhr.open('GET', sparql, true);
-      xhr.setRequestHeader("Accept", "text/csv"); 
+      xhr.setRequestHeader('Accept', 'text/csv'); 
       xhr.send(null);
     }
     
     function init() {
       //prepate and show the map
       map = new L.map('map');
-      document.getElementById("loader").style.display = "none";
+      document.getElementById('loader').style.display = 'none';
       // create the tile layer with correct attribution
       var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
       var osmAttrib='Map data &#9400; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
@@ -164,7 +164,7 @@
         }
       }
       xhr.open('GET', sparql, true);
-      xhr.setRequestHeader("Accept", "text/csv"); 
+      xhr.setRequestHeader('Accept', 'text/csv'); 
       xhr.send(null);
     }
   </script>

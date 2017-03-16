@@ -5,6 +5,34 @@
   <meta charset="utf-8" />
   <meta name="author" content="Frans Knibbe, Geodan">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    #loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 5000;
+      margin: -75px 0 0 -75px;
+      border: 14px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 14px solid #3498db;
+      width: 60px;
+      height: 60px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
   google.charts.load('current', {'packages':['corechart']});
@@ -24,9 +52,10 @@
     view.setColumns([0, 2]);
     var options = {'title':'Church buildings by current function'
       ,'width':1000
-      ,'height':600
+      ,'height':800
       ,'legend':'left'
       ,'is3D':true
+      ,'sliceVisibilityThreshold':0
     };
     var chart = new google.visualization.PieChart(document.getElementById('chart'));
     chart.draw(view, options);
@@ -34,6 +63,7 @@
       window.open(dataTable.getValue(chart.getSelection()[0]['row'],1));
     }
     google.visualization.events.addListener(chart, 'select', selectHandler);
+    document.getElementById('loader').style.display = 'none';
   }
   
   function getData() {
@@ -43,7 +73,8 @@
       used by XMLHttpRequest, and prefix it with the URI of the SPARQL endpoint, which
       in this case is "http://data.spider-ld.org/marmotta/sparql/select?query="
     */
-    sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix%20dbo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20cidoc%3A%20%3Chttp%3A%2F%2Fwww.cidoc-crm.org%2Frdfs%2Fcidoc_crm_v6.2-draft-2015August.rdfs%23%3E%0Aprefix%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aselect%20%3Flabel%20%3Fusage%20(count(%3Fchurch)%20as%20%3Fnumber_of_churches)%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20dbo%3AChurch%20.%0A%20%20%3Fchurch%20cidoc%3AP103_was_intended_for%2Fdct%3Asubject%20%3Fusage%20.%0A%20%20%3Fchurch%20cidoc%3AP103_was_intended_for%2Frdfs%3Alabel%20%3Flabel%20.%0A%20%20FILTER%20(lang(%3Flabel)%20%3D%20%27en%27)%20.%0A%7D%0Agroup%20by%20%3Fusage%20%3Flabel'
+    document.getElementById('loader').style.display = 'block';
+    sparql='http://data.spider-ld.org/marmotta/sparql/select?query=prefix%20dbo%3A%20%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0Aprefix%20cidoc%3A%20%3Chttp%3A%2F%2Ferlangen-crm.org%2F160714%2F%3E%0Aprefix%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aselect%20%3Flabel%20%3Fusage%20(count(%3Fchurch)%20as%20%3Fnumber_of_churches)%0Awhere%20%7B%0A%20%20%3Fchurch%20a%20dbo%3AChurch%20%3B%0A%20%20%20%20cidoc%3AP103_was_intended_for%2Fdct%3Asubject%20%3Fusage%20%3B%0A%20%20%20%20cidoc%3AP103_was_intended_for%2Frdfs%3Alabel%20%3Flabel%20.%0A%20%20FILTER%20(lang(%3Flabel)%20%3D%20%27en%27)%20.%0A%7D%0Agroup%20by%20%3Fusage%20%3Flabel'
     var xhr = new XMLHttpRequest();
     var csv;
     xhr.onreadystatechange = function() {
@@ -52,13 +83,15 @@
       }
     }
     xhr.open('GET', sparql, true);
-    xhr.setRequestHeader("Accept", "text/csv"); 
+    xhr.setRequestHeader('Accept', 'text/csv'); 
     xhr.send(null);
   }
   </script>
 </head>
 
 <body>
-  <div id="chart"></div>
+  <div id="loader"></div>
+  <div id="chart">
+  </div>
 </body>
 </html>
